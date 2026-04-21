@@ -1,0 +1,17 @@
+.DS_Store
+*.swp
+*.swo
+*~
+
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+build/
+.build/
+DerivedData/
+
+.idea/
+.vscode/
+*.iml
+
+.notion-cache/
