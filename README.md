@@ -13,9 +13,9 @@
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| LeetCode problems solved | 0 | 150+ |
-| Blind 75 completion | 0 / 75 | 75 / 75 |
-| NeetCode 150 completion | 0 / 150 | 150 / 150 |
+| LeetCode problems solved | 1 | 150+ |
+| Blind 75 completion | 1 / 75 | 75 / 75 |
+| NeetCode 150 completion | 1 / 150 | 150 / 150 |
 | Concept deep-dives done | 2 / 11 | 11 / 11 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
@@ -33,7 +33,7 @@
 | # | Topic | Deep-dive | Problems Solved |
 |---|-------|-----------|-----------------|
 | 01 | Array | ✅ | 0 |
-| 02 | HashTable / Dictionary | ✅ | 0 |
+| 02 | HashTable / Dictionary | ✅ | 1 |
 | 03 | String & Two Pointers | ⏳ | 0 |
 | 04 | Stack & Queue | ⏳ | 0 |
 | 05 | Linked List | ⏳ | 0 |
@@ -214,8 +214,8 @@ Mentor rotates 3 recall questions per session from the active deck. Weak topics 
 
 **Week 1 (2026-04-21 → 2026-04-27)** — Rotation A
 - Tue: ✅ Planning + setup (this repo)
-- Wed: 🪫 Preview Two Sum (Office + Gym)
-- Thu: 🔥 Two Sum guided solve (Format B)
-- Fri: 🪫 Light session
-- Sat: 🔥 Group Anagrams solo (Format C)
+- Wed: ✅ Preview Two Sum (Office + Gym)
+- Thu: ✅ Two Sum guided solve (Format B) → [0001-two-sum](problems/hashmap/0001-two-sum.md)
+- Fri: 🪫 Light session (30-min passive review of Two Sum MD)
+- Sat: 🔥 Group Anagrams solo (Format C) — or iOS ARC/Memory depending on Trendyol prep
 - Sun: 📊 Weekly Quiz + Week 2 plan
