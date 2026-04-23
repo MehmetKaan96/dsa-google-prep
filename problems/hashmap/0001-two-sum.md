@@ -310,12 +310,7 @@ See `Edge Cases Checklist` above. Emphasize:
 
 ---
 
-## 10. Today's Mock Session Debrief
-
-> **Date:** 2026-04-23 (Thursday, national holiday)
-> **Format:** B — Guided Problem
-> **Duration:** ~70 min
-> **Mentor Role:** Mock Trendyol iOS interviewer + coach
+## 10. Mock Session Debrief
 
 ### What Went Well
 - Asked 3 Priority-1 clarifying questions (sorted, negatives, duplicates).
@@ -331,9 +326,6 @@ See `Edge Cases Checklist` above. Emphasize:
 - **Weak naming refactor reflex** — shipped `storedNumber` and `j` without pushback.
 - **Space complexity waffling** — "O(1) or O(n)" instead of firm "O(n) worst case".
 - **Didn't know** Dictionary worst case = O(n) due to collisions.
-
-### Pass/Fail Signal Estimate
-If this were the actual Trendyol phone screen: **marginal pass**. Two coaching hints received; without them, likely still a pass with hints as a candidate — but the margin is thin. Reps between now and Monday close the margin.
 
 ### One Rule to Internalize
 **"Verbal before code, trace before verbal."** Narrate a concrete example as part of your approach. It's the cheapest clarity signal in interviews.
