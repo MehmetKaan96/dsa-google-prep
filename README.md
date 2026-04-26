@@ -62,6 +62,7 @@ dsa-google-prep/
 │   ├── graphs/
 │   └── dp/
 ├── ios-depth/              ← iOS internals, memory, concurrency, architecture
+├── interviews/             ← interview-specific prep docs (Trendyol, etc.)
 ├── system-design/          ← mobile system design notes
 └── weekly-reviews/         ← weekly retrospectives + Sunday planning output
 ```
@@ -220,4 +221,6 @@ Mentor rotates 3 recall questions per session from the active deck. Weak topics 
 - Fri: 🪫 Light session (30-min passive review of Two Sum MD)
 - Sat: ✅ Contains Duplicate solo (Format C) → [0217-contains-duplicate](problems/hashmap/0217-contains-duplicate.md)
 - Sun: ✅ iOS Deep-Dive — ARC + Memory Management (Format D) → [memory-management](ios-depth/memory-management.md)
-- Sun: 📊 Weekly Quiz + Week 2 plan (later)
+- Sun: ✅ Trendyol HR Screen Prep doc → [hr-screen-prep](interviews/2026-04-27-trendyol/hr-screen-prep.md)
+- Sun PM: Cold mock re-solve (Two Sum + Contains Duplicate) + HR role-play
+- Mon: 🎯 Trendyol HR Phone Screen
