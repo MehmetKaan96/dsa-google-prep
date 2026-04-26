@@ -60,6 +60,33 @@ Hash table = array (of buckets) + hash function. Key is mapped to bucket index v
 - Hard real-time (worst O(n) unacceptable)
 - Very small N (<10) — linear scan often faster
 
+## Set vs Dictionary — When to Use Which
+
+Both are hash-based, both give O(1) average operations. The choice depends on **what data you need back when you find a match.**
+
+| Need | Choice |
+|------|--------|
+| Just "is it present? yes/no" | `Set<T>` |
+| "Is it present? If yes, give me the index/count/payload" | `Dictionary<T, Data>` |
+
+### Memorize this phrase (interview-ready)
+
+> *"If I need associated data per element (index, count, payload), I use Dictionary. If I only need membership testing, Set is the minimal correct choice."*
+
+### Concrete examples
+
+| Problem | Choice | Why |
+|---------|--------|-----|
+| Two Sum (LC #1) | `[Int: Int]` | Need to **return the index** of the complement |
+| Contains Duplicate (LC #217) | `Set<Int>` | Just yes/no — no associated data |
+| Valid Anagram (LC #242) | `[Character: Int]` | Need **counts** per character |
+| Longest Consecutive Sequence (LC #128) | `Set<Int>` | Need O(1) membership for boundary checks |
+| Group Anagrams (LC #49) | `[String: [String]]` | Need to **group** by canonical key |
+
+### Senior signal
+
+> *"Reaching for `Dictionary<T, Void>` to simulate a Set is an anti-pattern in Swift — `Set<T>` is a first-class type with its own optimizations. Use the most specific tool for the job."*
+
 ## Senior Signals / Must-Drop Terms
 
 - Load factor (α)
