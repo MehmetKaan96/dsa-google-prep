@@ -311,6 +311,59 @@ D: ViewModel ↔ NetworkServiceProtocol (concrete'e değil)
 
 ---
 
+## 6.5 ARKADAŞ INTEL'İ — Trendyol'da Sıkça Sorulan 4 Ek Soru
+
+> Bu sorular, bir önceki Trendyol iOS mülakatında bizzat sorulmuş. Üstüne hazırlık yapılmazsa eler.
+
+### Q: "İngilizce seviyen nedir?" (5-10 saniye)
+
+> *"İngilizce'm professional working proficiency seviyesinde. Teknik konuları rahat okuyup yazıyorum, dokümantasyon ve kod review İngilizce yapabiliyorum. Konuşma tarafında — özellikle Londra'daki BETT UK fuarında uluslararası stakeholder'larla live demo yaptım, milli eğitim bakanları ve okul yöneticilerine ürünü İngilizce sundum. Akıcı seviyede konuşmaktan çekinmem."*
+
+**Anahtar:** BETT UK = LIVE proof of English. Bu detayı **mutlaka** zikret. Jenerik "iyi" cevabı zayıf — concrete proof = strong.
+
+---
+
+### Q: "Trendyol'da çalışan tanıdığın var mı?" (10 saniye)
+
+> *"Evet, [İSİM SOYİSİM], yaklaşık 1 ay önce Trendyol'a Android Developer olarak geçti. Aynı şirkette, aynı eğitim projesinde birlikte çalıştık. Bana ekibin teknik kültürü ve süreçleri hakkında genel intiba paylaştı."*
+
+**Pre-interview yapılacak:** İsim soyisim'i **net** söyle. "Hatırlamıyorum" = tanıdık yok izlenimi verir.
+
+---
+
+### Q: "SwiftUI biliyor musun? UIKit biliyor musun?" (15-20 saniye)
+
+> *"UIKit'i 2.5 yıllık production deneyimim boyunca aktif kullandım — programmatic UI dahil, SnapKit ile constraint yönetimi, MapKit entegrasyonu, custom view'lar gibi tüm seviyelerinde rahatım.*
+>
+> *SwiftUI'yı şu an çalıştığım eğitim projesinde son birkaç aydır aktif kullanıyoruz, küçük modülleri SwiftUI ile yazıp UIKit'e entegre ediyoruz. Declarative syntax'ına ve State / Binding mantığına aşinayım. UIKit kadar yıllık deneyimim yok ama yatırım yapıyorum, kişisel çalışmalarımda da deneme projeleri yapıyorum."*
+
+**Strateji:** UIKit = güçlü kart (yıllık prod). SwiftUI = gelişiyor (honest). İki framework'ü de bil + farklarını farket.
+
+**SwiftUI key concepts (hatırlatıcı):**
+- `@State` (local), `@Binding` (parent-child), `@ObservedObject` / `@StateObject` (external), `@EnvironmentObject` (global)
+- Declarative vs imperative
+- View body recomputation
+- UIKit interop: `UIViewRepresentable`, `UIHostingController`
+
+---
+
+### Q: "CI/CD süreçlerini biliyor musun?" (20-30 saniye)
+
+> *"FMSS'te projelerimizin release süreçleri Jenkins ile otomatize. Ben günlük olarak pipeline'ı tetikleyip build'leri başlatıyorum, build hatalarını takip ediyorum. Pipeline'ın yapılandırılması ekibimizdeki DevOps'tan sorumlu kişi tarafından yönetiliyor — kendim Jenkins config yazma deneyimim yok ama mevcut yapıyı okuyup anlayabilir, gerekli değişiklikleri yapabilirim. Süreç Bitbucket entegrasyonu, build automation ve App Store Connect submission adımlarını içeriyor."*
+
+**Strateji:**
+- ✅ "Kullanıyorum" — gerçek
+- ✅ "Yazma deneyimim yok" — dürüst
+- ✅ "Okuyup anlayabilirim, değişiklik yapabilirim" — adapte olabileceğini göster
+
+**CI/CD genel kavramlar (hatırlatıcı):**
+- **CI (Continuous Integration):** Kod commit'i → otomatik build + test
+- **CD (Continuous Delivery / Deployment):** Build → otomatik deploy (test / staging / production)
+- iOS pipeline ortak adımları: clone → install pods/SPM → build → unit test → archive → sign → upload to TestFlight / App Store
+- Tools: **Jenkins**, **GitHub Actions**, **Bitrise**, **CircleCI**, **Xcode Cloud**, **Fastlane** (deploy automation)
+
+---
+
 ## 7. DON'T-DO LIST
 
 ```
@@ -383,7 +436,7 @@ D: ViewModel ↔ NetworkServiceProtocol (concrete'e değil)
 │ SOLID:  S - Single Responsibility                   │
 │         O - Open/Closed                             │
 │         L - Liskov Substitution                     │
-│         I - Interface Segregation       ← UNUTMA   │
+│         I - Interface Segregation                   │
 │         D - Dependency Inversion                    │
 ├─────────────────────────────────────────────────────┤
 │ VIPER:  View - Interactor - Presenter -             │
@@ -393,6 +446,12 @@ D: ViewModel ↔ NetworkServiceProtocol (concrete'e değil)
 ├─────────────────────────────────────────────────────┤
 │ Test:   Unit (XCTest) | UI (XCUITest) |             │
 │         Integration | Snapshot                      │
+├─────────────────────────────────────────────────────┤
+│ ARKADAŞ INTEL — Hatırla:                            │
+│  • İngilizce → BETT UK demo örneği VER             │
+│  • Trendyol Tanıdığı → İSİM SOYİSİM net söyle      │
+│  • SwiftUI/UIKit → UIKit 2.5y prod, SwiftUI yeni   │
+│  • CI/CD → Jenkins kullanım var, yazma yok         │
 ├─────────────────────────────────────────────────────┤
 │ MIMO:   Bilmediğine "yakın deneyim var" köprü kur   │
 │         Yapmadığına "yapmadım ama prensibi" de      │
