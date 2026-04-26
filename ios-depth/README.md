@@ -5,10 +5,13 @@ Deep notes on iOS-specific interview topics. Populated during Phase 2-3 (Months 
 ## Planned Topics
 
 ### Memory Management
-- [ ] ARC — retain/release, autorelease pools
-- [ ] Strong / weak / unowned — when to use each
-- [ ] Retain cycles — closures, delegates, parent-child
-- [ ] Debugging leaks with Instruments (Leaks, Allocations)
+- [x] **ARC — retain/release** → [memory-management.md](memory-management.md)
+- [x] **Strong / weak / unowned — when to use each** → [memory-management.md](memory-management.md)
+- [x] **Retain cycles — closures, delegates, parent-child** → [memory-management.md](memory-management.md)
+- [x] **Cycle vs lifetime extension vs RunLoop-rooted leak** → [memory-management.md](memory-management.md)
+- [x] **Capture lists — `[weak self]` / `[unowned self]`** → [memory-management.md](memory-management.md)
+- [ ] Autorelease pools — `@autoreleasepool` patterns
+- [ ] Debugging leaks with Instruments (Leaks, Allocations) — practical session
 
 ### Concurrency
 - [ ] GCD — queues, dispatch groups, barriers

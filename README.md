@@ -16,7 +16,8 @@
 | LeetCode problems solved | 2 | 150+ |
 | Blind 75 completion | 2 / 75 | 75 / 75 |
 | NeetCode 150 completion | 2 / 150 | 150 / 150 |
-| Concept deep-dives done | 2 / 11 | 11 / 11 |
+| Concept deep-dives done | 3 / 11 | 11 / 11 |
+| iOS deep-dives done | 1 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
 
@@ -218,4 +219,5 @@ Mentor rotates 3 recall questions per session from the active deck. Weak topics 
 - Thu: ✅ Two Sum guided solve (Format B) → [0001-two-sum](problems/hashmap/0001-two-sum.md)
 - Fri: 🪫 Light session (30-min passive review of Two Sum MD)
 - Sat: ✅ Contains Duplicate solo (Format C) → [0217-contains-duplicate](problems/hashmap/0217-contains-duplicate.md)
-- Sun: 📊 Weekly Quiz + Week 2 plan
+- Sun: ✅ iOS Deep-Dive — ARC + Memory Management (Format D) → [memory-management](ios-depth/memory-management.md)
+- Sun: 📊 Weekly Quiz + Week 2 plan (later)
