@@ -13,9 +13,9 @@
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| LeetCode problems solved | 2 | 150+ |
-| Blind 75 completion | 2 / 75 | 75 / 75 |
-| NeetCode 150 completion | 2 / 150 | 150 / 150 |
+| LeetCode problems solved | 3 | 150+ |
+| Blind 75 completion | 3 / 75 | 75 / 75 |
+| NeetCode 150 completion | 3 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
 | iOS deep-dives done | 1 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
@@ -34,7 +34,7 @@
 | # | Topic | Deep-dive | Problems Solved |
 |---|-------|-----------|-----------------|
 | 01 | Array | ✅ | 0 |
-| 02 | HashTable / Dictionary | ✅ | 2 |
+| 02 | HashTable / Dictionary | ✅ | 3 |
 | 03 | String & Two Pointers | ⏳ | 0 |
 | 04 | Stack & Queue | ⏳ | 0 |
 | 05 | Linked List | ⏳ | 0 |
@@ -222,5 +222,7 @@ Mentor rotates 3 recall questions per session from the active deck. Weak topics 
 - Sat: ✅ Contains Duplicate solo (Format C) → [0217-contains-duplicate](problems/hashmap/0217-contains-duplicate.md)
 - Sun: ✅ iOS Deep-Dive — ARC + Memory Management (Format D) → [memory-management](ios-depth/memory-management.md)
 - Sun: ✅ Trendyol HR Screen Prep doc → [hr-screen-prep](interviews/2026-04-27-trendyol/hr-screen-prep.md)
-- Sun PM: Cold mock re-solve (Two Sum + Contains Duplicate) + HR role-play
-- Mon: 🎯 Trendyol HR Phone Screen
+- Sun PM: ✅ Cold mock re-solve (Two Sum + Contains Duplicate) + HR role-play
+- Mon: ✅ Trendyol HR Phone Screen — light review + Valid Anagram intro (Block A+B)
+- Tue: ✅ Trendyol IK callback (Stage 1 passed, escalated to HR Manager)
+- Tue PM: ✅ Valid Anagram (Format C) → [0242-valid-anagram](problems/hashmap/0242-valid-anagram.md)
