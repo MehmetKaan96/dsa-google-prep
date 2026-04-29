@@ -1,19 +1,18 @@
 # HashTable (Dictionary / Set)
 
-> **Full deep-dive:** `DSA.playground/Pages/02-HashTable.xcplaygroundpage/Contents.swift`
-> This file is a quick-reference summary.
+> **Tam deep-dive:** `DSA.playground/Pages/02-HashTable.xcplaygroundpage/Contents.swift`
+> Bu dosya hızlı referans özetidir.
 
 ## TL;DR
 
-Hash table = array (of buckets) + hash function. Key is mapped to bucket index via
-`hash(key) % capacity`. Average O(1) operations, but worst case O(n) under collisions.
+Hash table = bucket'lardan oluşan bir array + hash function. Key, `hash(key) % capacity` formülü ile bir bucket index'ine map'lenir. Average O(1) operasyonlar, ama collision durumunda worst case O(n).
 
-## Key Invariants
+## Temel Invariant'lar
 
-- Hashable contract: `a == b ⇒ a.hashValue == b.hashValue` (converse NOT required)
-- Deterministic per instance (randomized seed per process for HashDoS resistance)
-- Load factor α = count / capacity — typically rehash at α ≈ 0.75
-- No duplicate keys
+- Hashable contract: `a == b ⇒ a.hashValue == b.hashValue` (tersi gerekmez)
+- Aynı instance içinde deterministic (process başına randomized seed — HashDoS koruması)
+- Load factor α = count / capacity — tipik olarak α ≈ 0.75'te rehash
+- Duplicate key olmaz
 
 ## Big O
 
@@ -24,70 +23,70 @@ Hash table = array (of buckets) + hash function. Key is mapped to bucket index v
 | `removeValue(forKey:)` | O(1) | O(n) |
 | `contains` | O(1) | O(n) |
 | iteration | O(n + capacity) | |
-| CoW copy (first mutation) | O(n) | |
+| CoW copy (ilk mutation) | O(n) | |
 
-## Swift-specific
+## Swift'e Özgü
 
-- `Dictionary` uses **open addressing** + SipHash with randomized seed
-- `Set<T>` is essentially `Dictionary<T, Void>`
-- Value type with CoW on heap `ManagedBuffer`
-- Iteration order undefined and may differ across runs
-- Hash values NOT persistable (seed changes per process launch)
-- Auto-synthesize: if all stored properties are `Hashable`, compiler writes `hash(into:)` for you
+- `Dictionary` **open addressing** + SipHash + randomized seed kullanır
+- `Set<T>` aslında `Dictionary<T, Void>`'a çok benzer ama ayrı bir first-class type
+- Value type; heap'teki `ManagedBuffer` üzerinde CoW
+- Iteration order tanımsız ve runlar arasında değişebilir
+- Hash value'lar persistable **değildir** (seed her process başlangıcında değişir)
+- Auto-synthesize: tüm stored property'ler `Hashable` ise compiler `hash(into:)` yazar
 
 ## Collision Resolution
 
-| Strategy | Description | Pros/Cons |
-|----------|-------------|-----------|
-| Separate chaining | Each bucket holds a list | Simple delete; pointer chasing hurts cache |
-| Linear probing | Next slot on collision | Cache-friendly; primary clustering |
-| Quadratic probing | `i*i` offset | Reduces clustering; secondary clustering remains |
-| Double hashing | Second hash for step | Best distribution; most complex |
+| Strateji | Açıklama | Pros / Cons |
+|----------|----------|-------------|
+| Separate chaining | Her bucket bir liste tutar | Delete kolay; pointer chasing cache'i bozar |
+| Linear probing | Collision'da bir sonraki slot | Cache-friendly; primary clustering |
+| Quadratic probing | `i*i` offset | Clustering azalır; secondary clustering kalır |
+| Double hashing | Step için ikinci hash | En iyi distribution; en karmaşık |
 
-## Decision Engine
+## Karar Motoru
 
-✅ Use when:
+✅ Kullan:
 - Key-based lookup
 - Frequency counting
 - Caching / memoization
 - Deduplication (Set)
 - Graph adjacency
 
-❌ Avoid when:
-- Ordered iteration needed
-- Range queries
-- Positional access
-- Hard real-time (worst O(n) unacceptable)
-- Very small N (<10) — linear scan often faster
+❌ Kaçın:
+- Ordered iteration gerekiyor
+- Range query gerekiyor
+- Positional access gerekiyor
+- Hard real-time (worst case O(n) kabul edilemez)
+- Çok küçük N (<10) — linear scan genelde daha hızlı
 
-## Set vs Dictionary — When to Use Which
+## Set vs Dictionary — Hangisi Ne Zaman?
 
-Both are hash-based, both give O(1) average operations. The choice depends on **what data you need back when you find a match.**
+İkisi de hash-based, ikisi de average O(1). Seçim **match bulunduğunda hangi veriye ihtiyacın olduğuna** bağlı.
 
-| Need | Choice |
-|------|--------|
-| Just "is it present? yes/no" | `Set<T>` |
-| "Is it present? If yes, give me the index/count/payload" | `Dictionary<T, Data>` |
+| İhtiyaç | Tercih |
+|---------|--------|
+| Sadece "var mı? evet/hayır" | `Set<T>` |
+| "Var mı? Varsa index/count/payload getir" | `Dictionary<T, Data>` |
 
-### Memorize this phrase (interview-ready)
+### Ezberlenecek Cümle (interview-ready)
 
 > *"If I need associated data per element (index, count, payload), I use Dictionary. If I only need membership testing, Set is the minimal correct choice."*
 
-### Concrete examples
+### Somut Örnekler
 
-| Problem | Choice | Why |
-|---------|--------|-----|
-| Two Sum (LC #1) | `[Int: Int]` | Need to **return the index** of the complement |
-| Contains Duplicate (LC #217) | `Set<Int>` | Just yes/no — no associated data |
-| Valid Anagram (LC #242) | `[Character: Int]` | Need **counts** per character |
-| Longest Consecutive Sequence (LC #128) | `Set<Int>` | Need O(1) membership for boundary checks |
-| Group Anagrams (LC #49) | `[String: [String]]` | Need to **group** by canonical key |
+| Problem | Tercih | Neden |
+|---------|--------|-------|
+| Two Sum (LC #1) | `[Int: Int]` | Complement'in **index'ini** döndürmek lazım |
+| Contains Duplicate (LC #217) | `Set<Int>` | Sadece evet/hayır — associated data yok |
+| Valid Anagram (LC #242) | `[Character: Int]` | Karakter başı **count** lazım |
+| Longest Consecutive Sequence (LC #128) | `Set<Int>` | Boundary check için O(1) membership lazım |
+| Group Anagrams (LC #49) | `[String: [String]]` | Canonical key'e göre **gruplamak** lazım |
 
-### Senior signal
+### Senior Sinyali
 
-> *"Reaching for `Dictionary<T, Void>` to simulate a Set is an anti-pattern in Swift — `Set<T>` is a first-class type with its own optimizations. Use the most specific tool for the job."*
+> *"Swift'te `Set` simüle etmek için `Dictionary<T, Void>` kullanmak anti-pattern'dir — `Set<T>` kendi optimizasyonlarına sahip first-class bir type. İşin için en spesifik tool'u kullan."*
 
-## Senior Signals / Must-Drop Terms
+## Senior Sinyalleri / Bilinmesi Gereken Terimler
 
 - Load factor (α)
 - Collision resolution (chaining / linear / quadratic / double hashing)
@@ -99,7 +98,7 @@ Both are hash-based, both give O(1) average operations. The choice depends on **
 - Hashable contract / hash-equals invariant
 - Open addressing vs separate chaining
 
-## Common Interview Problems
+## Yaygın Mülakat Problemleri
 
 - [ ] Two Sum (Easy)
 - [ ] Valid Anagram (Easy)

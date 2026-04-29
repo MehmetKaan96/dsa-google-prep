@@ -1,8 +1,8 @@
 # Mobile System Design
 
-Populated during Phase 4 (Month 5).
+Phase 4 (Ay 5) boyunca dolar.
 
-## Planned Problems
+## Planlanan Problemler
 
 - [ ] Design Instagram / Photo Feed
 - [ ] Design Google Photos — offline sync & upload pipeline
@@ -15,13 +15,13 @@ Populated during Phase 4 (Month 5).
 
 ## Framework (Mobile System Design)
 
-1. **Clarify requirements** — users, scale, platforms, offline support
-2. **API contract** — REST/gRPC, request/response shapes
-3. **Data model** — local persistence schema, invariants
-4. **Component diagram** — layers: UI / ViewModel / Service / Repository / Network / Storage
+1. **Requirement clarify** — kullanıcı, scale, platform, offline support
+2. **API contract** — REST/gRPC, request/response shape'leri
+3. **Data model** — local persistence schema, invariant'lar
+4. **Component diagram** — katman'lar: UI / ViewModel / Service / Repository / Network / Storage
 5. **Sync strategy** — pull / push / bidirectional, conflict resolution
 6. **Caching** — memory / disk, invalidation, TTL
-7. **Failure modes** — network loss, backgrounding, low memory
-8. **Observability** — metrics, logs, crash reporting
+7. **Failure mode'lar** — network kaybı, backgrounding, low memory
+8. **Observability** — metric'ler, log'lar, crash reporting
 9. **Security** — keychain, encryption at rest, TLS
 10. **Testing** — unit / integration / load

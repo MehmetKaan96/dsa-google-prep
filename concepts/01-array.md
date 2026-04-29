@@ -1,19 +1,19 @@
 # Array
 
-> **Full deep-dive:** `DSA.playground/Pages/01-Array.xcplaygroundpage/Contents.swift`
-> This file is a quick-reference summary. The playground has runnable examples.
+> **Tam deep-dive:** `DSA.playground/Pages/01-Array.xcplaygroundpage/Contents.swift`
+> Bu dosya hızlı referans özetidir. Playground'da çalıştırılabilir örnekler bulunur.
 
 ## TL;DR
 
-Array = contiguous memory block. O(1) random access via base-plus-offset arithmetic.
-Swift `Array` is a value type with Copy-on-Write on a reference-counted heap buffer.
+Array = contiguous memory bloğu. `base + offset` aritmetiği ile O(1) random access sağlar.
+Swift `Array` bir value type'tır; reference-counted heap buffer üzerinde Copy-on-Write ile çalışır.
 
-## Key Invariants
+## Temel Invariant'lar
 
-- Contiguity — all elements in one memory block
-- Homogeneity — same type, same stride
-- Bounds — `index ∈ [0, count)`, Swift traps on violation
-- Capacity ≥ count — allocated ≥ used
+- Contiguity — tüm elemanlar tek bir memory bloğunda
+- Homogeneity — aynı tip, aynı stride
+- Bounds — `index ∈ [0, count)`, ihlalde Swift trap atar
+- Capacity ≥ count — allocate edilen ≥ kullanılan
 
 ## Big O
 
@@ -26,29 +26,29 @@ Swift `Array` is a value type with Copy-on-Write on a reference-counted heap buf
 | `contains` | O(n) | O(n) |
 | Binary search (sorted) | O(log n) | O(log n) |
 | `sort()` | O(n log n) | O(n log n) |
-| CoW copy | O(1) | O(n) first mutation |
+| CoW copy | O(1) | O(n) ilk mutation'da |
 
-## Swift-specific
+## Swift'e Özgü
 
-- `Array<T>` supports Obj-C bridging; `ContiguousArray<T>` doesn't (~2x faster iteration)
-- `ArraySlice` retains entire parent buffer — hidden memory leak if long-lived
-- CoW triggers on **mutation** when `isKnownUniquelyReferenced == false`, NOT on assignment
-- Geometric growth (~2x) gives amortized O(1) append; `reserveCapacity` avoids resize storms
+- `Array<T>` Obj-C bridging destekler; `ContiguousArray<T>` desteklemez (~2x daha hızlı iteration)
+- `ArraySlice` parent buffer'ı tamamen retain eder — uzun yaşıyorsa **gizli memory leak**
+- CoW, `isKnownUniquelyReferenced == false` olduğunda **mutation** anında tetiklenir, **assignment'ta değil**
+- Geometric growth (~2x) amortized O(1) append verir; `reserveCapacity` resize storm'unu engeller
 
-## Decision Engine
+## Karar Motoru
 
-✅ Use when:
+✅ Kullan:
 - Read-heavy + random access
-- Known/bounded size
+- Boyutu bilinen / bounded
 - Cache-sensitive hot path
-- Iteration-dominated algorithms
+- Iteration-dominated algoritmalar
 
-❌ Avoid when:
-- Frequent mid-insert/delete
-- Need O(1) key lookup → use `Dictionary`
-- FIFO/LIFO with growth from both ends → use `Deque`
+❌ Kaçın:
+- Sık mid-insert / mid-delete
+- O(1) key lookup gerekiyor → `Dictionary`
+- İki uçtan büyüyen FIFO/LIFO → `Deque`
 
-## Senior Signals / Must-Drop Terms
+## Senior Sinyalleri / Bilinmesi Gereken Terimler
 
 - Amortized analysis (banker's / potential method)
 - Spatial / temporal locality
@@ -56,9 +56,9 @@ Swift `Array` is a value type with Copy-on-Write on a reference-counted heap buf
 - Stride vs size vs alignment
 - Geometric growth factor
 - Copy-on-Write, `isKnownUniquelyReferenced`
-- Pointer chasing (LinkedList contrast)
+- Pointer chasing (LinkedList kontrastı)
 
-## Common Interview Problems
+## Yaygın Mülakat Problemleri
 
 - [ ] Two Sum (Easy)
 - [ ] Contains Duplicate (Easy)

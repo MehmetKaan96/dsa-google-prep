@@ -1,16 +1,16 @@
 # Problems
 
-LeetCode solutions organized by primary data structure / pattern.
+LeetCode çözümleri, primary data structure / pattern'e göre organize.
 
 ## Naming Convention
 
 `{leetcode-number}-{kebab-case-name}.swift`
 
-Example: `0001-two-sum.swift`, `0049-group-anagrams.swift`
+Örnek: `0001-two-sum.swift`, `0049-group-anagrams.swift`
 
 ## Solution File Template
 
-Every solution file should include:
+Her solution dosyası şunları içermeli:
 
 ```swift
 // MARK: - Problem
@@ -22,8 +22,8 @@ Every solution file should include:
 // Solve time: Xm (first attempt) / Ym (clean)
 //
 // MARK: - Approach
-// 1. Brute force: O(?) time, O(?) space — why rejected
-// 2. Optimal:     O(?) time, O(?) space — key insight
+// 1. Brute force: O(?) time, O(?) space — neden reject
+// 2. Optimal:     O(?) time, O(?) space — anahtar insight
 //
 // MARK: - Edge Cases
 // - empty input
@@ -47,10 +47,10 @@ print("✅ All tests passed")
 ## Folder Index
 
 | Folder | Topics | Primary DS |
-|--------|--------|-----------|
+|--------|--------|------------|
 | `arrays/` | Two pointers, sliding window, prefix sum | Array |
 | `hashmap/` | Frequency, lookup, dedup | Dictionary, Set |
-| `strings/` | Palindromes, pattern matching | String, Array |
+| `strings/` | Palindrome, pattern matching | String, Array |
 | `linked-list/` | Reversal, cycle detection, merging | LinkedList |
 | `trees/` | Traversal, BST, path problems | Tree |
 | `graphs/` | BFS, DFS, topological sort | Graph |

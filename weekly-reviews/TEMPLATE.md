@@ -1,40 +1,40 @@
-# Week YYYY-Www
+# Hafta YYYY-Www
 
-**Dates:** YYYY-MM-DD → YYYY-MM-DD
-**Phase:** Phase X — [name]
-**Rotation:** A (Office = Wed+Fri) | B (Office = Mon+Thu)
-**Gym days:** Mon, Wed, Fri (example — update weekly)
-**Focus:** [main topic of the week]
+**Tarih:** YYYY-MM-DD → YYYY-MM-DD
+**Phase:** Phase X — [isim]
+**Rotation:** A (Office = Çar+Cum) | B (Office = Pzt+Per)
+**Spor günleri:** Pzt, Çar, Cum (örnek — haftalık güncelle)
+**Focus:** [haftanın ana topic'i]
 
 ---
 
 ## Daily Log
 
-| Day | Location | Energy | Planned | Actual | Duration |
-|-----|----------|--------|---------|--------|----------|
-| Mon | WFH | 🔥 HIGH | New topic | — | 0 min |
-| Tue | WFH | ⚡ MED | Solo problem | — | 0 min |
-| Wed | Off+Gym | 🪫 LOW | Preview | — | 0 min |
-| Thu | WFH | ⚡ MED | Topic or iOS | — | 0 min |
-| Fri | Off+Gym | 🪫 LOW | Light review | — | 0 min |
-| Sat | — | 🔥 HIGH | Deep work | — | 0 min |
-| Sun | — | 🔥 HIGH | Review + plan | — | 0 min |
+| Gün | Lokasyon | Energy | Planlanan | Gerçekleşen | Süre |
+|-----|----------|--------|-----------|-------------|------|
+| Pzt | WFH | 🔥 HIGH | Yeni topic | — | 0 dk |
+| Sal | WFH | ⚡ MED | Solo problem | — | 0 dk |
+| Çar | Off+Gym | 🪫 LOW | Preview | — | 0 dk |
+| Per | WFH | ⚡ MED | Topic veya iOS | — | 0 dk |
+| Cum | Off+Gym | 🪫 LOW | Light review | — | 0 dk |
+| Cmt | — | 🔥 HIGH | Deep work | — | 0 dk |
+| Paz | — | 🔥 HIGH | Review + plan | — | 0 dk |
 
-**Weekly total:** X hours (Band: 🟢 / 🟡 / 🔴)
+**Haftalık total:** X saat (Band: 🟢 / 🟡 / 🔴)
 
 ---
 
-## Problems Solved
+## Çözülen Problemler
 
-| # | Problem | Difficulty | Topic | Time | Attempt | Clean solve? |
+| # | Problem | Difficulty | Topic | Süre | Attempt | Clean solve? |
 |---|---------|-----------|-------|------|---------|--------------|
-| 1 | [Name](https://leetcode.com/...) | Easy | Array | 15m | 1st | ✅ |
+| 1 | [İsim](https://leetcode.com/...) | Easy | Array | 15dk | 1st | ✅ |
 
-Total: X problems (Y easy / Z medium / W hard)
+Toplam: X problem (Y easy / Z medium / W hard)
 
 ---
 
-## Concepts Covered / Reviewed
+## Concept'ler — Cover / Review
 
 - [ ] Topic 1
 - [ ] Topic 2
@@ -43,12 +43,11 @@ Total: X problems (Y easy / Z medium / W hard)
 
 ## Warm-Up Recall Performance
 
-Track recall quiz scores to identify weak topics. Weak concepts surface more
-often in subsequent weeks.
+Recall quiz skorlarını track et — zayıf topic'leri belirler. Zayıf concept'ler sonraki haftalarda daha sık yüzeye çıkar.
 
-| Concept | Prompts Asked | Correct | Notes |
-|---------|---------------|---------|-------|
-| Array | 2 | 1 | CoW still shaky |
+| Concept | Sorulan | Doğru | Notlar |
+|---------|---------|-------|--------|
+| Array | 2 | 1 | CoW hâlâ shaky |
 | HashTable | 2 | 2 | Solid |
 
 ---
@@ -63,36 +62,36 @@ often in subsequent weeks.
 - …
 - …
 
-## Gaps Identified
+## Belirlenen Gap'ler
 
 - [ ] …
 - [ ] …
 
 ---
 
-## Next Week Plan (generated Sunday 11:15-11:30)
+## Sonraki Hafta Planı (Pazar 11:15-11:30 üretildi)
 
 - **Rotation:** A | B
-- **Gym days:** …
-- **Fixed commitments:** …
+- **Spor günleri:** …
+- **Sabit yükümlülük:** …
 
-| Day | Location | Energy | Target |
-|-----|----------|--------|--------|
-| Mon | | | |
-| Tue | | | |
-| Wed | | | |
-| Thu | | | |
-| Fri | | | |
-| Sat | | | |
-| Sun | | | |
+| Gün | Lokasyon | Energy | Hedef |
+|-----|----------|--------|-------|
+| Pzt | | | |
+| Sal | | | |
+| Çar | | | |
+| Per | | | |
+| Cum | | | |
+| Cmt | | | |
+| Paz | | | |
 
-**New topic:** …
-**Problems to attempt:** …
+**Yeni topic:** …
+**Çözülecek problemler:** …
 
 ---
 
-## Reflection (2-3 sentences)
+## Reflection (2-3 cümle)
 
-- **One reusable pattern I learned:** …
-- **One mistake to avoid:** …
-- **Retention check (self rating 1-10):** …
+- **Öğrendiğim bir reusable pattern:** …
+- **Kaçınılacak bir hata:** …
+- **Retention check (1-10 self rating):** …

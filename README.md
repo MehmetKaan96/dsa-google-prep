@@ -9,10 +9,10 @@
 
 ## Progress Tracker
 
-### Overall
+### Genel Durum
 
-| Metric | Current | Target |
-|--------|---------|--------|
+| Metric | Şu An | Hedef |
+|--------|-------|-------|
 | LeetCode problems solved | 3 | 150+ |
 | Blind 75 completion | 3 / 75 | 75 / 75 |
 | NeetCode 150 completion | 3 / 150 | 150 / 150 |
@@ -23,15 +23,15 @@
 
 ### Phase Progression
 
-- [ ] **Phase 1 — Fundamentals Review** (Month 1-2)
-- [ ] **Phase 2 — Medium LeetCode grind** (Month 3-4)
-- [ ] **Phase 3 — iOS Depth** (parallel, Month 3-4)
-- [ ] **Phase 4 — System Design** (Month 5)
-- [ ] **Phase 5 — Behavioral + Polish** (Month 6)
+- [ ] **Phase 1 — Fundamentals Review** (Ay 1-2)
+- [ ] **Phase 2 — Medium LeetCode grind** (Ay 3-4)
+- [ ] **Phase 3 — iOS Depth** (paralel, Ay 3-4)
+- [ ] **Phase 4 — System Design** (Ay 5)
+- [ ] **Phase 5 — Behavioral + Polish** (Ay 6)
 
 ### Concept Coverage
 
-| # | Topic | Deep-dive | Problems Solved |
+| # | Topic | Deep-dive | Çözülen Problem |
 |---|-------|-----------|-----------------|
 | 01 | Array | ✅ | 0 |
 | 02 | HashTable / Dictionary | ✅ | 3 |
@@ -51,9 +51,9 @@
 
 ```
 dsa-google-prep/
-├── README.md               ← this file (master tracker)
-├── concepts/               ← concept cheat sheets (deep-dives live in Xcode playground)
-├── problems/               ← LeetCode solutions organized by topic
+├── README.md               ← bu dosya (master tracker)
+├── concepts/               ← concept cheat sheet'leri (deep-dive'lar Xcode playground'da)
+├── problems/               ← LeetCode çözümleri, topic'e göre organize
 │   ├── arrays/
 │   ├── hashmap/
 │   ├── strings/
@@ -62,9 +62,9 @@ dsa-google-prep/
 │   ├── graphs/
 │   └── dp/
 ├── ios-depth/              ← iOS internals, memory, concurrency, architecture
-├── interviews/             ← interview-specific prep docs (Trendyol, etc.)
-├── system-design/          ← mobile system design notes
-└── weekly-reviews/         ← weekly retrospectives + Sunday planning output
+├── interviews/             ← mülakata özel hazırlık doc'ları (Trendyol, vb.)
+├── system-design/          ← mobile system design notları
+└── weekly-reviews/         ← haftalık retrospektif + Pazar planlama çıktısı
 ```
 
 ---
@@ -73,131 +73,131 @@ dsa-google-prep/
 
 ### Time Boundaries
 
-| Rule | Value | Type |
-|------|-------|------|
-| **Daily floor** | 1.5 hours | Non-negotiable minimum |
-| **Daily ceiling** | 2.5 hours | Non-negotiable maximum |
-| **Hard bedtime** | 22:30 | Non-negotiable (sleep = memory consolidation) |
-| **Mandatory recovery** | 3 consecutive extended days → 1 floor-only day | Burnout prevention |
-| **Weekly off-day** | 1 day complete rest | Sustainability |
+| Kural | Değer | Tip |
+|-------|-------|-----|
+| **Daily floor** | 1.5 saat | Non-negotiable minimum |
+| **Daily ceiling** | 2.5 saat | Non-negotiable maximum |
+| **Hard bedtime** | 22:30 | Non-negotiable (uyku = memory consolidation) |
+| **Mandatory recovery** | 3 ardışık extended gün → 1 floor-only gün | Burnout prevention |
+| **Weekly off-day** | 1 gün tam dinlenme | Sustainability |
 
 ### Weekly Bands
 
-| Band | Hours/week | Status |
-|------|-----------|--------|
+| Band | Saat/Hafta | Status |
+|------|------------|--------|
 | 🟢 Green | 8-10 | On track |
-| 🟡 Yellow | 5-7 | Acceptable, momentum preserved |
-| 🔴 Red | <5 | Recovery plan needed (Sunday ritual) |
+| 🟡 Yellow | 5-7 | Acceptable, momentum korundu |
+| 🔴 Red | <5 | Recovery plan gerekli (Pazar ritüeli) |
 
-Target: **≤ 2 Red weeks across 6 months**.
+Hedef: **6 ayda ≤ 2 Red hafta**.
 
 ---
 
 ## Energy-Matched Sessions
 
-Match session type to energy level; do not force HIGH work into LOW windows.
+Session tipini enerji seviyesine eşle; HIGH iş'i LOW window'a zorlama.
 
-| Energy | Duration | Best For |
-|--------|----------|----------|
-| 🔥 **HIGH** | 90-150 min | New concept, hard problem, mock interview |
-| ⚡ **MEDIUM** | 60-90 min | Medium problem, concept review, guided solve |
-| 🪫 **LOW** | 20-40 min | Warm-up recall, easy re-solve, reading |
-| 🔋 **MICRO** | 10-15 min | Flashcards, article, podcast |
+| Energy | Süre | En İyi |
+|--------|------|--------|
+| 🔥 **HIGH** | 90-150 dk | Yeni concept, zor problem, mock interview |
+| ⚡ **MEDIUM** | 60-90 dk | Medium problem, concept review, guided solve |
+| 🪫 **LOW** | 20-40 dk | Warm-up recall, kolay re-solve, okuma |
+| 🔋 **MICRO** | 10-15 dk | Flashcard, makale, podcast |
 
-Typical energy by day:
-- 🔥 HIGH: weekend morning, WFH evening (fresh)
-- ⚡ MEDIUM: WFH weekday evening
-- 🪫 LOW: post-gym evening, long work day
-- 🔋 MICRO: commute, lunch break
+Güne göre tipik enerji:
+- 🔥 HIGH: hafta sonu sabah, WFH akşam (taze)
+- ⚡ MEDIUM: WFH hafta içi akşam
+- 🪫 LOW: spor sonrası akşam, uzun iş günü
+- 🔋 MICRO: commute, öğle arası
 
 ---
 
 ## Session Formats
 
-Each session takes one of 5 shapes. Mentor proposes; user confirms at start.
+Her seans 5 şekilden birini alır. Mentor önerir; kullanıcı başta confirm eder.
 
-| Format | Name | Duration | When |
-|--------|------|----------|------|
-| **A** | Concept Deep-Dive | 60-90 min | New data structure or algorithm |
-| **B** | Guided Problem | 45-60 min | LeetCode with mentor, hints as needed |
-| **C** | Solo Sprint | 30+20 min | Timed solo solve + review |
-| **D** | iOS Deep-Dive | 60 min | iOS topic (Month 3+) |
-| **E** | Mock Interview | 60-90 min | Full simulation (Month 5+) |
+| Format | İsim | Süre | Ne Zaman |
+|--------|------|------|----------|
+| **A** | Concept Deep-Dive | 60-90 dk | Yeni data structure veya algoritma |
+| **B** | Guided Problem | 45-60 dk | LeetCode mentor ile, hint'ler ihtiyaca göre |
+| **C** | Solo Sprint | 30+20 dk | Timed solo solve + review |
+| **D** | iOS Deep-Dive | 60 dk | iOS topic (Ay 3+) |
+| **E** | Mock Interview | 60-90 dk | Tam simülasyon (Ay 5+) |
 
 ---
 
 ## Weekly Routine (Template)
 
-### Rotation A — Office = Wed + Fri
+### Rotation A — Office = Çar + Cum
 
 ```
-MON (WFH)       20:30-22:00   🔥 New topic / guided problem
-TUE (WFH)       20:30-22:00   ⚡ Solo problem (timed)
-WED (Off+Gym)   22:30-23:00   🪫 Preview / flashcard
-THU (WFH)       20:30-22:00   ⚡ Topic deepening or iOS
-FRI (Off+Gym)   22:30-23:00   🪫 Light review
-SAT             09:00-11:00   🔥 Deep work (hard problem)
-SUN             10:00-11:30   📊 Weekly Quiz + next week plan
+PZT (WFH)       20:30-22:00   🔥 Yeni topic / guided problem
+SAL (WFH)       20:30-22:00   ⚡ Solo problem (timed)
+ÇAR (Off+Gym)   22:30-23:00   🪫 Preview / flashcard
+PER (WFH)       20:30-22:00   ⚡ Topic deepening veya iOS
+CUM (Off+Gym)   22:30-23:00   🪫 Light review
+CMT             09:00-11:00   🔥 Deep work (zor problem)
+PAZ             10:00-11:30   📊 Weekly Quiz + sonraki hafta planı
 ```
 
-### Rotation B — Office = Mon + Thu
+### Rotation B — Office = Pzt + Per
 
 ```
-MON (Off+Gym)   22:30-23:00   🪫 Preview / flashcard
-TUE (WFH)       20:30-22:00   🔥 New topic / guided problem
-WED (WFH)       20:30-22:00   ⚡ Solo problem (timed)
-THU (Off+Gym)   22:30-23:00   🪫 Light review
-FRI (WFH)       20:30-21:30   🔋 Flashcard day (short)
-SAT             09:00-11:00   🔥 Deep work
-SUN             10:00-11:30   📊 Weekly Quiz + next week plan
+PZT (Off+Gym)   22:30-23:00   🪫 Preview / flashcard
+SAL (WFH)       20:30-22:00   🔥 Yeni topic / guided problem
+ÇAR (WFH)       20:30-22:00   ⚡ Solo problem (timed)
+PER (Off+Gym)   22:30-23:00   🪫 Light review
+CUM (WFH)       20:30-21:30   🔋 Flashcard günü (kısa)
+CMT             09:00-11:00   🔥 Deep work
+PAZ             10:00-11:30   📊 Weekly Quiz + sonraki hafta planı
 ```
 
-**Meta-solution:** Every Sunday at 11:15-11:30, the plan is re-built fresh based on the upcoming week's office rotation and gym schedule. Templates are defaults, not straitjackets.
+**Meta-solution:** Her Pazar 11:15-11:30, plan gelen haftanın office rotation ve gym programına göre **sıfırdan** kurulur. Template'ler default'tur, smokin değil.
 
 ---
 
-## Sunday Planning Ritual (15 min)
+## Pazar Planlama Ritüeli (15 dk)
 
-Every Sunday 11:15-11:30, end of weekly review:
+Her Pazar 11:15-11:30, weekly review sonu:
 
-1. **Input:** Next week's rotation (A or B)
-2. **Input:** Gym days (user follows 2-on-1-off, skips Tuesdays)
-3. **Input:** Fixed commitments (meetings, social, travel)
-4. **Output:** 7-day session plan with energy bands, targets, and expected problems/topics
+1. **Input:** Sonraki haftanın rotation'ı (A veya B)
+2. **Input:** Spor günleri (kullanıcı 2-on-1-off, Salı'ları skip)
+3. **Input:** Sabit yükümlülükler (toplantı, sosyal, seyahat)
+4. **Output:** 7-günlük session plan; energy band, hedef ve beklenen problem/topic'ler ile
 
-The output goes into `weekly-reviews/YYYY-Www-plan.md`.
-
----
-
-## Daily Warm-Up Recall (3-5 min, every session start)
-
-Active retrieval over passive re-reading. Spaced repetition schedule:
-- **1 day** after topic learned
-- **3 days** after
-- **1 week** after
-- **2 weeks** after
-- **1 month** after
-
-Mentor rotates 3 recall questions per session from the active deck. Weak topics surface more frequently.
+Çıktı `weekly-reviews/YYYY-Www-plan.md`'e gider.
 
 ---
 
-## English Integration (Gradual)
+## Daily Warm-Up Recall (3-5 dk, her seans başında)
 
-- **Now (Month 1-2):** Problems solved in TR; problem descriptions read in EN
-- **Month 3:** Weekly problem summaries written in EN
-- **Month 3+:** Mock interviews conducted in EN
+Aktif retrieval > pasif okuma. Spaced repetition takvimi:
+- Topic öğrendikten **1 gün** sonra
+- **3 gün** sonra
+- **1 hafta** sonra
+- **2 hafta** sonra
+- **1 ay** sonra
+
+Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'ler daha sık yüzeye çıkar.
 
 ---
 
-## Weekly Routine Rules
+## English Integration (Aşamalı)
 
-1. **Sustainability > intensity.** Missing a day is fine; missing a week needs recovery plan.
-2. **Retrieval > re-reading.** Active recall beats passive review.
-3. **Explain before code.** Verbal pseudocode + Big O before any Swift.
-4. **Timed solo solving.** Track real solve time — this is the interview gap.
-5. **Sunday planning is sacred.** 15 min, non-negotiable. Without it, retention collapses.
-6. **No guilt rule.** Missed sessions are recovered, never punished.
+- **Şu an (Ay 1-2):** Problemler TR'de çözülür; problem description'lar EN okunur
+- **Ay 3:** Haftalık problem özetleri EN yazılır
+- **Ay 3+:** Mock mülakatlar EN yapılır
+
+---
+
+## Weekly Routine Kuralları
+
+1. **Sustainability > intensity.** Bir gün kaçırmak ok; bir hafta kaçırmak recovery plan ister.
+2. **Retrieval > re-reading.** Aktif recall pasif review'u yener.
+3. **Explain before code.** Swift'ten önce sözel pseudocode + Big O.
+4. **Timed solo solving.** Gerçek solve süresini track et — bu mülakat gap'idir.
+5. **Pazar planlama kutsaldır.** 15 dk, non-negotiable. Olmazsa retention çöker.
+6. **No guilt rule.** Kaçan seanslar telafi edilir, asla cezalandırılmaz.
 
 ---
 
@@ -215,14 +215,14 @@ Mentor rotates 3 recall questions per session from the active deck. Weak topics 
 ## Current Week
 
 **Week 1 (2026-04-21 → 2026-04-27)** — Rotation A
-- Tue: ✅ Planning + setup (this repo)
-- Wed: ✅ Preview Two Sum (Office + Gym)
-- Thu: ✅ Two Sum guided solve (Format B) → [0001-two-sum](problems/hashmap/0001-two-sum.md)
-- Fri: 🪫 Light session (30-min passive review of Two Sum MD)
-- Sat: ✅ Contains Duplicate solo (Format C) → [0217-contains-duplicate](problems/hashmap/0217-contains-duplicate.md)
-- Sun: ✅ iOS Deep-Dive — ARC + Memory Management (Format D) → [memory-management](ios-depth/memory-management.md)
-- Sun: ✅ Trendyol HR Screen Prep doc → [hr-screen-prep](interviews/2026-04-27-trendyol/hr-screen-prep.md)
-- Sun PM: ✅ Cold mock re-solve (Two Sum + Contains Duplicate) + HR role-play
-- Mon: ✅ Trendyol HR Phone Screen — light review + Valid Anagram intro (Block A+B)
-- Tue: ✅ Trendyol IK callback (Stage 1 passed, escalated to HR Manager)
-- Tue PM: ✅ Valid Anagram (Format C) → [0242-valid-anagram](problems/hashmap/0242-valid-anagram.md)
+- Sal: ✅ Planlama + setup (bu repo)
+- Çar: ✅ Two Sum preview (Office + Gym)
+- Per: ✅ Two Sum guided solve (Format B) → [0001-two-sum](problems/hashmap/0001-two-sum.md)
+- Cum: 🪫 Light session (30-min Two Sum MD passive review)
+- Cmt: ✅ Contains Duplicate solo (Format C) → [0217-contains-duplicate](problems/hashmap/0217-contains-duplicate.md)
+- Paz: ✅ iOS Deep-Dive — ARC + Memory Management (Format D) → [memory-management](ios-depth/memory-management.md)
+- Paz: ✅ Trendyol HR Screen Prep doc → [hr-screen-prep](interviews/2026-04-27-trendyol/hr-screen-prep.md)
+- Paz PM: ✅ Cold mock re-solve (Two Sum + Contains Duplicate) + HR role-play
+- Pzt: ✅ Trendyol HR Phone Screen — light review + Valid Anagram intro (Block A+B)
+- Sal: ✅ Trendyol IK callback (Stage 1 passed, HR Manager'a escalate)
+- Sal PM: ✅ Valid Anagram (Format C) → [0242-valid-anagram](problems/hashmap/0242-valid-anagram.md)

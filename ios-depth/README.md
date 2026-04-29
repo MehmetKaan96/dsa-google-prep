@@ -1,23 +1,23 @@
 # iOS Depth
 
-Deep notes on iOS-specific interview topics. Populated during Phase 2-3 (Months 3-4).
+iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca dolar.
 
-## Planned Topics
+## Planlanan Topic'ler
 
 ### Memory Management
 - [x] **ARC — retain/release** → [memory-management.md](memory-management.md)
-- [x] **Strong / weak / unowned — when to use each** → [memory-management.md](memory-management.md)
-- [x] **Retain cycles — closures, delegates, parent-child** → [memory-management.md](memory-management.md)
+- [x] **Strong / weak / unowned — hangisi ne zaman** → [memory-management.md](memory-management.md)
+- [x] **Retain cycle'lar — closure'lar, delegate'ler, parent-child** → [memory-management.md](memory-management.md)
 - [x] **Cycle vs lifetime extension vs RunLoop-rooted leak** → [memory-management.md](memory-management.md)
-- [x] **Capture lists — `[weak self]` / `[unowned self]`** → [memory-management.md](memory-management.md)
-- [ ] Autorelease pools — `@autoreleasepool` patterns
-- [ ] Debugging leaks with Instruments (Leaks, Allocations) — practical session
+- [x] **Capture list'ler — `[weak self]` / `[unowned self]`** → [memory-management.md](memory-management.md)
+- [ ] Autorelease pool — `@autoreleasepool` pattern'leri
+- [ ] Instruments ile leak debugging (Leaks, Allocations) — pratik seans
 
 ### Concurrency
-- [ ] GCD — queues, dispatch groups, barriers
+- [ ] GCD — queue'lar, dispatch group'lar, barrier'lar
 - [ ] OperationQueue vs GCD
 - [ ] Swift Concurrency — async/await, Task, TaskGroup
-- [ ] Actors & isolation
+- [ ] Actor'lar & isolation
 - [ ] Sendable & data-race safety (Swift 6)
 - [ ] Priority inversion, cancellation
 
@@ -26,33 +26,33 @@ Deep notes on iOS-specific interview topics. Populated during Phase 2-3 (Months 
 - [ ] View lifecycle, layout pass (layoutSubviews, setNeedsLayout)
 - [ ] Auto Layout internals, constraint solver
 - [ ] SwiftUI diffing, body recomputation
-- [ ] @State / @Binding / @ObservedObject / @StateObject — ownership rules
+- [ ] @State / @Binding / @ObservedObject / @StateObject — ownership kuralları
 
 ### App Architecture
-- [ ] MVC / MVVM / MVP / VIPER / TCA — trade-offs
-- [ ] Dependency injection patterns
+- [ ] MVC / MVVM / MVP / VIPER / TCA — trade-off'lar
+- [ ] Dependency injection pattern'leri
 - [ ] Coordinator pattern
 - [ ] Reactive (Combine, RxSwift)
 
 ### Networking & Persistence
-- [ ] URLSession, tasks, delegates
-- [ ] Codable — custom decoders, defensive decoding
-- [ ] Caching strategies (NSCache, disk, HTTP)
-- [ ] Core Data / SwiftData / Realm trade-offs
-- [ ] Offline-first sync patterns
+- [ ] URLSession, task'lar, delegate'ler
+- [ ] Codable — custom decoder'lar, defensive decoding
+- [ ] Caching strategy'leri (NSCache, disk, HTTP)
+- [ ] Core Data / SwiftData / Realm trade-off'ları
+- [ ] Offline-first sync pattern'leri
 
 ### App Lifecycle & Background
-- [ ] Application states (active / inactive / background / suspended)
-- [ ] Background modes (fetch, processing, audio, location)
+- [ ] Application state'leri (active / inactive / background / suspended)
+- [ ] Background mode'lar (fetch, processing, audio, location)
 - [ ] BGTaskScheduler
 
 ### Testing
 - [ ] XCTest fundamentals
 - [ ] Unit vs integration vs snapshot vs UI tests
-- [ ] Dependency injection for testability
-- [ ] Mocking, stubbing, protocol-based seams
+- [ ] Testability için dependency injection
+- [ ] Mocking, stubbing, protocol-based seam'ler
 
 ### Accessibility
-- [ ] VoiceOver, accessibility labels/traits/hints
+- [ ] VoiceOver, accessibility label/trait/hint
 - [ ] Dynamic Type
-- [ ] Reduced motion, contrast adaptations
+- [ ] Reduced motion, contrast adaptation'ları

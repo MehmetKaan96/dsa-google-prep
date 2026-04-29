@@ -1,71 +1,70 @@
 # LeetCode #1 — Two Sum
 
-> **Difficulty:** Easy · **Topics:** Array, HashMap · **Pattern:** Single-pass hash lookup
+> **Zorluk:** Easy · **Konular:** Array, HashMap · **Pattern:** Single-pass hash lookup
 > **Blind 75 / NeetCode 150:** ✅ Core problem
-> **Solved:** 2026-04-23 (Format B — guided solve)
 
 ---
 
-## 1. Problem Statement
+## 1. Problem Tanımı
 
-Given an integer array `nums` and an integer `target`, return **indices** of the two numbers such that they add up to `target`.
+Bir integer array `nums` ve bir integer `target` verildiğinde, toplamı `target`'a eşit olan iki sayının **index**'lerini döndür.
 
-**Assumptions (from problem):**
-- Exactly one valid answer per input.
-- Cannot use the same element twice.
-- Return indices in any order.
+**Problem'in varsayımları:**
+- Her input için **tam olarak bir** geçerli cevap var.
+- Aynı elemanı iki kez kullanamazsın.
+- Index'leri herhangi bir sırada döndürebilirsin.
 
-**Example:**
+**Örnek:**
 ```
 Input:  nums = [2, 7, 11, 15], target = 9
 Output: [0, 1]
 ```
 
-**Constraints to confirm in interview:**
-| Constraint | Answer | Impact |
-|-----------|--------|--------|
-| Sorted? | No | Rules out pure two-pointer |
-| Negatives allowed? | Yes | Doesn't affect approach |
-| Duplicates? | Yes | Must use lookup-before-insert |
-| Array size? | 2 to 10⁴ | O(n²) too slow for upper end |
-| Guaranteed solution? | Yes | No "return -1 / nil" case |
+**Mülakatta teyit edilecek constraint'ler:**
+| Constraint | Cevap | Etki |
+|------------|-------|------|
+| Sorted? | Hayır | Pure two-pointer'ı eler |
+| Negatif değer? | Evet | Yaklaşımı etkilemez |
+| Duplicate var mı? | Evet | Lookup-before-insert şart |
+| Array boyutu? | 2 → 10⁴ | Üst sınırda O(n²) yetmez |
+| Çözüm garantili mi? | Evet | "Bulunamadı / -1" case'i yok |
 
 ---
 
-## 2. Clarifying Questions — The Right Set
+## 2. Clarifying Questions — Doğru Set
 
-The goal is **3-4 high-signal questions**, not 10.
+Hedef **3-4 yüksek-sinyalli soru**, 10 değil.
 
-**Priority 1 — Input structure** (changes the algorithm entirely)
-- Is the array sorted?
-- Can values be negative / zero?
-- Can values be duplicated?
-- What's the array size range?
+**Priority 1 — Input yapısı** (algoritmayı tamamen değiştirir)
+- Array sorted mi?
+- Değerler negatif / sıfır olabilir mi?
+- Duplicate olabilir mi?
+- Array boyutu hangi aralıkta?
 
-**Priority 2 — Output specification**
-- Return indices or values?
-- Is there always a solution, or do I need to handle "not found"?
-- Multiple valid solutions — all, any, specific?
+**Priority 2 — Output spesifikasyonu**
+- Index mi value mı dönecek?
+- Çözüm her zaman var mı, yoksa "bulunamadı" durumunu da handle etmeli miyim?
+- Birden fazla geçerli çözüm — hepsi mi, herhangi biri mi, spesifik mi?
 
-**Priority 3 — Environment / edge cases**
-- Can I modify the original array?
-- Can empty or single-element arrays be input?
+**Priority 3 — Environment / edge case'ler**
+- Original array'i mutate edebilir miyim?
+- Boş veya tek elemanlı array gelir mi?
 
-### Closing the clarification phase
+### Clarification Fazını Kapatma
 
 > *"Bu kadar yeterli sanırım — eğer kritik bir nüans varsa çözerken fark edersem sorarım. Yaklaşımıma geçebilir miyim?"*
 
-This signals **time management + openness** — a staff-engineer move.
+Bu cümle **time management + openness** sinyali verir — staff-engineer hareketi.
 
 ---
 
 ## 3. Approach Evolution
 
-Always walk through **at least two** approaches. Naming a brute force first shows you think in trade-offs.
+Her zaman **en az iki** yaklaşımdan geç. Önce brute force'u söylemek trade-off'larla düşündüğünü gösterir.
 
 ### Approach 1 — Brute Force (Nested Loops)
 
-For every `i`, try every `j > i` and check if `nums[i] + nums[j] == target`.
+Her `i` için, her `j > i`'yi dene ve `nums[i] + nums[j] == target` kontrolü yap.
 
 ```
 for i in 0..<nums.count {
@@ -75,31 +74,31 @@ for i in 0..<nums.count {
 }
 ```
 
-- **Time:**  O(n²) — Gauss sum: `(n-1) + (n-2) + ... + 1 = n(n-1)/2`
+- **Time:**  O(n²) — Gauss toplamı: `(n-1) + (n-2) + ... + 1 = n(n-1)/2`
 - **Space:** O(1)
-- **Why reject:** At n=10⁷, O(n²) = 10¹⁴ ops → dead.
+- **Reject sebebi:** n=10⁷'de O(n²) = 10¹⁴ ops → ölü.
 
 ### Approach 2 — Sort + Two Pointers
 
-Sort the array, then use `low` and `high` pointers moving toward each other.
+Array'i sort et, sonra `low` ve `high` pointer'ları birbirine doğru hareket ettir.
 
-**Critical catch:** Two pointers requires a **sorted** array — a pre-condition. If we sort, we **lose original indices**. Solution: pair each `(value, originalIndex)` as tuples, sort by value, then two-pointer returning original indices.
+**Kritik nokta:** Two-pointer **sorted** array gerektirir — ön koşul. Eğer sort edersek, **original index'leri kaybederiz**. Çözüm: her `(value, originalIndex)` tuple'ı eşleştir, value'ya göre sort et, sonra two-pointer ile original index'leri döndür.
 
-- **Time:**  O(n log n) — sort dominates
-- **Space:** O(n) for the tuple array
-- **Why reject:** Strictly worse than hash map on both axes. Only attractive if O(1) space is a hard requirement (it isn't here).
+- **Time:**  O(n log n) — sort dominate eder
+- **Space:** O(n) — tuple array için
+- **Reject sebebi:** İki eksende de hash map'ten kötü. Sadece O(1) space hard requirement ise çekici (burada değil).
 
 ### Approach 3 — Hash Map Single-Pass (OPTIMAL)
 
-**Key insight — Complement:**
-> For each element `num`, the question becomes: *"Have I seen `target - num` before?"*
-> If yes → pair found. If no → record `num` for future queries.
+**Anahtar insight — Complement:**
+> Her `num` için soru şuna dönüşür: *"`target - num`'u daha önce gördüm mü?"*
+> Evet → çift bulundu. Hayır → `num`'u gelecek query'ler için kaydet.
 
-**Dictionary structure:** `[value: originalIndex]`
-- Key = value you've seen
-- Value = its index
+**Dictionary yapısı:** `[value: originalIndex]`
+- Key = gördüğün değer
+- Value = onun index'i
 
-**Algorithm (7 lines):**
+**Algoritma (7 satır):**
 
 ```swift
 func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
@@ -115,16 +114,16 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 }
 ```
 
-- **Time:**  O(n) — one pass, average O(1) dict ops
-- **Space:** O(n) — dict can grow to n entries in worst case
+- **Time:**  O(n) — tek geçiş, average O(1) dict ops
+- **Space:** O(n) — dict worst case n entry'ye kadar büyür
 
-### Why LOOKUP BEFORE INSERT Matters
+### LOOKUP BEFORE INSERT Neden Önemli?
 
-Three subtle properties of this ordering, **all free**:
+Bu sıralamanın üç ince özelliği var, **hepsi bedavaya geliyor**:
 
-1. **Same-index protection.** At iteration `i`, `nums[i]` hasn't been inserted yet, so you can never pair it with itself.
-2. **Duplicate handling.** `[3, 3], target=6`: at i=1 we find `3` in dict from i=0 → return `[0, 1]`. If we had pre-built the full dict, `{3: 1}` would have overwritten `{3: 0}`.
-3. **Early exit.** Return the moment a pair is found — no second pass needed.
+1. **Same-index protection.** Iteration `i`'de, `nums[i]` henüz dict'e eklenmemiş, dolayısıyla kendisiyle eşleşemez.
+2. **Duplicate handling.** `[3, 3], target=6`: i=1'de dict'te i=0'dan gelen `3`'ü buluruz → `[0, 1]` döneriz. Eğer önce tüm dict'i build etseydik, `{3: 1}` `{3: 0}`'ı overwrite ederdi.
+3. **Early exit.** Çift bulunduğu an return — ikinci pass gerekmez.
 
 ---
 
@@ -132,22 +131,22 @@ Three subtle properties of this ordering, **all free**:
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Time (avg) | O(n) | Single pass × O(1) avg dict ops |
-| Time (worst) | O(n²) | Theoretical — hash collisions |
-| Space | O(n) | Worst: pair lies in last 2 elements → dict size n-1 |
+| Time (avg) | O(n) | Tek pass × O(1) avg dict ops |
+| Time (worst) | O(n²) | Teorik — hash collision |
+| Space | O(n) | Worst case: çift son 2 elemanda → dict size n-1 |
 
-### Why Swift `Dictionary` is Practically O(1)
+### Swift `Dictionary` Pratik Olarak Neden O(1)?
 
-Swift's `Dictionary` uses **per-process randomized hash seeds** (Swift 4.2+). This is HashDoS protection — an adversary cannot craft inputs that force all keys into one bucket, because the hash function varies per process run.
+Swift'in `Dictionary`'si **process başına randomized hash seed** kullanır (Swift 4.2+). Bu HashDoS korumasıdır — bir saldırgan tüm key'leri tek bucket'a sokacak input crafting yapamaz, çünkü hash function her process run'da değişir.
 
-**Interview-ready sentence:**
+**Interview-ready cümle:**
 > *"Total time is O(n) — Swift Dictionary gives average O(1) lookup. Worst case is theoretically O(n²) due to hash collisions, but Swift uses randomized hashing, so practically it's always O(n)."*
 
 ---
 
-## 5. Trace Walkthroughs
+## 5. Trace Walkthrough
 
-Always narrate at least one trace verbally in the interview.
+Mülakatta her zaman en az bir trace'i sözel olarak anlat.
 
 ### Trace 1 — Basic
 
@@ -158,7 +157,7 @@ i=0: num=2,  comp=7.  seen={}              → insert {2: 0}
 i=1: num=7,  comp=2.  seen={2:0}   2 ✓    → return [0, 1]
 ```
 
-### Trace 2 — Duplicates
+### Trace 2 — Duplicate'ler
 
 ```
 nums = [3, 3], target = 6
@@ -167,7 +166,7 @@ i=0: num=3,  comp=3.  seen={}              → insert {3: 0}
 i=1: num=3,  comp=3.  seen={3:0}   3 ✓    → return [0, 1]
 ```
 
-### Trace 3 — Match at End
+### Trace 3 — Sondan Match
 
 ```
 nums = [3, 2, 4], target = 6
@@ -177,7 +176,7 @@ i=1: num=2,  comp=4.  seen={3:0}   4 ✗    → insert {3:0, 2:1}
 i=2: num=4,  comp=2.  seen={3:0,2:1} 2 ✓ → return [1, 2]
 ```
 
-### Trace 4 — Negatives
+### Trace 4 — Negatifler
 
 ```
 nums = [-1, -2, -3, -4, -5], target = -8
@@ -193,161 +192,161 @@ i=4: num=-5, comp=-3. seen[-3]=2 ✓ → return [2, 4]
 
 ## 6. Edge Cases Checklist
 
-| Case | Expected | Covered By |
-|------|----------|-----------|
-| Minimum size (n=2) | Returns pair | `[3, 3], 6` |
-| Duplicates | Works | `[3, 3], 6` |
-| Match at start | Works | `[2, 7, ...], 9` |
-| Match at end | Works | `[3, 2, 4], 6` |
-| Negatives | Works | `[-1, -2, ...], -8` |
-| Target = 0 with zero value | Works | `[0, 4, 3, 0], 0` → `[0, 3]` |
-| No solution | Returns `[]` (defensive) | Problem guarantees solution |
+| Case | Beklenen | Karşılayan |
+|------|----------|------------|
+| Minimum boyut (n=2) | Çift döner | `[3, 3], 6` |
+| Duplicate | Çalışır | `[3, 3], 6` |
+| Baştan match | Çalışır | `[2, 7, ...], 9` |
+| Sondan match | Çalışır | `[3, 2, 4], 6` |
+| Negatif | Çalışır | `[-1, -2, ...], -8` |
+| Target = 0, içinde sıfır | Çalışır | `[0, 4, 3, 0], 0` → `[0, 3]` |
+| Çözüm yok | `[]` döner (defensive) | Problem çözüm garanti ediyor ama yine de |
 
 ---
 
 ## 7. Common Mistakes — Personal Record
 
-Captured live from today's session. Review before next hash-map problem.
+Live seansta yaptığım hatalar. Bir sonraki hash-map probleminden önce gözden geçir.
 
-### Mistake 1 — Calling O(n²) "Two Pointer"
+### Mistake 1 — O(n²)'ye "Two Pointer" Demek
 
-I proposed "two pointer" on an **unsorted** array by moving `high` down then resetting with `low++`. This is not two-pointer — it's nested iteration in disguise, still O(n²).
+**Unsorted** array'de `high`'i aşağı, `low`'u yukarı oynayarak yapılan bir şeye "two pointer" dedim. Bu two-pointer değil — kılık değiştirmiş nested iteration, hâlâ O(n²).
 
-**Rule:** True two-pointer requires **sorted** input (or monotonic property). If the array isn't sorted, naming something "two pointer" is a category error.
+**Kural:** Gerçek two-pointer **sorted** input (veya monotonic property) gerektirir. Array sorted değilse "two pointer" demek **kategori hatası**.
 
-### Mistake 2 — Skipping the Verbal Trace
+### Mistake 2 — Sözel Trace'i Atlamak
 
-On first verbal approach, I didn't walk through a concrete example. Abstract explanations lose interviewers.
+İlk verbal approach'ta somut bir örnek üzerinden gitmedim. Soyut açıklamalar mülakatçıyı kaybettirir.
 
-**Rule:** Every verbal approach includes at least one trace on an example (`[2, 7, 11, 15], target = 9`). 30 seconds of trace buys enormous clarity signal.
+**Kural:** Her sözel approach **en az bir** trace içerir (`[2, 7, 11, 15], target = 9` gibi). 30 saniye trace, çok büyük clarity sinyali kazandırır.
 
 ### Mistake 3 — Variable Naming (`storedNumber` vs `storedIndex`)
 
-Named the value retrieved from `dict[complement]` as `storedNumber`. But the dict is `[value: index]`, so the retrieved value is an **index**, not a number. This caused a return bug: `return [complement, index]` instead of `return [storedIndex, index]`.
+`dict[complement]`'ten gelen değere `storedNumber` ismini verdim. Ama dict `[value: index]` yapısında, dolayısıyla retrieve edilen değer **index'tir**, sayı değil. Bu return bug'ına yol açtı: `return [complement, index]` (yanlış) yerine `return [storedIndex, index]` (doğru).
 
-**Rule:** Variable name must describe **what the variable holds**, not the surrounding concept. If the dict stores indices, the extracted value is `storedIndex`.
+**Kural:** Variable name **variable'ın ne tuttuğunu** ifade etmeli, etrafındaki kavramı değil. Dict index tutuyorsa, çıkan değer `storedIndex`'tir.
 
-### Mistake 4 — Space Complexity Uncertainty
+### Mistake 4 — Space Complexity Belirsizliği
 
-Said "space is O(1) or O(n), not sure." Big O is always worst-case (upper bound). Even if lucky-case is O(1), the answer is O(n).
+"Space O(1) ya da O(n), emin değilim" dedim. Big O her zaman worst-case'dir (upper bound). Lucky case O(1) olsa bile cevap O(n)'dir.
 
-**Rule:** Big O = worst case. Always state the worst case; mention best case only if explicitly asked.
+**Kural:** Big O = worst case. Her zaman worst case'i söyle; best case'i ancak özellikle sorulduğunda dile getir.
 
 ### Mistake 5 — `dict[num] = 0` Typo
 
-Briefly wrote a constant `0` instead of the current `index`. Caught via probe.
+`index` yerine sabit `0` yazdım kısaca. Probe ile yakalandı.
 
-**Rule:** Before any dict insert, ask: *"What do I want to retrieve later?"* That's what goes in as the value.
+**Kural:** Her dict insert öncesi sor: *"Sonra ne çekmek isterim?"* Cevap, value olarak yazılan şey.
 
 ---
 
 ## 8. Reusable Pattern — Hash Map Single-Pass
 
-### When to Apply
+### Ne Zaman Uygula?
 
-- **"Find a pair / complement / counterpart"** problems
-- **"Have I seen this before?"** queries
-- **O(n) target with O(n) space budget**
+- **"Bir pair / complement / counterpart bul"** problemleri
+- **"Bunu daha önce gördüm mü?"** sorgulamaları
+- **O(n) hedef + O(n) space budget** durumları
 
-### Pattern Skeleton
+### Pattern İskeleti
 
 ```swift
 var seen: [Key: Value] = [:]
 for (index, element) in collection.enumerated() {
-    let needed = /* what would complete the answer? */
+    let needed = /* cevabı tamamlayacak şey nedir? */
     if let matchedIndex = seen[needed] {
-        return /* use matchedIndex + current index */
+        return /* matchedIndex + current index'i kullan */
     }
     seen[element] = index
 }
 ```
 
-### Related Problems That Fit This Skeleton
+### Bu İskeleti Kullanan İlgili Problemler
 
-| Problem | Needed | Dict Holds |
-|---------|--------|-----------|
+| Problem | Aranan | Dict Tuttuğu |
+|---------|--------|--------------|
 | Two Sum (this) | `target - num` | `[value: index]` |
-| Contains Duplicate | `num` itself | `Set<value>` |
-| Valid Anagram | character counts | `[Character: Int]` |
+| Contains Duplicate | `num`'un kendisi | `Set<value>` |
+| Valid Anagram | character count'ları | `[Character: Int]` |
 | Subarray Sum Equals K | `prefixSum - k` | `[prefixSum: count]` |
-| First Unique Character | character counts | `[Character: Int]` |
+| First Unique Character | character count'ları | `[Character: Int]` |
 | Group Anagrams | sorted key | `[String: [String]]` |
 
-**Mental model:** *"Am I looking backward to find a match? → Single-pass hash map."*
+**Mental model:** *"Match bulmak için geriye mi bakıyorum? → Single-pass hash map."*
 
 ---
 
 ## 9. Follow-up Questions an Interviewer May Ask
 
-Be ready — these commonly follow Two Sum in a real interview.
+Hazır ol — bunlar gerçek mülakatta Two Sum'dan sonra sıkça gelir.
 
-### FU-1: "What if the array is sorted?"
-Switch to two-pointer, O(n) time, O(1) space. Be ready to code it.
+### FU-1: "Array sorted olsaydı?"
+Two-pointer'a geç, O(n) time, O(1) space. Kod yazmaya hazır ol.
 
-### FU-2: "What if there can be multiple pairs? Return all."
-Can't early-exit. Must scan the whole array. `seen[num]` becomes `[Int: [Int]]` to track all indices of each value.
+### FU-2: "Birden fazla pair olabilir mi? Hepsini döndür."
+Early exit yapamazsın. Tüm array'i tara. `seen[num]` artık `[Int: [Int]]` — her value'nun tüm index'lerini tutar.
 
-### FU-3: "What if you need three numbers (3Sum)?"
-Sort + fix one element + two-pointer on the rest → O(n²). This is the canonical pattern for k-Sum family.
+### FU-3: "Üç sayı gerekirse (3Sum)?"
+Sort + bir elemanı sabitle + kalanda two-pointer → O(n²). k-Sum ailesinin canonical pattern'i.
 
-### FU-4: "What if the numbers don't fit in Int (overflow)?"
-Use `Int.addingReportingOverflow` or pre-check `target - num` against `Int.min` / `Int.max`. In production, prefer `BigInt` library if values can exceed 64 bits.
+### FU-4: "Sayılar Int'e sığmıyorsa (overflow)?"
+`Int.addingReportingOverflow` kullan veya `target - num` öncesinde `Int.min` / `Int.max` ile pre-check yap. Production'da, 64 bit aşıyorsa `BigInt` library tercih et.
 
-### FU-5: "What if memory is very tight?"
-Sort + two-pointer, O(n log n) time, O(1) space (if in-place sort and index preservation isn't needed — or O(n) extra for tuples if needed). Trade time for space.
+### FU-5: "Memory çok kısıtlıysa?"
+Sort + two-pointer, O(n log n) time, O(1) space (in-place sort + index preservation gerekmiyorsa — gerekiyorsa tuple için O(n) extra). Time'ı space için takas et.
 
-### FU-6: "Would you unit test this? What cases?"
-See `Edge Cases Checklist` above. Emphasize:
-- Duplicates (`[3, 3], 6`)
-- Negatives and zero
-- Minimum size (n=2)
-- Match at boundaries (start, end)
+### FU-6: "Unit test yazsan? Hangi case'ler?"
+Yukarıdaki `Edge Cases Checklist`'e bak. Vurgu:
+- Duplicate (`[3, 3], 6`)
+- Negatif ve sıfır
+- Minimum boyut (n=2)
+- Boundary'lerde match (start, end)
 
-### FU-7: "What could go wrong in production?"
-- Non-hashable keys (custom types without `Hashable`)
-- Hash collision DoS (mitigated by Swift's randomized seed)
-- Very large inputs → memory pressure (O(n) space)
+### FU-7: "Production'da ne ters gidebilir?"
+- Non-hashable key'ler (custom type'lar `Hashable` olmadan)
+- Hash collision DoS (Swift'in randomized seed'i ile mitigate)
+- Çok büyük input → memory pressure (O(n) space)
 
 ---
 
 ## 10. Mock Session Debrief
 
 ### What Went Well
-- Asked 3 Priority-1 clarifying questions (sorted, negatives, duplicates).
-- Scale sensitivity: noted O(n²) problem at n=10⁷ — staff-level signal.
-- Gauss sum derivation for brute-force complexity.
-- Discovered the complement insight (with a nudge).
-- Recognized the critical duplicate-handling subtlety (lookup before insert).
-- Self-corrected two bugs via targeted probes.
+- 3 Priority-1 clarifying question soruldu (sorted, negatif, duplicate).
+- Scale sensitivity: n=10⁷'de O(n²) problemi fark edildi — staff-level sinyal.
+- Brute-force complexity için Gauss toplamı türetildi.
+- Complement insight'ı (küçük bir dürtüş ile) keşfedildi.
+- Critical duplicate-handling subtlety (lookup before insert) yakalandı.
+- Targeted probe'larla iki bug self-correct edildi.
 
 ### Needs Work
-- **Two-pointer category error** — proposed it on unsorted array. Unforced.
-- **No verbal trace** in first approach narration.
-- **Weak naming refactor reflex** — shipped `storedNumber` and `j` without pushback.
-- **Space complexity waffling** — "O(1) or O(n)" instead of firm "O(n) worst case".
-- **Didn't know** Dictionary worst case = O(n) due to collisions.
+- **Two-pointer kategori hatası** — unsorted array'de önerildi. Forced değildi.
+- **İlk approach'ta sözel trace yok**.
+- **Naming refactor refleksi zayıf** — `storedNumber` ve `j` itirazsız geçti.
+- **Space complexity belirsizliği** — "O(1) ya da O(n)" yerine net "O(n) worst case" demek lazım.
+- **Bilinmiyordu**: Dictionary worst case = O(n) collision yüzünden.
 
-### One Rule to Internalize
-**"Verbal before code, trace before verbal."** Narrate a concrete example as part of your approach. It's the cheapest clarity signal in interviews.
+### Internalize Edilecek Tek Kural
+**"Verbal before code, trace before verbal."** Approach narrasyonun bir parçası olarak somut bir örneği anlat. Mülakatta en ucuz clarity sinyali.
 
 ---
 
 ## 11. Re-solve Protocol
 
-To lock this in:
+Locking için:
 
-1. **+1 day (Fri 24/04):** 30-min passive review of this MD.
-2. **+2 days (Sat 25/04):** Solve from scratch, no notes, target ≤ 10 min.
-3. **+7 days (Thu 30/04):** Warm-up recall question: *"Hash-map single-pass pattern, when?"*
-4. **+14 days:** Re-solve again, target ≤ 7 min.
-5. **+1 month:** Spaced repetition final check.
+1. **+1 gün:** 30-min passive review of this MD.
+2. **+2 gün:** Sıfırdan çöz, notlara bakmadan, hedef ≤ 10 dk.
+3. **+7 gün:** Warm-up recall sorusu: *"Hash-map single-pass pattern, ne zaman?"*
+4. **+14 gün:** Tekrar çöz, hedef ≤ 7 dk.
+5. **+1 ay:** Spaced repetition final check.
 
 ---
 
 ## References
 
 - [LeetCode #1 — Two Sum](https://leetcode.com/problems/two-sum/)
-- Blind 75 — Array & Hashing group
+- Blind 75 — Array & Hashing grubu
 - NeetCode 150 — [Two Sum walkthrough](https://neetcode.io/problems/two-integer-sum)
-- Swift stdlib: `Dictionary` subscript returns `Optional<Value>`
-- Related: `0049-group-anagrams`, `0217-contains-duplicate`, `0560-subarray-sum-equals-k` (future)
+- Swift stdlib: `Dictionary` subscript `Optional<Value>` döner
+- Related: `0049-group-anagrams`, `0217-contains-duplicate`, `0560-subarray-sum-equals-k` (gelecek)
