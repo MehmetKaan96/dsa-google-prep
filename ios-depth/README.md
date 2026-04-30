@@ -4,6 +4,9 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 
 ## Planlanan Topic'ler
 
+### Swift Language Semantics
+- [x] **Access Control — `open` / `public` / `internal` / `fileprivate` / `private` / `final` / `private(set)`** → [access-control.md](access-control.md)
+
 ### Memory Management
 - [x] **ARC — retain/release** → [memory-management.md](memory-management.md)
 - [x] **Strong / weak / unowned — hangisi ne zaman** → [memory-management.md](memory-management.md)

@@ -17,7 +17,7 @@
 | Blind 75 completion | 3 / 75 | 75 / 75 |
 | NeetCode 150 completion | 3 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
-| iOS deep-dives done | 1 / 8 | 8 / 8 |
+| iOS deep-dives done | 2 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
 
@@ -226,3 +226,8 @@ Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'l
 - Pzt: ✅ Trendyol HR Phone Screen — light review + Valid Anagram intro (Block A+B)
 - Sal: ✅ Trendyol IK callback (Stage 1 passed, HR Manager'a escalate)
 - Sal PM: ✅ Valid Anagram (Format C) → [0242-valid-anagram](problems/hashmap/0242-valid-anagram.md)
+
+**Week 2 (2026-04-28 → 2026-05-04)** — Rotation A
+- Çar: ✅ Repo MD çeviri (commute reading) + Trendyol teknik mülakat intel (project-based code review)
+- Per PM: ✅ iOS Deep-Dive — Access Control + code review drills (Format D) → [access-control](ios-depth/access-control.md)
+- Cum (1 Mayıs): 🎯 Group Anagrams + Concurrency intro (Format B + A)
