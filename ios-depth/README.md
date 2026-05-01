@@ -2,6 +2,8 @@
 
 iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca dolar.
 
+**Code review drill bankası (Trendyol tarzı snippet'ler):** [drills/README.md](drills/README.md)
+
 ## Planlanan Topic'ler
 
 ### Swift Language Semantics

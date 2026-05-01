@@ -61,7 +61,7 @@ dsa-google-prep/
 │   ├── trees/
 │   ├── graphs/
 │   └── dp/
-├── ios-depth/              ← iOS internals, memory, concurrency, architecture
+├── ios-depth/              ← iOS internals, memory, concurrency, architecture, code-review drills/
 ├── interviews/             ← mülakata özel hazırlık doc'ları (Trendyol, vb.)
 ├── system-design/          ← mobile system design notları
 └── weekly-reviews/         ← haftalık retrospektif + Pazar planlama çıktısı
