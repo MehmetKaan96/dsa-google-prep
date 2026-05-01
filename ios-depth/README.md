@@ -17,8 +17,8 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 - [ ] Instruments ile leak debugging (Leaks, Allocations) — pratik seans
 
 ### Concurrency
-- [ ] GCD — queue'lar, dispatch group'lar, barrier'lar
-- [ ] OperationQueue vs GCD
+- [x] **GCD — queue'lar, DispatchGroup, barrier (reader-writer)** → [concurrency-gcd.md](concurrency-gcd.md)
+- [x] **OperationQueue vs GCD (ne zaman hangisi)** → [concurrency-gcd.md](concurrency-gcd.md)
 - [ ] Swift Concurrency — async/await, Task, TaskGroup
 - [ ] Actor'lar & isolation
 - [ ] Sendable & data-race safety (Swift 6)

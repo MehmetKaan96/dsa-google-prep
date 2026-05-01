@@ -103,7 +103,7 @@ Hash table = bucket'lardan oluşan bir array + hash function. Key, `hash(key) % 
 - [ ] Two Sum (Easy)
 - [ ] Valid Anagram (Easy)
 - [ ] Contains Duplicate (Easy)
-- [ ] Group Anagrams (Medium)
+- [x] Group Anagrams (Medium)
 - [ ] Top K Frequent Elements (Medium)
 - [ ] Longest Consecutive Sequence (Medium)
 - [ ] Subarray Sum Equals K (Medium)

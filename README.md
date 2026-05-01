@@ -13,11 +13,11 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 3 | 150+ |
-| Blind 75 completion | 3 / 75 | 75 / 75 |
-| NeetCode 150 completion | 3 / 150 | 150 / 150 |
+| LeetCode problems solved | 4 | 150+ |
+| Blind 75 completion | 4 / 75 | 75 / 75 |
+| NeetCode 150 completion | 4 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
-| iOS deep-dives done | 2 / 8 | 8 / 8 |
+| iOS deep-dives done | 3 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
 
@@ -34,7 +34,7 @@
 | # | Topic | Deep-dive | Çözülen Problem |
 |---|-------|-----------|-----------------|
 | 01 | Array | ✅ | 0 |
-| 02 | HashTable / Dictionary | ✅ | 3 |
+| 02 | HashTable / Dictionary | ✅ | 4 |
 | 03 | String & Two Pointers | ⏳ | 0 |
 | 04 | Stack & Queue | ⏳ | 0 |
 | 05 | Linked List | ⏳ | 0 |
@@ -230,4 +230,4 @@ Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'l
 **Week 2 (2026-04-28 → 2026-05-04)** — Rotation A
 - Çar: ✅ Repo MD çeviri (commute reading) + Trendyol teknik mülakat intel (project-based code review)
 - Per PM: ✅ iOS Deep-Dive — Access Control + code review drills (Format D) → [access-control](ios-depth/access-control.md)
-- Cum (1 Mayıs): 🎯 Group Anagrams + Concurrency intro (Format B + A)
+- Cum (1 Mayıs): ✅ Group Anagrams (Format B) → [0049-group-anagrams](problems/hashmap/0049-group-anagrams.md) · ✅ GCD / Concurrency (Format A) → [concurrency-gcd](ios-depth/concurrency-gcd.md)
