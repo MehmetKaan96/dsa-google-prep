@@ -8,6 +8,13 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 
 ### Swift Language Semantics
 - [x] **Access Control — `open` / `public` / `internal` / `fileprivate` / `private` / `final` / `private(set)`** → [access-control.md](access-control.md)
+- [x] **async/await — suspend/resume, Task, actor, @MainActor** → [async-await.md](async-await.md)
+
+### Architecture
+- [x] **MVVM / Clean / Modularization + SOLID** → [architecture.md](architecture.md)
+
+### UIKit
+- [x] **View Controller lifecycle + timer/observer cleanup** → [uikit-lifecycle.md](uikit-lifecycle.md)
 
 ### Memory Management
 - [x] **ARC — retain/release** → [memory-management.md](memory-management.md)
@@ -21,7 +28,7 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 ### Concurrency
 - [x] **GCD — queue'lar, DispatchGroup, barrier (reader-writer)** → [concurrency-gcd.md](concurrency-gcd.md)
 - [x] **OperationQueue vs GCD (ne zaman hangisi)** → [concurrency-gcd.md](concurrency-gcd.md)
-- [ ] Swift Concurrency — async/await, Task, TaskGroup
+- [x] **Swift Concurrency — async/await, Task, actor** → [async-await.md](async-await.md)
 - [ ] Actor'lar & isolation
 - [ ] Sendable & data-race safety (Swift 6)
 - [ ] Priority inversion, cancellation

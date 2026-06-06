@@ -13,6 +13,7 @@ Theory için ana notlar: [access-control.md](../access-control.md), [memory-mana
 | 1 | **Access control** — `open` / `public`, method-level `open`, module boundary | [01-access-control.md](01-access-control.md) |
 | 2 | **GCD** — `main.async` vs `main.sync`, `DispatchGroup` `enter` / `leave` | [02-gcd-dispatch-group.md](02-gcd-dispatch-group.md) |
 | 3 | **Closures & memory** — `[weak self]`, cycle vs lifetime extension, delegate | [03-closures-delegates-memory.md](03-closures-delegates-memory.md) |
+| 4 | **Scenario** — large list image loading (mobile system design lite) | [04-scenario-image-list.md](04-scenario-image-list.md) |
 
 ---
 

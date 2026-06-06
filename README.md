@@ -17,7 +17,7 @@
 | Blind 75 completion | 4 / 75 | 75 / 75 |
 | NeetCode 150 completion | 4 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
-| iOS deep-dives done | 3 / 8 | 8 / 8 |
+| iOS deep-dives done | 6 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
 
@@ -231,3 +231,9 @@ Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'l
 - Çar: ✅ Repo MD çeviri (commute reading) + Trendyol teknik mülakat intel (project-based code review)
 - Per PM: ✅ iOS Deep-Dive — Access Control + code review drills (Format D) → [access-control](ios-depth/access-control.md)
 - Cum (1 Mayıs): ✅ Group Anagrams (Format B) → [0049-group-anagrams](problems/hashmap/0049-group-anagrams.md) · ✅ GCD / Concurrency (Format A) → [concurrency-gcd](ios-depth/concurrency-gcd.md)
+
+> **Ara (5 Mayıs → 2 Haziran):** token yenileme + iş + Kurban Bayramı. Trendyol: HR telefon aşamasında elendi (teknik aşamaya gelmeden). Plan korundu, Google hedefi diri.
+
+**Restart Week (2026-06-06 →)** — Pazartesi (8 Haz) teknik sohbet mülakatı prep
+- Cmt (6 Haz): ✅ iOS Deep-Dive — Architecture/SOLID + UIKit lifecycle + async/await + image-loading senaryo (Format D)
+  → [architecture](ios-depth/architecture.md) · [async-await](ios-depth/async-await.md) · [uikit-lifecycle](ios-depth/uikit-lifecycle.md) · [scenario](ios-depth/drills/04-scenario-image-list.md)
