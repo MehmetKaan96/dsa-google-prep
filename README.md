@@ -17,7 +17,7 @@
 | Blind 75 completion | 4 / 75 | 75 / 75 |
 | NeetCode 150 completion | 4 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
-| iOS deep-dives done | 6 / 8 | 8 / 8 |
+| iOS deep-dives done | 8 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
 
@@ -237,3 +237,5 @@ Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'l
 **Restart Week (2026-06-06 →)** — Pazartesi (8 Haz) teknik sohbet mülakatı prep
 - Cmt (6 Haz): ✅ iOS Deep-Dive — Architecture/SOLID + UIKit lifecycle + async/await + image-loading senaryo (Format D)
   → [architecture](ios-depth/architecture.md) · [async-await](ios-depth/async-await.md) · [uikit-lifecycle](ios-depth/uikit-lifecycle.md) · [scenario](ios-depth/drills/04-scenario-image-list.md)
+- Paz (7 Haz): ✅ Testing + SwiftUI temel + 4 senaryo mock (payment/offline/realtime/search) (Format D)
+  → [testing](ios-depth/testing.md) · [swiftui-basics](ios-depth/swiftui-basics.md) · drills 05-08

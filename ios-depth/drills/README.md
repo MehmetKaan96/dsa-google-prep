@@ -17,6 +17,7 @@ Theory için ana notlar: [access-control.md](../access-control.md), [memory-mana
 | 5 | **Scenario** — payment flow & double charge (idempotency) | [05-scenario-payment-idempotency.md](05-scenario-payment-idempotency.md) |
 | 6 | **Scenario** — offline-first sync & conflict (LWW/merge) | [06-scenario-offline-sync.md](06-scenario-offline-sync.md) |
 | 7 | **Scenario** — real-time messaging & delivery (WebSocket/APNs) | [07-scenario-realtime-messaging.md](07-scenario-realtime-messaging.md) |
+| 8 | **Scenario** — live search (debounce + out-of-order) | [08-scenario-live-search.md](08-scenario-live-search.md) |
 
 ### Senaryo cevap iskeleti (genel)
 

@@ -13,8 +13,12 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 ### Architecture
 - [x] **MVVM / Clean / Modularization + SOLID** → [architecture.md](architecture.md)
 
-### UIKit
+### UIKit & SwiftUI
 - [x] **View Controller lifecycle + timer/observer cleanup** → [uikit-lifecycle.md](uikit-lifecycle.md)
+- [x] **SwiftUI temel — declarative + property wrapper ownership** → [swiftui-basics.md](swiftui-basics.md)
+
+### Testing
+- [x] **Unit / UI / DI + mock + coverage** → [testing.md](testing.md)
 
 ### Memory Management
 - [x] **ARC — retain/release** → [memory-management.md](memory-management.md)
