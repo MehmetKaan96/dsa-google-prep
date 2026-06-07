@@ -12,6 +12,10 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 
 ### Architecture
 - [x] **MVVM / Clean / Modularization + SOLID** → [architecture.md](architecture.md)
+- [x] **Modularization deep — eksenler, bağımlılık yönü, white-label, granularity** → [modularization.md](modularization.md)
+
+### CI/CD
+- [x] **CI vs CD, iOS pipeline, Fastlane, quality gate + dürüst CV framing** → [ci-cd.md](ci-cd.md)
 
 ### UIKit & SwiftUI
 - [x] **View Controller lifecycle + timer/observer cleanup** → [uikit-lifecycle.md](uikit-lifecycle.md)
