@@ -18,12 +18,31 @@ Theory için ana notlar: [access-control.md](../access-control.md), [memory-mana
 | 6 | **Scenario** — offline-first sync & conflict (LWW/merge) | [06-scenario-offline-sync.md](06-scenario-offline-sync.md) |
 | 7 | **Scenario** — real-time messaging & delivery (WebSocket/APNs) | [07-scenario-realtime-messaging.md](07-scenario-realtime-messaging.md) |
 | 8 | **Scenario** — live search (debounce + out-of-order) | [08-scenario-live-search.md](08-scenario-live-search.md) |
+| 9 | **Scenario** — background video upload (URLSession background config) | [09-scenario-background-upload.md](09-scenario-background-upload.md) |
+| 10 | **Scenario** — analytics tracking at scale (batching + persistence) | [10-scenario-analytics-batching.md](10-scenario-analytics-batching.md) |
 
 ### Senaryo cevap iskeleti (genel)
 
 `Clarify → Data model → Katmanlar → Concurrency → Failure modes → Trade-off`
 
-**Tekrarlayan hero kavramlar:** idempotency (retry safety, dedupe), outbox + ACK + retry (at-least-once), LWW/merge (conflict), downsampling + background decode (performans).
+### Clarify — 4 eksen şablonu (boş kalma)
+1. **Scale** — hacim, kullanıcı, frekans
+2. **Criticality** — kayıp/hata toleransı (genelde **en pahalı varsayım** burada)
+3. **Constraints** — network, batarya, offline, platform
+4. **Contract** — backend ne destekliyor (bulk, range, webhook)
+
+### Tekrarlayan hero kavramlar
+- **idempotency** — retry safety + dedupe
+- **outbox + ACK + retry** — at-least-once delivery
+- **batching + persistent queue** — yüksek frekans + dayanıklılık
+- **LWW / merge** — conflict resolution
+- **stale-response guard / cancel** — en güncel olanı al (image/search/messaging)
+- **downsampling + background decode** — liste performansı
+- **URLSession background config** — app suspend/kill'de süren transfer
+
+### İki büyük dağıtık pattern (sentez)
+1. **Stale-response guard** — async sonuç geç gelir, en güncel olanı al/iptal et
+2. **Persistent outbox + batch + idempotency** — kaybetme, mükerrer sayma
 
 ---
 

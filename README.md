@@ -239,3 +239,6 @@ Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'l
   → [architecture](ios-depth/architecture.md) · [async-await](ios-depth/async-await.md) · [uikit-lifecycle](ios-depth/uikit-lifecycle.md) · [scenario](ios-depth/drills/04-scenario-image-list.md)
 - Paz (7 Haz): ✅ Testing + SwiftUI temel + 4 senaryo mock (payment/offline/realtime/search) (Format D)
   → [testing](ios-depth/testing.md) · [swiftui-basics](ios-depth/swiftui-basics.md) · drills 05-08
+- Paz (7 Haz) PM: ✅ SwiftUI deep-dive (struct/diffing/identity/köprü) + 2 senaryo (background upload, analytics batching) + clarify 4-eksen framework
+  → drills 09-10
+- Pzt (8 Haz): 🎯 Teknik sohbet mülakatı
