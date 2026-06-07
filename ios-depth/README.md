@@ -15,6 +15,7 @@ iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca do
 
 ### UIKit & SwiftUI
 - [x] **View Controller lifecycle + timer/observer cleanup** → [uikit-lifecycle.md](uikit-lifecycle.md)
+- [x] **UIKit deep — layout cycle, responder chain, Auto Layout, cell reuse, frame/bounds** → [uikit-deep.md](uikit-deep.md)
 - [x] **SwiftUI temel — declarative + property wrapper ownership** → [swiftui-basics.md](swiftui-basics.md)
 
 ### Testing
