@@ -20,6 +20,7 @@ Theory için ana notlar: [access-control.md](../access-control.md), [memory-mana
 | 8 | **Scenario** — live search (debounce + out-of-order) | [08-scenario-live-search.md](08-scenario-live-search.md) |
 | 9 | **Scenario** — background video upload (URLSession background config) | [09-scenario-background-upload.md](09-scenario-background-upload.md) |
 | 10 | **Scenario** — analytics tracking at scale (batching + persistence) | [10-scenario-analytics-batching.md](10-scenario-analytics-batching.md) |
+| 11 | **Scenario** — white-label multi-country app (config-driven, RTL) | [11-scenario-white-label-multicountry.md](11-scenario-white-label-multicountry.md) |
 
 ### Senaryo cevap iskeleti (genel)
 
