@@ -56,15 +56,39 @@ Google'da çalışan biri refer ederse CV önceliklenir. Tek en getirili hamle.
 
 ---
 
-## Netleştirilecekler (stratejiyi değiştirir — bir sonraki oturumda doldur)
+## Profil (2026-07-26 dolduruldu)
 
-Bunlar planı somutlaştırır; cevaplar stratejiyi ciddi değiştirir:
+- **Lokasyon:** İstanbul, TR. Relocation'a çok açık.
+- **Hedef ofisler (kullanıcı):** London, LA, SF, Florida, NYC, Chicago, Mountain View.
+- **Çalışma izni:** US/UK çalışma vizesi **YOK**. Geçmişte 6 aylık UK standart (visitor) vizesi vardı → çalışma izni değil.
+- **Deneyim:** ~3 yıl (staj + kayıtsız dönemler dahil); mevcut şirkette **Mayıs 2024**'ten beri.
+- **Hedef seviye:** Jr / Mid (~L3–L4 aralığı).
+- **Ağ:** Google'da tanıdık/ortak bağlantı **yok**.
 
-- [ ] **Lokasyon + relocation:** Hangi ülke/şehirdesin? Google hangi ofis? Taşınmaya açık mısın?
-- [ ] **Çalışma izni / visa:** Hedef ülkede çalışma hakkın var mı, yoksa sponsorship mı gerekir? (Bu, hangi ofislere başvurabileceğini belirler.)
-- [ ] **Deneyim:** Kaç yıl iOS? Şu anki şirket/rol? (Leveling ve CV çerçevesi buna bağlı.)
-- [ ] **Hedef seviye:** L3/L4 gerçekçiliği (deneyime göre kalibre edilir).
-- [ ] **Mevcut ağ:** Google'da tanıdık var mı? Ortak bağlantı?
+---
+
+## Visa & Lokasyon Stratejisi (BASKIN KISIT)
+
+> Sert gerçek: relocation için Google'ın **sponsorship** yapması şart. Jr/Mid + yurtdışından + sponsorluk = zor ama imkânsız değil. Hedefleri **erişilebilirliğe göre** sıralamak şart.
+
+### Hedeflerin gerçekçilik sıralaması
+
+| Hub | Visa yolu | Gerçekçilik | Not |
+|-----|-----------|-------------|-----|
+| **Dublin (İrlanda)** | Critical Skills Employment Permit | 🟢 en erişilebilir | İngilizce, Google'ın Avrupa merkezi, yazılımcı için akıcı süreç |
+| **London (UK)** | Skilled Worker visa | 🟢 erişilebilir | **Lottery yok**, points-based; Google London büyük eng hub |
+| **Zürich / Münih / Amsterdam / Varşova** | Yerel iş izni | 🟡 erişilebilir | Devasa Google eng merkezleri; kullanıcı listesinde yok — **eklenmeli** |
+| **US ofisleri** (SF, NYC, MTV, LA, Chicago, FL) | H-1B (lottery) / O-1 | 🔴 en zor | Lottery şans faktörü + uluslararası Jr/Mid için yüksek bar |
+
+### Stratejik sonuç
+
+1. **Birincil hedef = sponsorship'i erişilebilir hub'lar** (Dublin, London, Zürich). US'i **stretch/ikincil** tut — bırakma ama tek yumurtayı oraya koyma.
+2. **Hedef listesini genişlet:** Dublin + İsviçre/Almanya Google eng ofisleri; İngilizce + göçmenlik açısından US'ten kolay.
+3. **Level & sinyal kritik:** Google seni, visa gerektirmeyen yerel adaylara tercih edecekse "clearly above the bar" olmalısın. Bu yüzden güçlü prep pazarlık payı değil, **giriş bileti**.
+4. **Referral daha da önemli:** visa engeli varken her ekstra sinyal ağırlık taşır. Ağ sıfır → sıfırdan kur (Track C önceliklenir).
+5. **Ara yol (opsiyon):** seni relocate/sponsor eden bir şirkete gir → yeni ülkeden Google'a **lokal** başvur (visa denklemi tersine döner).
+
+> **Not (immigration):** Buradaki visa bilgisi genel stratejidir, hukuki tavsiye değil. Başvuru öncesi Google'ın güncel sponsorship politikası ve ilgili ülke kurallarını doğrula.
 
 ---
 
@@ -76,7 +100,7 @@ Sabit tarih değil, **sinyal**. Şu üçü tutunca aktif başvuru fazına geç:
 2. **CV + LinkedIn** hazır ve impact-driven.
 3. En az **1 referral kanalı** ısınmış (veya güçlü inbound görünürlük).
 
-> Not: Restart sonrası ~Ekim hedefi kaymış olabilir — bu normal. Gate hazırlığa bağlı, takvime değil. Assets'i (CV, LinkedIn, referral haritası) **şimdiden** kur (lead time uzun); aktif apply'ı gate'e bağla.
+> Not: Restart + visa gerçekliği ile bu **muhtemelen çok-aylık / 1-2 yıllık bir stratejik oyun** — ~Ekim 2026 değil. Bu tamamen normal ve sorun değil; sponsorship gerektiren uluslararası geçişler zaman alır. Assets'i (CV, LinkedIn, referral haritası) **şimdiden** kur (lead time uzun); aktif apply'ı gate'e bağla.
 
 ---
 
@@ -92,7 +116,7 @@ Sabit tarih değil, **sinyal**. Şu üçü tutunca aktif başvuru fazına geç:
 | A — CV | ⬜ başlanmadı | 2026-07-26 | Impact-driven ilk taslak |
 | B — LinkedIn/görünürlük | ⬜ başlanmadı | 2026-07-26 | Başlık + open-to-work |
 | C — Referral haritası | ⬜ başlanmadı | 2026-07-26 | Ağ taraması + liste |
-| D — Application | ⬜ beklemede (gate) | 2026-07-26 | Gate açılınca |
-| Netleştirmeler | ⬜ | 2026-07-26 | 5 soruyu yanıtla |
+| D — Application | ⬜ beklemede (gate) | 2026-07-26 | Gate açılınca; **Dublin/London öncelik** |
+| Profil + visa stratejisi | ✅ hazır | 2026-07-26 | Hedef listesine EU hub'ları ekle |
 
 Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
