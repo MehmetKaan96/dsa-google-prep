@@ -66,6 +66,19 @@ Neden güçlü: mezun olunca **post-study work visa** ile **işveren sponsorluğ
 
 **GPA 2.90 gerçeği:** ≈ UK 2:2. Rekabetçi CS programları genelde 2:1 ister ama **duvar değil.** 2:2 kabul eden üniversiteler var (Kent, Anglia Ruskin, East London…); ayrıca **~3 yıl iş deneyimin düşük GPA'yı telafi eder** (çok üni bunu ağırlıklandırır). Güçlendir: GRE, güçlü referanslar, net SOP, ilgili deneyim vurgusu.
 
+#### US'te "cebimden para çıkmadan" gerçeği
+
+- **US master's genelde FONLANMAZ** — üniversiteler için gelir kapısıdır. Tam-fonlu master's istisnadır. Fonlanan asıl şey **PhD**'dir.
+- **Gerçekten ücretsiz/ödemeli rotalar:**
+  - **Fonlu PhD (CS):** tuition waiver + stipend (RA/TA), ~5-6 yıl. Güvenilir "para çıkmayan" yol. STEM PhD sonrası **3 yıl OPT**. Ama büyük araştırma taahhüdü + rekabetçi kabul.
+  - **TA/RA/GA-fonlu master's:** bazı (çoğu devlet) üniversitede tuition waiver + stipend; ama **rekabetçi ve kabulde garanti değil.**
+- **⚠️ İki "geri dön" tuzağı (stay-and-work hedefini öldürür):**
+  - **Fulbright:** fully-funded ama US devlet fonu → **212(e) iki yıl ülkene dönme zorunluluğu**; o sürede US'te çalışmaya/oturuma geçemezsin. Chevening'in US karşılığı.
+  - **Türk devlet bursları (YLSY/MEB):** fully-funded ama **mecburi hizmet** (dönüp devlete çalışma) şartlı.
+- **US master's'ın cazibesi (ödülü):** STEM MS → **OPT 1 yıl + STEM uzatma 24 ay = 3 yıl** sponsorsuz çalışma hakkı (UK Graduate Route'tan uzun). Sonra H-1B lottery.
+- **GPA 2.90 US'te daha çok yakar:** fonlu assistantship/PhD kabulleri genelde 3.0+ (üst programlar 3.5+) ister → GRE + araştırma/yayın + güçlü SOP/LOR ile telafi şart.
+- **Dürüst sonuç:** 2.90 + fon rekabeti nedeniyle US-fonlu, Almanya/Hollanda rotasından **daha zor.** Ücretsiz + kal-ve-çalış önceliğinse **Almanya (~ücretsiz tuition) pragmatik kazanan**; US esas olarak **fonlu PhD** yolunu göze alırsan veya assistantship kaparsan mantıklı.
+
 ## Cadence (portföyü tek başına yürütme)
 
 - Distribution slotunda (ayda ~2-4 saat) **bir kanala odaklan**, hepsini aynı anda değil.
