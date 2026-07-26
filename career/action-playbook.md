@@ -69,7 +69,7 @@ Local-preference tuzağını tamamen aşar (zaten çalışanısın).
 | Kök neden — CV/pozisyon | ⬜ | 2026-07-26 | Impact-driven CV (Track A) |
 | 1 — Kayıtlı sponsorlar | 🟡 liste v1 | 2026-07-26 | UK: Capgemini/Heat Geek — register'dan teyit |
 | 2 — ICT | 🟡 liste v1 | 2026-07-26 | MS/Amazon/SAP/Insider — mobility teyit |
-| 3 — NL HSM | 🟡 liste v1 | 2026-07-26 | Booking/Adyen/Uber — <30 eşiği avantajı |
+| 3 — NL HSM | 🟡 liste v1 | 2026-07-26 | Booking/Adyen/Uber — 30+ eşiği (€5,942/ay), test yok |
 | 4 — Self-sponsored | ⬜ | 2026-07-26 | İlk OSS katkısı / yazı |
 
 Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
@@ -81,7 +81,9 @@ Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
 ### Önce oku — eşik & gerçekçilik (kritik)
 
 - **UK Skilled Worker (iOS, SOC 2134):** min maaş ~**£54,700/yıl**. Saf Jr roller bu barı geçmeyebilir → UK'de **mid+ pozisyon** hedefle.
-- **NL Highly Skilled Migrant eşiği:** 30+ için €5,942/ay, **30 yaş altı için €4,357/ay**. Labour market test **yok**, işlem ~2 hafta. → **30 yaşın altındaysan NL, Jr/Mid için UK'den belirgin daha erişilebilir. En umut verici rota bu.**
+- **NL Highly Skilled Migrant eşiği:** 30+ için €5,942/ay (~€71k/yıl baz), 30 yaş altı için €4,357/ay. Labour market test **yok**, işlem ~2 hafta.
+  - **Kullanıcı: Eylül 2026'da 30 oluyor.** Düşük eşik penceresi ~2 ay içinde kapanıyor; prep restart'ta olduğumuz için o pencerede iş başlamak gerçekçi değil → **planı 30+ eşiğine (€5,942/ay ≈ €71k) göre kur.**
+  - Bu hâlâ **en umut verici rota**: labour market test yok (yerel-tercih tuzağı yok, yaştan bağımsız). Tek fark maaş tabanı — ve Booking/Adyen/Uber gibi hedeflerde mid seviye zaten bu bandın üstünde ödüyor. Yani birthday panik konusu değil.
 - **UK Global Talent:** "3 yıl standart deneyim + kayda değer OSS/tanınırlık yoksa Exceptional Promise barını genelde geçmez" → Kanal 4 (profil inşası) ile uzun vade.
 
 ### UK — iOS sponsorlayan şirketler (register'dan teyit et)
