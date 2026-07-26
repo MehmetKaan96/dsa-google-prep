@@ -22,6 +22,16 @@ Theory için ana notlar: [access-control.md](../access-control.md), [memory-mana
 | 10 | **Scenario** — analytics tracking at scale (batching + persistence) | [10-scenario-analytics-batching.md](10-scenario-analytics-batching.md) |
 | 11 | **Scenario** — white-label multi-country app (config-driven, RTL) | [11-scenario-white-label-multicountry.md](11-scenario-white-label-multicountry.md) |
 
+## Recognition drills (hız + sinyal) — `recognition/`
+
+Mülakatçı kod gösterir → **saniyeler içinde** bug'ı tanı + trade-off'la açıkla. Cevaplar `<details>` altında gizli (gerçek self-test).
+
+- [recognition/00-RECOGNITION-MAP.md](recognition/00-RECOGNITION-MAP.md) — "tell → refleks teşhis → severity → fix → trade-off" haritası (6 kategori)
+- [recognition/00-PROTOCOL.md](recognition/00-PROTOCOL.md) — timed drill protokolü + 5-adım cevap iskeleti
+- [recognition/01-memory-arc.md](recognition/01-memory-arc.md) — Set 01 (seed, 6 drill) ✅ · Set 02-06 planlı (concurrency, swiftui, architecture, networking, safety/perf)
+
+---
+
 ### Senaryo cevap iskeleti (genel)
 
 `Clarify → Data model → Katmanlar → Concurrency → Failure modes → Trade-off`

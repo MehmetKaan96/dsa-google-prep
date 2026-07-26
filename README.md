@@ -52,7 +52,14 @@
 ```
 dsa-google-prep/
 ├── README.md               ← bu dosya (master tracker)
-├── concepts/               ← concept cheat sheet'leri (deep-dive'lar Xcode playground'da)
+├── CLAUDE.md               ← UNIVERSAL SENIOR DOCTRINE + repo context (mentor operating rules)
+├── concepts/               ← concept cheat sheet'leri + retention backbone
+│   ├── 00-MASTER-COMPLEXITY.md   ← tüm DS & algo time/space (single source of truth)
+│   ├── 00-PATTERN-TRIGGERS.md    ← problem sinyali → algoritma haritası
+│   └── 00-TEMPLATE.md            ← her concept note'un iskeleti
+├── retrieval/              ← spaced-repetition motoru (unutmayı yenen sistem)
+│   ├── DECK.md                   ← active-recall kartları
+│   └── SCHEDULE.md               ← Leitner kutu takvimi (due tarihleri)
 ├── problems/               ← LeetCode çözümleri, topic'e göre organize
 │   ├── arrays/
 │   ├── hashmap/
@@ -243,3 +250,24 @@ Mentor seans başına aktif deck'ten 3 recall sorusu rotate eder. Zayıf topic'l
   → drills 09-10
 - Paz (7 Haz) gece: ✅ UIKit deep-dive → [uikit-deep](ios-depth/uikit-deep.md) · ✅ Modularization deep (mülakatçı imza konusu) → [modularization](ios-depth/modularization.md) · ✅ CI/CD → [ci-cd](ios-depth/ci-cd.md)
 - Pzt (8 Haz): 🎯 Teknik sohbet mülakatı (İhsan Kahramanoğlu — Eng. Manager, eski Mobile Software Architect)
+
+---
+
+## Foundation Restart (2026-07-26)
+
+Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara verse bile unutmayacak kadar sağlam bir DS&A temeli. Mekanizma = understanding-first + active recall + spaced repetition + tek doğruluk kaynağı.
+
+- ✅ Retention backbone kuruldu: [00-MASTER-COMPLEXITY](concepts/00-MASTER-COMPLEXITY.md) · [00-PATTERN-TRIGGERS](concepts/00-PATTERN-TRIGGERS.md) · [00-TEMPLATE](concepts/00-TEMPLATE.md)
+- ✅ Spaced-repetition motoru: [retrieval/DECK](retrieval/DECK.md) + [retrieval/SCHEDULE](retrieval/SCHEDULE.md) — Array, HashTable ve 4 çözülmüş problem Kutu 1'e seed'lendi
+- ✅ [CLAUDE.md](CLAUDE.md) = UNIVERSAL SENIOR DOCTRINE + repo context (mentor operating rules)
+- ⏭️ Sıradaki: guided concept loop — Array (01) mekaniği baştan (kullanıcı anlatır, mentor probe eder)
+
+**Kadans:** Her seans 3-5 recall kartı ile başlar (SCHEDULE'da due olandan). Konu sırası: Linear (Array→Hash→String/2P→Stack/Queue→LinkedList) → Trees/Heap → Graphs/Backtracking/Sort → DP → mock.
+
+### iOS Code Recognition Drills (2026-07-26 eklendi)
+
+Mülakatçı kod gösterince hızlı bug tanıma + trade-off antrenmanı (doctrine #1 + #3). Cevaplar gizli → gerçek self-test.
+- ✅ [recognition/00-RECOGNITION-MAP.md](ios-depth/drills/recognition/00-RECOGNITION-MAP.md) (6 kategori tarama haritası) · [00-PROTOCOL.md](ios-depth/drills/recognition/00-PROTOCOL.md) (timed, 5-adım cevap)
+- ✅ Set 01 — Memory/ARC (6 drill) → [01-memory-arc.md](ios-depth/drills/recognition/01-memory-arc.md)
+- ✅ Set 02 — Concurrency (6 drill) → [02-concurrency.md](ios-depth/drills/recognition/02-concurrency.md)
+- ⏭️ Set 03-06 planlı: SwiftUI, Architecture, Networking, Safety/Perf
