@@ -96,8 +96,32 @@ Neden güçlü: mezun olunca **post-study work visa** ile **işveren sponsorluğ
 | 4 — Self-sponsored | ⬜ | 2026-07-26 | İlk OSS katkısı / yazı |
 | 5 — Yüksek lisans → PSW | 🟡 araştırıldı | 2026-07-26 | Chevening ELE (return şartı); DE/NL ucuz + PSW; 2:2 kabul eden CS programları |
 | 🌙 Moonshot — US Google direkt | 🟢 açık kalır | 2026-07-26 | Düşük efor, sürekli: req açıldıkça CV hazırsa başvur |
+| Referral (cross-cutting) | 🟡 kanal bulundu | 2026-07-26 | Turks in Tech (SF/NY) + diaspora — ilişki kur |
 
 Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
+
+## Referral Playbook — sıfırdan referral erişimi
+
+**Mekanik:** Referral **cold istenmez, kazanılır.** Refer eden kişi Google'da *kendi itibarını* riske atar (üstelik bonus ancak sen işe girip barı geçersen gelir) → tanımadığını refer etmez. O yüzden sıra: kredibilite → ilişki → istek.
+
+**1. Kredibilite kapısı (önce bu).** Hazır olmadan isteme. Prep + görünür iş (GitHub, OSS) = "beni refer edersen mahcup olmazsın" sinyali. Prep bu yüzden referral'ın da yakıtı.
+
+**2. Sıcak kanal — Türk diasporası (en gerçekçi yol).**
+- **Turks in Tech** (turksintech.com) — ~6.000 üye; chapter'lar: **San Francisco, New York**, Berlin, Amsterdam, Toronto, İstanbul. US Google için **US chapter'larındaki Türk mühendisler = doğal sıcak bağlantı.**
+- **TurkTech Diaspora** (turktechdiaspora.com, YTB destekli, Amsterdam merkezli).
+- Türk mühendisler birbirine yardım etme eğilimindedir — sıfır-network durumunda en kısa yolun bu.
+
+**3. İlişki-önce yaklaşım (ask değil, connect).**
+- LinkedIn'de Google'daki Türk iOS/mobile mühendislerini bul (2nd-degree + diaspora).
+- Değer vererek etkileşime gir (spam değil): içeriğe düşünceli yorum, ortak ilgi, teknik soru.
+- Google'ın maintain ettiği açık kaynağa (Swift ekosistemi) katkı → doğal tanışma zemini.
+
+**4. Referral isteği mekaniği (kolay "evet" yarat).**
+- Kısa (<125 kelime), **tek net CTA**, spesifik req linki + uyarlanmış CV + 2-3 cümle "neden uygunum".
+- "İstersen çekinmeden reddet" tonu — baskı yok, itibarını koruduğunu göster.
+- Kişiselleştir: 5 dk araştırma reply oranını 3-5x artırır. Mass-spam itibar yakar, ters teper.
+
+**5. US-özel dürüstlük.** US referral seni recruiter'ın önüne koyar ama **visa barını kaldırmaz** (H-1B lottery + sponsorluk hâlâ orada). Moonshot mantığıyla düşük eforla değer. **Daha yüksek getirili:** aynı diaspora bağlantılarını **erişilebilir hub Google'ları (Dublin/London/Amsterdam)** için de kullan → oraya gir, sonra internal transfer ile US.
 
 ### 🌙 Moonshot — US Google direkt başvuru (düşük olasılık / yüksek ödül)
 
