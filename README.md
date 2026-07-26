@@ -69,6 +69,7 @@ dsa-google-prep/
 │   ├── graphs/
 │   └── dp/
 ├── ios-depth/              ← iOS internals, memory, concurrency, architecture, code-review drills/
+├── career/                 ← distribution planı (mülakata girmek: CV, referral, görünürlük)
 ├── interviews/             ← mülakata özel hazırlık doc'ları (Trendyol, vb.)
 ├── system-design/          ← mobile system design notları
 └── weekly-reviews/         ← haftalık retrospektif + Pazar planlama çıktısı
@@ -263,6 +264,11 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - ⏭️ Sıradaki: guided concept loop — Array (01) mekaniği baştan (kullanıcı anlatır, mentor probe eder)
 
 **Kadans:** Her seans 3-5 recall kartı ile başlar (SCHEDULE'da due olandan). Konu sırası: Linear (Array→Hash→String/2P→Stack/Queue→LinkedList) → Trees/Heap → Graphs/Backtracking/Sort → DP → mock.
+
+### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
+
+Prep "mülakatı geçmek"i çözer; ayrı bir paralel track "mülakata girmek"i çözer (ayda ~2-4 saat). CV · LinkedIn/görünürlük · **referral (en yüksek kaldıraç)** · application stratejisi. Aktif başvuru sabit tarihe değil hazırlık-sinyaline (Activation Gate) bağlı.
+→ [career/distribution-plan.md](career/distribution-plan.md)
 
 ### iOS Code Recognition Drills (2026-07-26 eklendi)
 
