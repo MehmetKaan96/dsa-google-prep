@@ -8,6 +8,12 @@
 Array = contiguous memory bloğu. `base + offset` aritmetiği ile O(1) random access sağlar.
 Swift `Array` bir value type'tır; reference-counted heap buffer üzerinde Copy-on-Write ile çalışır.
 
+## Şema — dinamik dizi büyümesi (amortized O(1) append)
+
+![Dinamik dizi büyümesi](diagrams/array-amortized-append.svg)
+
+Dolu buffer'a `append`: kapasite yetmez → 2× büyük yeni buffer ayrılır → 4 eleman kopyalanır (**O(n) tek seferlik**) → yeni eleman eklenir. Bu kopyalama nadir olduğu ve maliyeti sonraki n append'e yayıldığı için **amortized O(1)**. Ezberleme — şemayı gözünde canlandır, sayıyı türet.
+
 ## Temel Invariant'lar
 
 - Contiguity — tüm elemanlar tek bir memory bloğunda

@@ -1,0 +1,22 @@
+<svg width="680" height="300" viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, Helvetica, Arial, sans-serif">
+<title>Dinamik dizi büyümesi — amortized O(1) append</title>
+<desc>Dolu kapasite-4 dizi append aldığında 2 kat büyük yeni buffer ayrılır, 4 eleman kopyalanır (O(n)) ve yeni eleman eklenir; bu nadir kopyalama n append'e yayıldığı için append amortized O(1)'dir.</desc>
+<rect x="0" y="0" width="680" height="300" rx="12" fill="#ffffff"/>
+
+<text x="40" y="40" font-size="13" fill="#5F5E5A">count = 4 · capacity = 4 — dizi dolu</text>
+<g fill="#E6F1FB" stroke="#185FA5" stroke-width="1"><rect x="40" y="52" width="56" height="40" rx="4"/><rect x="102" y="52" width="56" height="40" rx="4"/><rect x="164" y="52" width="56" height="40" rx="4"/><rect x="226" y="52" width="56" height="40" rx="4"/></g>
+<g font-size="14" fill="#0C447C" text-anchor="middle"><text x="68" y="77">10</text><text x="130" y="77">20</text><text x="192" y="77">30</text><text x="254" y="77">40</text></g>
+
+<text x="40" y="122" font-size="13" fill="#5F5E5A">append(50) → kapasite yetmiyor, 2× büyük yeni buffer ayrılır</text>
+<line x1="160" y1="132" x2="160" y2="166" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M155 160 L160 167 L165 160" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<text x="40" y="188" font-size="13" fill="#5F5E5A">count = 5 · capacity = 8</text>
+<g fill="#E6F1FB" stroke="#185FA5" stroke-width="1"><rect x="40" y="200" width="56" height="40" rx="4"/><rect x="102" y="200" width="56" height="40" rx="4"/><rect x="164" y="200" width="56" height="40" rx="4"/><rect x="226" y="200" width="56" height="40" rx="4"/></g>
+<g font-size="14" fill="#0C447C" text-anchor="middle"><text x="68" y="225">10</text><text x="130" y="225">20</text><text x="192" y="225">30</text><text x="254" y="225">40</text></g>
+<g fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"><rect x="288" y="200" width="56" height="40" rx="4"/></g>
+<text x="316" y="225" font-size="14" fill="#04342C" text-anchor="middle">50</text>
+<g fill="none" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="4 3"><rect x="350" y="200" width="56" height="40" rx="4"/><rect x="412" y="200" width="56" height="40" rx="4"/><rect x="474" y="200" width="56" height="40" rx="4"/></g>
+
+<text x="40" y="270" font-size="12" fill="#888780">mavi = kopyalanan 4 eleman (O(n) tek seferlik) · yeşil = yeni · kesikli = boş kapasite</text>
+</svg>
