@@ -56,6 +56,16 @@ Local-preference tuzağını tamamen aşar (zaten çalışanısın).
 
 ---
 
+### Kanal 5 — Yüksek lisans → mezuniyet sonrası çalışma vizesi (🟢 yerel-tercihi kökten çözer)
+
+Neden güçlü: mezun olunca **post-study work visa** ile **işveren sponsorluğu olmadan** çalışma hakkı kazanırsın → "yerel aday" olursun, screen-reddi biter. Konuştuğumuz tüm kanalların en temiz çözümü olabilir.
+
+- **UK Graduate Route:** iş teklifi/sponsor **gerekmez**. Süre: başvuru **31 Ara 2026'ya kadar 2 yıl**, **1 Oca 2027'den sonra 18 ay**. Bu 2 yılda UK deneyimi + iş bul → Skilled Worker'a geç.
+- **⚠️ CHEVENING TUZAĞI (kritik):** Chevening fully-funded ama **mezuniyet sonrası en az 2 yıl ülkene dönmek ZORUNDASIN** — o sürede Graduate visa'ya, Skilled Worker'a veya başka leave-to-remain'e **geçemezsin**; dönmezsen bursu tamamen geri ödersin. Yani "okuyup orada kalma" hedefine **doğrudan engel.** Chevening senin planın için **yanlış araç.** Fully-funded istiyorsan return-şartı olmayan burs ara; yoksa self-funded + Graduate Route.
+- **Daha ucuz alternatifler (aynı strateji):** Almanya (çoğu eyalette internationals'a tuition ~ücretsiz + 18 ay iş-arama vizesi), Hollanda (orientation year / zoekjaar + yeni-mezun düşük HSM eşiği). UK self-funded pahalı (~£20-40k+ tuition + yaşam).
+
+**GPA 2.90 gerçeği:** ≈ UK 2:2. Rekabetçi CS programları genelde 2:1 ister ama **duvar değil.** 2:2 kabul eden üniversiteler var (Kent, Anglia Ruskin, East London…); ayrıca **~3 yıl iş deneyimin düşük GPA'yı telafi eder** (çok üni bunu ağırlıklandırır). Güçlendir: GRE, güçlü referanslar, net SOP, ilgili deneyim vurgusu.
+
 ## Cadence (portföyü tek başına yürütme)
 
 - Distribution slotunda (ayda ~2-4 saat) **bir kanala odaklan**, hepsini aynı anda değil.
@@ -71,6 +81,7 @@ Local-preference tuzağını tamamen aşar (zaten çalışanısın).
 | 2 — ICT | 🟡 liste v1 | 2026-07-26 | MS/Amazon/SAP/Insider — mobility teyit |
 | 3 — NL HSM | 🟡 liste v1 | 2026-07-26 | Booking/Adyen/Uber — 30+ eşiği (€5,942/ay), test yok |
 | 4 — Self-sponsored | ⬜ | 2026-07-26 | İlk OSS katkısı / yazı |
+| 5 — Yüksek lisans → PSW | 🟡 araştırıldı | 2026-07-26 | Chevening ELE (return şartı); DE/NL ucuz + PSW; 2:2 kabul eden CS programları |
 
 Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
 
