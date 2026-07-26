@@ -95,8 +95,18 @@ Neden güçlü: mezun olunca **post-study work visa** ile **işveren sponsorluğ
 | 3 — NL HSM | 🟡 liste v1 | 2026-07-26 | Booking/Adyen/Uber — 30+ eşiği (€5,942/ay), test yok |
 | 4 — Self-sponsored | ⬜ | 2026-07-26 | İlk OSS katkısı / yazı |
 | 5 — Yüksek lisans → PSW | 🟡 araştırıldı | 2026-07-26 | Chevening ELE (return şartı); DE/NL ucuz + PSW; 2:2 kabul eden CS programları |
+| 🌙 Moonshot — US Google direkt | 🟢 açık kalır | 2026-07-26 | Düşük efor, sürekli: req açıldıkça CV hazırsa başvur |
 
 Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
+
+### 🌙 Moonshot — US Google direkt başvuru (düşük olasılık / yüksek ödül)
+
+**Bırakmıyoruz — ama doğru ağırlıkla.** Portfolio mantığı: düşük-olasılık/yüksek-ödül bahsi elde tutulur, sermaye ona bağlanmaz (#10 trade-off, #18 pragmatism).
+
+- **Kural:** US Google iOS req'leri açıldıkça başvur; ama **düşük efor** (CV hazırken birkaç dakika). Ana enerji erişilebilir kanallarda (NL/ICT/DE master's).
+- **Neden düşük olasılık:** H-1B lottery + uluslararası Jr/Mid için yüksek bar + İstanbul'dan direkt sponsorluk.
+- **En yüksek olasılıklı US-Google yolu direkt değil:** önce erişilebilir bir hub'a (Dublin/London/Amsterdam Google veya başka şirket) yerleş → **Google içi internal transfer** ile US'e geç. İçeriden ofis değiştirmek, dışarıdan US Google'a girmekten çok daha kolay.
+- **Maliyet:** ~sıfır (birkaç dakika/req). Kaybedecek bir şey yok, bu yüzden açık kalır.
 
 ## Hedef Liste v1 — web araştırması (2026-07-26)
 
