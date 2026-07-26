@@ -90,6 +90,24 @@ Google'da çalışan biri refer ederse CV önceliklenir. Tek en getirili hamle.
 
 > **Not (immigration):** Buradaki visa bilgisi genel stratejidir, hukuki tavsiye değil. Başvuru öncesi Google'ın güncel sponsorship politikası ve ilgili ülke kurallarını doğrula.
 
+### Visa-dostu kanallar — "yerel tercih ediliyor" tuzağını aşmak
+
+Gözlem: standart başvuruda yerel adayla **convenience/maliyet** üzerinden yarışıyorsun → yapısal olarak kaybediyorsun. Çözüm daha çok başvurmak değil, **dezavantajı nötralize eden kanala geçmek.**
+
+| Kanal | Neden yerel-tercih tuzağını aşar | Öncelik |
+|-------|----------------------------------|---------|
+| **ICT — intra-company transfer** | İstanbul'daki çok-uluslu şirketin ofisine gir → içeriden EU/UK/US ofisine transfer. **Local labor market test yok** (zaten çalışanısın). | 🟢 en güçlü yapısal çözüm |
+| **Yalnızca kayıtlı sponsorlar** | UK'nin public "licensed sponsor register"ı ve NL IND "recognized sponsors" listesi var. Sponsor olmayana/visa filtreleyene başvurma → enerjini boşa harcama. | 🟢 |
+| **Netherlands — Highly Skilled Migrant (Kennismigrant)** | En işveren-dostu EU rotası; şirketler rutin olarak uluslararası alır, IND fast-track. Amsterdam/Eindhoven. | 🟢 |
+| **Germany — EU Blue Card / Opportunity Card** | Yazılımcı için erişilebilir; "Chancenkarte" iş aramaya gelmeye izin verir. | 🟡 |
+| **Self-sponsored — UK Global Talent** | İşveren gerekmez; güçlü profil (OSS, teknik görünürlük) ile sen kendini sponsorlarsın → yerel-tercih tamamen devre dışı. | 🟡 uzun vadeli profil oyunu |
+
+**Funnel teşhisi (önce bunu yap):** Nerede eleniyorsun?
+- **Screen'de (hiç dönüş yok):** pozisyon/visa-flag/sponsor-değil problemi → sadece kayıtlı sponsorlara + ICT'ye yönel.
+- **Interview'da:** yetenek/prep açığı → prep track bunu çözer. Ayrıca visa gerektirmeyen adaya karşı "açık ara üstünde" olmak = güçlü prep + niş uzmanlık.
+
+**Kural:** Jr generalist'i reddetmek kolay; görünür derinliği olan (OSS, niş iOS uzmanlığı) bir mühendis "visa zahmetine değer." Kanal + level birlikte çalışır.
+
 ---
 
 ## Activation Gate — aktif başvuru ne zaman?
