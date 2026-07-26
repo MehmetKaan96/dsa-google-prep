@@ -67,12 +67,47 @@ Local-preference tuzağını tamamen aşar (zaten çalışanısın).
 | Kanal | Durum | Son güncelleme | Sonraki adım |
 |-------|-------|----------------|--------------|
 | Kök neden — CV/pozisyon | ⬜ | 2026-07-26 | Impact-driven CV (Track A) |
-| 1 — Kayıtlı sponsorlar | ⬜ | 2026-07-26 | UK/NL register'dan hedef liste |
-| 2 — ICT | ⬜ | 2026-07-26 | İstanbul çok-uluslu listesi |
-| 3 — NL HSM | ⬜ | 2026-07-26 | NL sponsor iOS ilanları |
+| 1 — Kayıtlı sponsorlar | 🟡 liste v1 | 2026-07-26 | UK: Capgemini/Heat Geek — register'dan teyit |
+| 2 — ICT | 🟡 liste v1 | 2026-07-26 | MS/Amazon/SAP/Insider — mobility teyit |
+| 3 — NL HSM | 🟡 liste v1 | 2026-07-26 | Booking/Adyen/Uber — <30 eşiği avantajı |
 | 4 — Self-sponsored | ⬜ | 2026-07-26 | İlk OSS katkısı / yazı |
 
 Durum: ⬜ başlanmadı · 🟡 devam · ✅ hazır
 
+## Hedef Liste v1 — web araştırması (2026-07-26)
+
+> Bunlar başlangıç noktası; başvurmadan önce **güncel sponsor durumunu resmi register'dan** ve maaş eşiğini doğrula (ilanlar değişir).
+
+### Önce oku — eşik & gerçekçilik (kritik)
+
+- **UK Skilled Worker (iOS, SOC 2134):** min maaş ~**£54,700/yıl**. Saf Jr roller bu barı geçmeyebilir → UK'de **mid+ pozisyon** hedefle.
+- **NL Highly Skilled Migrant eşiği:** 30+ için €5,942/ay, **30 yaş altı için €4,357/ay**. Labour market test **yok**, işlem ~2 hafta. → **30 yaşın altındaysan NL, Jr/Mid için UK'den belirgin daha erişilebilir. En umut verici rota bu.**
+- **UK Global Talent:** "3 yıl standart deneyim + kayda değer OSS/tanınırlık yoksa Exceptional Promise barını genelde geçmez" → Kanal 4 (profil inşası) ile uzun vade.
+
+### UK — iOS sponsorlayan şirketler (register'dan teyit et)
+
+| Şirket | Rol / lokasyon | Not |
+|--------|----------------|-----|
+| **Capgemini UK** | Junior iOS Developer — London/Manchester | Danışmanlık; sponsorluk ✓; ICT ihtimali de var |
+| **Heat Geek Technologies** | Junior/Mid iOS — London | Jr-dostu |
+| **Trainline** | Senior iOS — London | Mid+ için |
+| **Digital Moneybox** | Senior iOS | |
+| Canlı board | huntukvisasponsors.com/jobs/role/ios-developer | Resmi: gov.uk "licensed sponsor register" |
+
+### NL — recognized sponsor, engineer alan (Amsterdam)
+
+Booking.com (NL'nin en büyük HSM sponsoru) · Adyen · Uber · Databricks · Optiver. Resmi liste: **IND "recognized sponsors"**. NL guide: jobbatical / nextleveljobs.
+
+### ICT — İstanbul çok-uluslu → içeriden transfer
+
+- **Multinational + İstanbul dev merkezi:** Microsoft (İstanbul = MEA merkezi), Amazon, SAP (TR'de 2001'den beri) → global ofislere iç transfer yolu.
+- **Uluslararası ofisli TR şirketleri:** Insider (global martech ofisleri — güçlü), Trendyol (Alibaba, genişliyor), Getir (UK/US — **dikkat: küçülme yaşadı**), Dream/Peak/Rollic (gaming, uluslararası).
+
+### Self-sponsored — Global Talent (uzun vade, Kanal 4 ile)
+
+UKRI Digital Technology, Exceptional Promise. İş teklifi gerekmez ama **OSS/tanınırlık şart** → önce profil inşa et.
+
+---
+
 ## Sonraki somut adım
-Gerçek hedef listelerini birlikte kurabiliriz: UK/NL sponsor register'larından + İstanbul çok-uluslularından iOS-uygun şirketleri araştırıp bu dosyaya somut isimler eklemek (web araştırması gerektirir).
+Yaşını (NL <30 eşiği için) ve mevcut CV'ni netleştirip: (1) NL HSM'ye uygun 5-8 hedef şirkete somut başvuru listesi, (2) Capgemini/Heat Geek gibi UK Jr-sponsor rollerine CV uyarlaması. Bunu bir sonraki distribution slotunda yaparız.
