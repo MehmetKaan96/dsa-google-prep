@@ -22,6 +22,12 @@
 
 **ARR-6** · Q: `ArraySlice`'ın gizli tuzağı? — A: Parent buffer'ı tamamen retain eder; slice uzun yaşarsa büyük buffer serbest kalmaz → memory leak.
 
+**ARR-7** · Q: `arr[i]`'nin adresi nasıl hesaplanır ve neden O(1)? — A: `base + i×stride` (stride = eleman byte boyutu). Tek çarpma+toplama, doğrudan zıplar → `i`'den ve boyuttan bağımsız sabit. Adres = bellekteki byte index'i, sıradan bir sayı.
+
+**ARR-8** · Q: insert(at:0) neden O(n) — "yeni dizi" yüzünden mi? — A: Hayır, **kaydırma** yüzünden: bitişiklik için sonraki tüm elemanlar bir sağa kayar (n kaydırma). Yeni dizi sadece kapasite doluysa gerekir (ayrı kavram: growth).
+
+**ARR-9** · Q: append neden O(1) *amortized*, ve neden 2× büyüme kritik? — A: Dolunca 2× büyüt+kopyala; kopyalar 1+2+4+…≈2n → n append'e bölününce sabit. `+1` büyüseydi 1+2+…+n=O(n²) → append başı O(n).
+
 ---
 
 ## HASH — HashTable (Dictionary / Set)

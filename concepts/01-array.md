@@ -14,6 +14,16 @@ Swift `Array` bir value type'tır; reference-counted heap buffer üzerinde Copy-
 
 Dolu buffer'a `append`: kapasite yetmez → 2× büyük yeni buffer ayrılır → 4 eleman kopyalanır (**O(n) tek seferlik**) → yeni eleman eklenir. Bu kopyalama nadir olduğu ve maliyeti sonraki n append'e yayıldığı için **amortized O(1)**. Ezberleme — şemayı gözünde canlandır, sayıyı türet.
 
+## Mekanik (Under the Hood) — türet, ezberleme
+
+Adres = sadece bir sayı; bellek (RAM) dev bir byte dizisidir, adres o dizideki index'tir. Örn. `0x100 = 256` (onluk); byte #256.
+
+- **Access `arr[i]` → O(1):** `adres(arr[i]) = base + i × stride` (`stride` = elemanın byte boyutu; `MemoryLayout<Int>.stride == 8`). Örn. `arr[3] = 0x100 + 3×8 = 0x118 = 280`. Tek çarpma+toplama, doğrudan zıplar, taramaz → `i` ne olursa olsun sabit. `arr[0]` ile `arr[999999]` **aynı** maliyet.
+- **Insert/remove (baş/orta) → O(n):** Bitişiklik korunmak zorunda (yoksa `base+i×stride` bozulur). Baştan/ortadan eklemek için sonraki **tüm** elemanlar bir slot **kaydırılır** → `n` kaydırma. Bu, dizi dolu olmasa bile olur. **Not:** insert'i O(n) yapan şey kaydırmadır, "yeni dizi" değil.
+- **Append → O(1) amortized:** Boş kapasite varsa sona doğrudan yazılır (O(1)). Kapasite **doluysa** → **growth**: 2× büyük yeni blok ayrılır, hepsi kopyalanır (O(n) tek sefer). Kopyalar `1+2+4+…+n ≈ 2n` (geometric seri) olduğundan, `n` append'e yayılınca işlem başına sabit = **amortized O(1)**.
+  - **Neden 2× kritik:** `+1` büyüseydi kopyalar `1+2+…+n = O(n²)` → append başı O(n). Geometric growth toplam kopyalamayı `2n`'de tutar.
+  - **Shift ≠ Growth:** kaydırma (insert/remove) ile büyüme (dolunca kopyalama) ayrı kavramlar; ikisi de O(n) ama farklı sebep.
+
 ## Temel Invariant'lar
 
 - Contiguity — tüm elemanlar tek bir memory bloğunda

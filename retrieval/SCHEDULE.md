@@ -22,13 +22,13 @@
 
 | Konu | Kutu | Last Reviewed | Next Due | Not |
 |------|------|---------------|----------|-----|
-| Array (ARR) | 1 | 2026-07-26 | 2026-07-27 | Restart — cold recall gerek |
-| HashTable (HASH) | 1 | 2026-07-26 | 2026-07-27 | Restart — cold recall gerek |
+| Array (ARR) | 1 | 2026-08-01 | 2026-08-02 | Cold recall: pas → mekanik guided işlendi |
+| HashTable (HASH) | 1 | 2026-08-01 | 2026-08-02 | Cold recall: pas |
 | Two Sum (0001) | 1 | 2026-07-26 | 2026-07-27 | Cold re-solve hedefi ≤10dk |
 | Contains Duplicate (0217) | 1 | 2026-07-26 | 2026-07-27 | |
 | Valid Anagram (0242) | 1 | 2026-07-26 | 2026-07-27 | |
 | Group Anagrams (0049) | 1 | 2026-07-26 | 2026-07-27 | |
-| Pattern triggers (PAT) | 1 | 2026-07-26 | 2026-07-27 | Yeni deck bölümü |
+| Pattern triggers (PAT) | 2 | 2026-08-01 | 2026-08-04 | Cold recall: "pair/complement→hash" doğru ✓ |
 | Recognition-MemARC (iOS drills 01) | 1 | 2026-07-26 | 2026-07-27 | Timed: isim <10sn, cevap <90sn |
 | Recognition-Concurrency (iOS drills 02) | 1 | 2026-07-26 | 2026-07-27 | Refleks: main? shared state? bir kez tamamlanma? |
 
