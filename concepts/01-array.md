@@ -74,14 +74,21 @@ Adres = sadece bir sayı; bellek (RAM) dev bir byte dizisidir, adres o dizideki 
 - Copy-on-Write, `isKnownUniquelyReferenced`
 - Pointer chasing (LinkedList kontrastı)
 
-## Yaygın Mülakat Problemleri
+## Problem Merdiveni (pekiştirme yol haritası)
 
-- [ ] Two Sum (Easy)
-- [ ] Contains Duplicate (Easy)
-- [ ] Best Time to Buy and Sell Stock (Easy)
-- [ ] Product of Array Except Self (Medium)
-- [ ] Maximum Subarray / Kadane's (Medium)
-- [ ] Rotate Array (Medium)
-- [ ] 3Sum (Medium)
-- [ ] Container With Most Water (Medium)
-- [ ] Trapping Rain Water (Hard)
+Sıra: her problem yeni bir Array pattern'i ekler; kolaydan zora. `[x]` = çözüldü.
+
+| # | Problem | Zorluk | Öğrettiği pattern | Durum |
+|---|---------|--------|-------------------|-------|
+| 0283 | Move Zeroes | Easy | In-place write-pointer | [x] ✅ 2026-08-01 |
+| 0026 | Remove Duplicates (Sorted) | Easy | Write-pointer (dedupe) | [ ] |
+| 0121 | Best Time to Buy/Sell Stock | Easy | Tek-pass min takibi | [ ] |
+| 0238 | Product of Array Except Self | Medium | Prefix/suffix çarpım | [ ] |
+| 0053 | Maximum Subarray (Kadane) | Medium | Running-sum DP | [ ] |
+| 0167 | Two Sum II (Sorted) | Medium | Converging two-pointer | [ ] |
+| 0011 | Container With Most Water | Medium | Two-pointer (greedy) | [ ] |
+| 0189 | Rotate Array | Medium | Reversal trick | [ ] |
+| 0015 | 3Sum | Medium | Sort + two-pointer | [ ] |
+| 0042 | Trapping Rain Water | Hard | Two-pointer / prefix-max | [ ] |
+
+**Not:** Array mekaniği (O(1) erişim, O(n) shift, write-pointer) bu problemlerin **hepsinde** tekrar tekrar kullanılır — ayrıca String, Sliding Window, Matrix konularında da. Yani Array asla "bitmiş" bir konu değil; her yeni konuda yeniden pekişir (interleaving).
