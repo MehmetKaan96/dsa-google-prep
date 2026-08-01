@@ -76,6 +76,8 @@
 
 **PROB-0049** · Q: Group Anagrams — key nasıl seçilir? — A: Sorted string (veya char-count imzası) canonical key; `[String: [String]]` ile grupla.
 
+**PROB-0283** · Q: Move Zeroes — pattern ve neden brute force O(n²)? — A: In-place write-pointer: `slow`'a non-zero'ları kompakla, kuyruğu 0 doldur (O(n)). Brute (`remove`+`firstIndex` döngü içinde) = O(n²). Kural: döngü içi remove/firstIndex = gizli O(n).
+
 ---
 
 ## Nasıl büyütülür

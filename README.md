@@ -13,9 +13,9 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 4 | 150+ |
+| LeetCode problems solved | 5 | 150+ |
 | Blind 75 completion | 4 / 75 | 75 / 75 |
-| NeetCode 150 completion | 4 / 150 | 150 / 150 |
+| NeetCode 150 completion | 5 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
 | iOS deep-dives done | 8 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
@@ -33,7 +33,7 @@
 
 | # | Topic | Deep-dive | Çözülen Problem |
 |---|-------|-----------|-----------------|
-| 01 | Array | ✅ | 0 |
+| 01 | Array | ✅ | 1 |
 | 02 | HashTable / Dictionary | ✅ | 4 |
 | 03 | String & Two Pointers | ⏳ | 0 |
 | 04 | Stack & Queue | ⏳ | 0 |
@@ -264,6 +264,12 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - ⏭️ Sıradaki: guided concept loop — Array (01) mekaniği baştan (kullanıcı anlatır, mentor probe eder)
 
 **Kadans:** Her seans 3-5 recall kartı ile başlar (SCHEDULE'da due olandan). Konu sırası: Linear (Array→Hash→String/2P→Stack/Queue→LinkedList) → Trees/Heap → Graphs/Backtracking/Sort → DP → mock.
+
+**Seans 1 — 2026-08-01 (⚡ MEDIUM, Format B guided):**
+- Warm-up recall: Array/HashTable mekaniği "pas" (cold), pattern tanıma doğru ✓
+- Array mekaniği guided işlendi (address arithmetic O(1) · shift O(n) · growth/amortized) → [01-array](concepts/01-array.md) + 3 şema
+- Move Zeroes (#283) guided çözüldü: brute O(n²) tuzağı → optimal two-pointer O(n) → [arrays/0283](problems/arrays/0283-move-zeroes.md)
+- Kilit ders: `arr[i]` (O(1)) ≠ `insert/remove` (O(n)); döngü içi `remove`/`firstIndex` = gizli O(n²)
 
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 

@@ -31,6 +31,8 @@
 | Pattern triggers (PAT) | 2 | 2026-08-01 | 2026-08-04 | Cold recall: "pair/complement→hash" doğru ✓ |
 | Recognition-MemARC (iOS drills 01) | 1 | 2026-07-26 | 2026-07-27 | Timed: isim <10sn, cevap <90sn |
 | Recognition-Concurrency (iOS drills 02) | 1 | 2026-07-26 | 2026-07-27 | Refleks: main? shared state? bir kez tamamlanma? |
+| Move Zeroes (0283) | 1 | 2026-08-01 | 2026-08-02 | Guided çözüldü; +3g cold re-solve ≤8dk (compact+fill & swap) |
+| Array mekaniği (access/shift/growth) | 1 | 2026-08-01 | 2026-08-02 | Guided işlendi; türetilebilir olmalı |
 
 > Not: Uzun aradan (token/iş) sonra restart — hepsi Kutu 1'e resetlendi. Bilinçli karar: temelden sağlamlaştırma.
 
