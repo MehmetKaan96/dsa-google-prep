@@ -24,6 +24,7 @@
 |------|------|---------------|----------|-----|
 | Array (ARR) | 2 | 2026-08-02 | 2026-08-05 | Recall güçlü: erişim/shift/Move Zeroes doğru ✓ |
 | HashTable (HASH) | 1 | 2026-08-02 | 2026-08-03 | Mekanik guided işlendi (hash%cap, collision, load factor, rehash) |
+| Longest Consecutive (0128) | 1 | 2026-08-02 | 2026-08-05 | Guided (ağır scaffold); +3g COLD re-solve şart — asıl test |
 | Two Sum (0001) | 1 | 2026-07-26 | 2026-07-27 | Cold re-solve hedefi ≤10dk |
 | Contains Duplicate (0217) | 1 | 2026-07-26 | 2026-07-27 | |
 | Valid Anagram (0242) | 1 | 2026-07-26 | 2026-07-27 | |

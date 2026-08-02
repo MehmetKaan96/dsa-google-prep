@@ -13,9 +13,9 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 5 | 150+ |
-| Blind 75 completion | 4 / 75 | 75 / 75 |
-| NeetCode 150 completion | 5 / 150 | 150 / 150 |
+| LeetCode problems solved | 6 | 150+ |
+| Blind 75 completion | 5 / 75 | 75 / 75 |
+| NeetCode 150 completion | 6 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
 | iOS deep-dives done | 8 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
@@ -34,7 +34,7 @@
 | # | Topic | Deep-dive | Çözülen Problem |
 |---|-------|-----------|-----------------|
 | 01 | Array | ✅ | 1 |
-| 02 | HashTable / Dictionary | ✅ | 4 |
+| 02 | HashTable / Dictionary | ✅ | 5 |
 | 03 | String & Two Pointers | ⏳ | 0 |
 | 04 | Stack & Queue | ⏳ | 0 |
 | 05 | Linked List | ⏳ | 0 |
@@ -274,7 +274,10 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 **Seans 2 — 2026-08-02 (⚡ MEDIUM, guided):**
 - Warm-up recall (Array): 3.5/4 — erişim/shift/Move Zeroes doğru ✓, amortized math zayıf → re-teach (1+2+4≈2n → O(1); +1 → O(n²))
 - HashTable mekaniği guided işlendi: `hash(key)%capacity` → bucket (O(1)) · collision (chaining/open addressing) · worst O(n) · load factor → rehash (amortized, Array growth'un aynısı) → [02-hashtable](concepts/02-hashtable.md) + şema
-- Deck: HASH-8/9/10 eklendi. Sırada: Hashable contract + bir HashTable problemi (pekiştirme)
+- Deck: HASH-8/9/10 eklendi.
+- Hashable contract işlendi (`a==b ⇒ aynı hash`; ihlal → farklı bucket → Set unique'liği çöker; fix: hash ⊆ ==)
+- **Longest Consecutive Sequence (#128)** guided çözüldü → [hashmap/0128](problems/hashmap/0128-longest-consecutive-sequence.md). Ağır scaffold gerekti ama trace'i kendi yürütünce **gerçekten anladı** (Set O(1) + başlangıç-tespiti + O(n) ispatı). +3g cold re-solve şart.
+- Kilit ders: while koşulunda ilerleyen değişken (`current`) kullan (sonsuz döngü tuzağı); iç içe döngü ama iç iş toplamı n → O(n)
 
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 

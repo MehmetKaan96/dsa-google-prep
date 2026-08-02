@@ -65,3 +65,4 @@ print("✅ All tests passed")
 | 0217 | Contains Duplicate | Easy | Set membership | [hashmap/0217](hashmap/0217-contains-duplicate.md) |
 | 0242 | Valid Anagram | Easy | Char-count map | [hashmap/0242](hashmap/0242-valid-anagram.md) |
 | 0283 | Move Zeroes | Easy | In-place write-pointer | [arrays/0283](arrays/0283-move-zeroes.md) |
+| 0128 | Longest Consecutive Sequence | Medium | Set O(1) membership + start detection | [hashmap/0128](hashmap/0128-longest-consecutive-sequence.md) |

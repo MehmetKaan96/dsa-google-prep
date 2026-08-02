@@ -84,6 +84,8 @@
 
 **PROB-0283** · Q: Move Zeroes — pattern ve neden brute force O(n²)? — A: In-place write-pointer: `slow`'a non-zero'ları kompakla, kuyruğu 0 doldur (O(n)). Brute (`remove`+`firstIndex` döngü içinde) = O(n²). Kural: döngü içi remove/firstIndex = gizli O(n).
 
+**PROB-0128** · Q: Longest Consecutive — nasıl O(n), sort olmadan? — A: `Set` (O(1) membership) + sadece "başlangıç"lardan (num-1 yoksa) sağa yürü. İç içe döngü ama tüm while adımları toplamı = n → O(n). Tuzak: while koşulu `current+1` (num değil, yoksa sonsuz döngü).
+
 ---
 
 ## Nasıl büyütülür
