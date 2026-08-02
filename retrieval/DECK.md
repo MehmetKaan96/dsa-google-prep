@@ -46,6 +46,12 @@
 
 **HASH-7** · Q: `Dictionary<T, Void>` ile Set simüle etmek neden anti-pattern? — A: `Set<T>` first-class, kendi optimizasyonlarına sahip; en spesifik tool'u kullan.
 
+**HASH-8** · Q: `dict[key]` arka planda nasıl doğru bucket'a gidiyor? — A: `index = hash(key) % capacity`. Hash büyük sayıyı üretir, `% capacity` geçerli bucket index'ine katlar; doğrudan zıplar, taramaz. (Array'in `base + i×stride` karşılığı.)
+
+**HASH-9** · Q: Collision nasıl çözülür ve worst case erişim ne? — A: Chaining (bucket'ta liste) veya open addressing (sonraki boş slot, Swift). Hepsi tek bucket'a düşerse tek lookup O(n) — **O(n²) değil**.
+
+**HASH-10** · Q: Load factor nedir, rehash ne zaman/nasıl, hangi array kavramına benzer? — A: α = count/capacity; α > ~0.75'te rehash → 2× büyüt + hepsini yeniden yerleştir (O(n) seyrek → amortized O(1)). Array growth'un aynısı.
+
 ---
 
 ## PAT — Pattern tanıma (problemden algoritmaya)

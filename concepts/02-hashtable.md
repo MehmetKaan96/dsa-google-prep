@@ -7,6 +7,18 @@
 
 Hash table = bucket'lardan oluşan bir array + hash function. Key, `hash(key) % capacity` formülü ile bir bucket index'ine map'lenir. Average O(1) operasyonlar, ama collision durumunda worst case O(n).
 
+## Mekanik (Under the Hood) — türet, ezberleme
+
+HashTable = **bucket dizisi + hash fonksiyonu.** Altında yine bir array var.
+
+- **Lookup `dict[key]` → O(1) ortalama:** `index = hash(key) % capacity`. Hash devasa bir sayı üretir; `% capacity` onu geçerli bir bucket index'ine (`0..capacity-1`) **katlar**. Sonra doğrudan o bucket'a zıpla — taramaz. Array'in `base + i×stride`'ının karşılığı: ikisi de "index'i hesapla, doğrudan git".
+  - Kapasite genelde 2'nin kuvveti → `% 2^k` hızlı bit işlemine (`hash & (capacity-1)`) iner.
+- **Collision (iki key aynı index'e düşer):** iki çözüm —
+  - *Separate chaining:* bucket bir **liste** tutar (`5 → [cat, dog]`).
+  - *Open addressing (Swift `Dictionary`):* bir sonraki **boş** slota probe et (`5→cat, 6→dog`).
+- **Worst case → O(n) (O(n²) değil):** Tüm key'ler tek bucket'a düşerse, tek bir lookup o `n`-elemanlı zinciri baştan sona tarar → `n` karşılaştırma → O(n). (O(n²) ancak `n` ayrı arama × her biri O(n) yapılırsa.)
+- **Load factor α = count / capacity → rehash:** α yükseldikçe collision artar (dolu slota düşme olasılığı ↑). α > ~0.75 olunca **rehash**: 2× büyük bucket dizisi ayır, **tüm** key'leri `hash % yeni_capacity` ile yeniden yerleştir. O(n) tek sefer, seyrek → **amortized O(1)** — **Array growth'un birebir aynısı.**
+
 ## Temel Invariant'lar
 
 - Hashable contract: `a == b ⇒ a.hashValue == b.hashValue` (tersi gerekmez)

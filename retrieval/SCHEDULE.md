@@ -22,8 +22,8 @@
 
 | Konu | Kutu | Last Reviewed | Next Due | Not |
 |------|------|---------------|----------|-----|
-| Array (ARR) | 1 | 2026-08-01 | 2026-08-02 | Cold recall: pas → mekanik guided işlendi |
-| HashTable (HASH) | 1 | 2026-08-01 | 2026-08-02 | Cold recall: pas |
+| Array (ARR) | 2 | 2026-08-02 | 2026-08-05 | Recall güçlü: erişim/shift/Move Zeroes doğru ✓ |
+| HashTable (HASH) | 1 | 2026-08-02 | 2026-08-03 | Mekanik guided işlendi (hash%cap, collision, load factor, rehash) |
 | Two Sum (0001) | 1 | 2026-07-26 | 2026-07-27 | Cold re-solve hedefi ≤10dk |
 | Contains Duplicate (0217) | 1 | 2026-07-26 | 2026-07-27 | |
 | Valid Anagram (0242) | 1 | 2026-07-26 | 2026-07-27 | |
@@ -31,8 +31,9 @@
 | Pattern triggers (PAT) | 2 | 2026-08-01 | 2026-08-04 | Cold recall: "pair/complement→hash" doğru ✓ |
 | Recognition-MemARC (iOS drills 01) | 1 | 2026-07-26 | 2026-07-27 | Timed: isim <10sn, cevap <90sn |
 | Recognition-Concurrency (iOS drills 02) | 1 | 2026-07-26 | 2026-07-27 | Refleks: main? shared state? bir kez tamamlanma? |
-| Move Zeroes (0283) | 1 | 2026-08-01 | 2026-08-02 | Guided çözüldü; +3g cold re-solve ≤8dk (compact+fill & swap) |
-| Array mekaniği (access/shift/growth) | 1 | 2026-08-01 | 2026-08-02 | Guided işlendi; türetilebilir olmalı |
+| Move Zeroes (0283) | 2 | 2026-08-02 | 2026-08-05 | Recall doğru; +3g cold re-solve ≤8dk (compact+fill & swap) |
+| Array mekaniği: erişim + shift | 2 | 2026-08-02 | 2026-08-05 | Recall doğru ✓ |
+| Array mekaniği: AMORTIZED | 1 | 2026-08-02 | 2026-08-03 | Recall zayıf (math pas) → re-drill: 1+2+4≈2n, +1 → O(n²) |
 
 > Not: Uzun aradan (token/iş) sonra restart — hepsi Kutu 1'e resetlendi. Bilinçli karar: temelden sağlamlaştırma.
 

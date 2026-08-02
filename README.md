@@ -271,6 +271,11 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - Move Zeroes (#283) guided çözüldü: brute O(n²) tuzağı → optimal two-pointer O(n) → [arrays/0283](problems/arrays/0283-move-zeroes.md)
 - Kilit ders: `arr[i]` (O(1)) ≠ `insert/remove` (O(n)); döngü içi `remove`/`firstIndex` = gizli O(n²)
 
+**Seans 2 — 2026-08-02 (⚡ MEDIUM, guided):**
+- Warm-up recall (Array): 3.5/4 — erişim/shift/Move Zeroes doğru ✓, amortized math zayıf → re-teach (1+2+4≈2n → O(1); +1 → O(n²))
+- HashTable mekaniği guided işlendi: `hash(key)%capacity` → bucket (O(1)) · collision (chaining/open addressing) · worst O(n) · load factor → rehash (amortized, Array growth'un aynısı) → [02-hashtable](concepts/02-hashtable.md) + şema
+- Deck: HASH-8/9/10 eklendi. Sırada: Hashable contract + bir HashTable problemi (pekiştirme)
+
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 
 Prep "mülakatı geçmek"i çözer; ayrı bir paralel track "mülakata girmek"i çözer (ayda ~2-4 saat). CV · LinkedIn/görünürlük · **referral (en yüksek kaldıraç)** · application stratejisi. Aktif başvuru sabit tarihe değil hazırlık-sinyaline (Activation Gate) bağlı.
