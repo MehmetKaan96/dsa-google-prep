@@ -90,6 +90,14 @@
 
 **TP-1** · Q: "Sorted dizi + iki-uçtan yakınsayan karar" (pair-sum, palindrome, container) → ? — A: Converging two pointers (`while left < right`). O(n)/O(1). Her tur bir uç içeri; mesafe 1 azalır → O(n).
 
+**STR-1** · Q: Swift'te `str[5]` neden yasak, ne yaparsın? — A: Character = grapheme cluster, değişken byte, sabit stride yok → index O(n) olurdu. `Array(s)` (O(1) index, O(n) space) veya `String.Index`.
+
+**STR-2** · Q: `str.count` neden O(n)? ve `Array(s)`'in bedeli? — A: Karakter sayısı için grapheme sınırlarını baştan yürümek gerekir → O(n). `Array(s)` = O(n) time + O(n) space, karşılığında O(1) index.
+
+**STR-3** · Q: `String.Index` — `endIndex` nedir, tuzağı? — A: Son karakterin **bir sonrası** (past-the-end), okunamaz. Son karakter = `index(before: endIndex)`. Boş string'de crash → guard.
+
+**PROB-0125** · Q: Valid Palindrome — pattern + ana bug? — A: Converging two pointers + non-alnum skip. Bug: "not alphanumeric" = `!isLetter && !isNumber` (De Morgan, `&&` — `||` değil, yoksa hepsini skip'ler). O(1) space için String.Index.
+
 ---
 
 ## Nasıl büyütülür

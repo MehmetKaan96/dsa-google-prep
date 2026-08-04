@@ -13,10 +13,10 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 7 | 150+ |
-| Blind 75 completion | 5 / 75 | 75 / 75 |
-| NeetCode 150 completion | 7 / 150 | 150 / 150 |
-| Concept deep-dives done | 3 / 11 | 11 / 11 |
+| LeetCode problems solved | 8 | 150+ |
+| Blind 75 completion | 6 / 75 | 75 / 75 |
+| NeetCode 150 completion | 8 / 150 | 150 / 150 |
+| Concept deep-dives done | 4 / 11 | 11 / 11 |
 | iOS deep-dives done | 8 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
@@ -35,7 +35,7 @@
 |---|-------|-----------|-----------------|
 | 01 | Array | ✅ | 2 |
 | 02 | HashTable / Dictionary | ✅ | 5 |
-| 03 | String & Two Pointers | ⏳ | 0 |
+| 03 | String & Two Pointers | ✅ | 2 |
 | 04 | Stack & Queue | ⏳ | 0 |
 | 05 | Linked List | ⏳ | 0 |
 | 06 | Trees & BST | ⏳ | 0 |
@@ -284,6 +284,9 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - **Two Pointers** mekaniği guided işlendi (converging L/R, sorted array, üç-yönlü karar) + şema
 - **Two Sum II sorted (#167)** guided çözüldü, **ilk denemede bug'sız** → [arrays/0167](problems/arrays/0167-two-sum-ii-sorted.md)
 - Kilit dersler: "sorted" sinyali → two pointers (O(1) space, hash'ten iyi); **optimalliği tanı** (O(n)/O(1) zaten optimal, uydurma optimizasyon ekleme)
+- **String mekaniği** guided işlendi: Character = grapheme cluster (değişken byte) → `str[Int]` yasak, `count` O(n), `Array(s)` (O(n) space/O(1) index) vs `String.Index` (O(1) space) → [03-string-two-pointers](concepts/03-string-two-pointers.md) + şema
+- **Valid Palindrome (#125)** guided çözüldü, **iki versiyon**: Array + String.Index. Bug: De Morgan (`!(A\|\|B)=!A&&!B`) + case (per-compare lowercase) → [strings/0125](problems/strings/0125-valid-palindrome.md)
+- Konu 03 (String & Two Pointers) ✅ — 8 problem toplam
 
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 

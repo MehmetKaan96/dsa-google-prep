@@ -67,3 +67,4 @@ print("✅ All tests passed")
 | 0283 | Move Zeroes | Easy | In-place write-pointer | [arrays/0283](arrays/0283-move-zeroes.md) |
 | 0128 | Longest Consecutive Sequence | Medium | Set O(1) membership + start detection | [hashmap/0128](hashmap/0128-longest-consecutive-sequence.md) |
 | 0167 | Two Sum II (Sorted) | Medium | Converging two pointers | [arrays/0167](arrays/0167-two-sum-ii-sorted.md) |
+| 0125 | Valid Palindrome | Easy | Two pointers + skip; String mekaniği | [strings/0125](strings/0125-valid-palindrome.md) |

@@ -27,6 +27,8 @@
 | Longest Consecutive (0128) | 1 | 2026-08-02 | 2026-08-05 | Guided (ağır scaffold); +3g COLD re-solve şart — asıl test |
 | Two Sum II (0167) | 1 | 2026-08-04 | 2026-08-07 | İlk denemede bug'sız ✓; +3g re-solve ≤5dk |
 | Two Pointers pattern (TP) | 1 | 2026-08-04 | 2026-08-05 | Converging (sorted); warm-up'ta kaçmıştı → drill |
+| String mekaniği (STR) | 1 | 2026-08-04 | 2026-08-05 | Variable-width, str[Int] yasak, Array(s), String.Index |
+| Valid Palindrome (0125) | 1 | 2026-08-04 | 2026-08-07 | 2 versiyon (Array + String.Index); +3g re-solve. Bug: De Morgan |
 | Two Sum (0001) | 1 | 2026-07-26 | 2026-07-27 | Cold re-solve hedefi ≤10dk |
 | Contains Duplicate (0217) | 1 | 2026-07-26 | 2026-07-27 | |
 | Valid Anagram (0242) | 1 | 2026-07-26 | 2026-07-27 | |
