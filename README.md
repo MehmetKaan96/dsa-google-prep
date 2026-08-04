@@ -13,9 +13,9 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 6 | 150+ |
+| LeetCode problems solved | 7 | 150+ |
 | Blind 75 completion | 5 / 75 | 75 / 75 |
-| NeetCode 150 completion | 6 / 150 | 150 / 150 |
+| NeetCode 150 completion | 7 / 150 | 150 / 150 |
 | Concept deep-dives done | 3 / 11 | 11 / 11 |
 | iOS deep-dives done | 8 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
@@ -33,7 +33,7 @@
 
 | # | Topic | Deep-dive | Çözülen Problem |
 |---|-------|-----------|-----------------|
-| 01 | Array | ✅ | 1 |
+| 01 | Array | ✅ | 2 |
 | 02 | HashTable / Dictionary | ✅ | 5 |
 | 03 | String & Two Pointers | ⏳ | 0 |
 | 04 | Stack & Queue | ⏳ | 0 |
@@ -278,6 +278,12 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - Hashable contract işlendi (`a==b ⇒ aynı hash`; ihlal → farklı bucket → Set unique'liği çöker; fix: hash ⊆ ==)
 - **Longest Consecutive Sequence (#128)** guided çözüldü → [hashmap/0128](problems/hashmap/0128-longest-consecutive-sequence.md). Ağır scaffold gerekti ama trace'i kendi yürütünce **gerçekten anladı** (Set O(1) + başlangıç-tespiti + O(n) ispatı). +3g cold re-solve şart.
 - Kilit ders: while koşulunda ilerleyen değişken (`current`) kullan (sonsuz döngü tuzağı); iç içe döngü ama iç iş toplamı n → O(n)
+
+**Seans 3 — 2026-08-04 (⚡ MEDIUM, guided):**
+- Warm-up: Amortized re-drill **DOĞRU** ✓ (zayıftı → 2 günde oturdu), HashTable doğru, sorted-pair pattern kaçtı → Two Pointers köprüsü
+- **Two Pointers** mekaniği guided işlendi (converging L/R, sorted array, üç-yönlü karar) + şema
+- **Two Sum II sorted (#167)** guided çözüldü, **ilk denemede bug'sız** → [arrays/0167](problems/arrays/0167-two-sum-ii-sorted.md)
+- Kilit dersler: "sorted" sinyali → two pointers (O(1) space, hash'ten iyi); **optimalliği tanı** (O(n)/O(1) zaten optimal, uydurma optimizasyon ekleme)
 
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 

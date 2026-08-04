@@ -23,8 +23,10 @@
 | Konu | Kutu | Last Reviewed | Next Due | Not |
 |------|------|---------------|----------|-----|
 | Array (ARR) | 2 | 2026-08-02 | 2026-08-05 | Recall güçlü: erişim/shift/Move Zeroes doğru ✓ |
-| HashTable (HASH) | 1 | 2026-08-02 | 2026-08-03 | Mekanik guided işlendi (hash%cap, collision, load factor, rehash) |
+| HashTable (HASH) | 2 | 2026-08-04 | 2026-08-07 | Recall doğru (worst O(n) = tek bucket lineer) ✓ |
 | Longest Consecutive (0128) | 1 | 2026-08-02 | 2026-08-05 | Guided (ağır scaffold); +3g COLD re-solve şart — asıl test |
+| Two Sum II (0167) | 1 | 2026-08-04 | 2026-08-07 | İlk denemede bug'sız ✓; +3g re-solve ≤5dk |
+| Two Pointers pattern (TP) | 1 | 2026-08-04 | 2026-08-05 | Converging (sorted); warm-up'ta kaçmıştı → drill |
 | Two Sum (0001) | 1 | 2026-07-26 | 2026-07-27 | Cold re-solve hedefi ≤10dk |
 | Contains Duplicate (0217) | 1 | 2026-07-26 | 2026-07-27 | |
 | Valid Anagram (0242) | 1 | 2026-07-26 | 2026-07-27 | |
@@ -34,7 +36,7 @@
 | Recognition-Concurrency (iOS drills 02) | 1 | 2026-07-26 | 2026-07-27 | Refleks: main? shared state? bir kez tamamlanma? |
 | Move Zeroes (0283) | 2 | 2026-08-02 | 2026-08-05 | Recall doğru; +3g cold re-solve ≤8dk (compact+fill & swap) |
 | Array mekaniği: erişim + shift | 2 | 2026-08-02 | 2026-08-05 | Recall doğru ✓ |
-| Array mekaniği: AMORTIZED | 1 | 2026-08-02 | 2026-08-03 | Recall zayıf (math pas) → re-drill: 1+2+4≈2n, +1 → O(n²) |
+| Array mekaniği: AMORTIZED | 2 | 2026-08-04 | 2026-08-07 | Re-drill DOĞRU ✓ (2n/3n→O(1); +1→O(n²)). Zayıftı, oturdu. |
 
 > Not: Uzun aradan (token/iş) sonra restart — hepsi Kutu 1'e resetlendi. Bilinçli karar: temelden sağlamlaştırma.
 
