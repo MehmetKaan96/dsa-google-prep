@@ -86,6 +86,8 @@
 
 **PROB-0128** · Q: Longest Consecutive — nasıl O(n), sort olmadan? — A: `Set` (O(1) membership) + sadece "başlangıç"lardan (num-1 yoksa) sağa yürü. İç içe döngü ama tüm while adımları toplamı = n → O(n). Tuzak: while koşulu `current+1` (num değil, yoksa sonsuz döngü).
 
+**LOOP-1** ⚠️ *(zayıf nokta — 2 ve 5 Ağu'da takıldı)* · Q: "Bir noktadan başlayıp koşul bozulana kadar yürü ve say" — kalıp nedir? — A: Üçlü: **`current`** (ilerleyen işaretçi, başlangıç değerinden kopyalanır) + **`length = 1`** (sayaç, kendisi dahil) + **`while koşul(current)`** { current ilerle; length++ }. Kritik: while koşulunda **ilerleyen** değişken olmalı (sabit olan → sonsuz döngü).
+
 **PROB-0167** · Q: Two Sum II (sorted) — hangi teknik, neden hash değil? — A: Converging two pointers (L=0, R=n-1): sum>target→R--, sum<target→L++. O(n) time, **O(1) space**. Sorted olduğu için R-- toplamı kesin küçültür. Hash de çalışır ama O(n) space; sorted → two pointers daha iyi.
 
 **TP-1** · Q: "Sorted dizi + iki-uçtan yakınsayan karar" (pair-sum, palindrome, container) → ? — A: Converging two pointers (`while left < right`). O(n)/O(1). Her tur bir uç içeri; mesafe 1 azalır → O(n).

@@ -24,10 +24,11 @@
 |------|------|---------------|----------|-----|
 | Array (ARR) | 2 | 2026-08-02 | 2026-08-05 | Recall güçlü: erişim/shift/Move Zeroes doğru ✓ |
 | HashTable (HASH) | 2 | 2026-08-04 | 2026-08-07 | Recall doğru (worst O(n) = tek bucket lineer) ✓ |
-| Longest Consecutive (0128) | 1 | 2026-08-02 | 2026-08-05 | Guided (ağır scaffold); +3g COLD re-solve şart — asıl test |
+| Longest Consecutive (0128) | 1 | 2026-08-05 | 2026-08-06 | COLD re-solve **kısmi**: Set+start ✓, Big-O ✓, **while yürüyüşü ✗** → Kutu 1'de kal |
+| ⚠️ ZAYIF NOKTA: while-walk kalıbı | 1 | 2026-08-05 | 2026-08-06 | Tekrarlayan: `current` (ilerleyen) + `length` (sayaç) + `while cond` üçlüsü. 2 Ağu ve 5 Ağu'da takıldı. |
 | Two Sum II (0167) | 1 | 2026-08-04 | 2026-08-07 | İlk denemede bug'sız ✓; +3g re-solve ≤5dk |
-| Two Pointers pattern (TP) | 1 | 2026-08-04 | 2026-08-05 | Converging (sorted); warm-up'ta kaçmıştı → drill |
-| String mekaniği (STR) | 1 | 2026-08-04 | 2026-08-05 | Variable-width, str[Int] yasak, Array(s), String.Index |
+| Two Pointers pattern (TP) | 2 | 2026-08-05 | 2026-08-08 | Recall doğru ✓ (O(1) space ekseni) |
+| String mekaniği (STR) | 2 | 2026-08-05 | 2026-08-08 | Recall doğru ✓ (stride mantığıyla açıkladı) |
 | Valid Palindrome (0125) | 1 | 2026-08-04 | 2026-08-07 | 2 versiyon (Array + String.Index); +3g re-solve. Bug: De Morgan |
 | Two Sum (0001) | 1 | 2026-07-26 | 2026-07-27 | Cold re-solve hedefi ≤10dk |
 | Contains Duplicate (0217) | 1 | 2026-07-26 | 2026-07-27 | |
@@ -36,7 +37,7 @@
 | Pattern triggers (PAT) | 2 | 2026-08-01 | 2026-08-04 | Cold recall: "pair/complement→hash" doğru ✓ |
 | Recognition-MemARC (iOS drills 01) | 1 | 2026-07-26 | 2026-07-27 | Timed: isim <10sn, cevap <90sn |
 | Recognition-Concurrency (iOS drills 02) | 1 | 2026-07-26 | 2026-07-27 | Refleks: main? shared state? bir kez tamamlanma? |
-| Move Zeroes (0283) | 2 | 2026-08-02 | 2026-08-05 | Recall doğru; +3g cold re-solve ≤8dk (compact+fill & swap) |
+| Move Zeroes (0283) | 3 | 2026-08-05 | 2026-08-12 | Recall doğru (brute O(n²) sebebi) ✓ |
 | Array mekaniği: erişim + shift | 2 | 2026-08-02 | 2026-08-05 | Recall doğru ✓ |
 | Array mekaniği: AMORTIZED | 2 | 2026-08-04 | 2026-08-07 | Re-drill DOĞRU ✓ (2n/3n→O(1); +1→O(n²)). Zayıftı, oturdu. |
 
