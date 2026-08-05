@@ -86,6 +86,10 @@
 
 **PROB-0128** · Q: Longest Consecutive — nasıl O(n), sort olmadan? — A: `Set` (O(1) membership) + sadece "başlangıç"lardan (num-1 yoksa) sağa yürü. İç içe döngü ama tüm while adımları toplamı = n → O(n). Tuzak: while koşulu `current+1` (num değil, yoksa sonsuz döngü).
 
+**LOOP-2** ⚠️⚠️ *(ANA ZAYIF NOKTA — 5 Ağu, 3 denemede çözüldü)* · Q: Sayaç değişkenini döngünün içine mi dışına mı koyarsın? — A: **Sayacın ömrü, saydığın şeyin ömrüne eşit olmalı.** Blok İÇİNDE tanımlanan `var` her girişte **yeniden doğar** (birikim imkânsız). Turlar arası bilgi taşıyacaksa → **dışarıda**. Örnek: #485 (tek geçiş, ardışık say) → dışarıda; #128 (her başlangıç kendi yürüyüşü) → içeride. Ezberleme, ömre bak.
+
+**PROB-0485** · Q: Max Consecutive Ones — kalıp? — A: `current` ve `longest` for'un DIŞINDA. `1` → `current += 1; longest = max(longest, current)`. `0` → `current = 0`. Her artışta max aldığın için "dizi 1 ile biterse" özel durumu **gerekmez**.
+
 **LOOP-1** ⚠️ *(zayıf nokta — 2 ve 5 Ağu'da takıldı)* · Q: "Bir noktadan başlayıp koşul bozulana kadar yürü ve say" — kalıp nedir? — A: Üçlü: **`current`** (ilerleyen işaretçi, başlangıç değerinden kopyalanır) + **`length = 1`** (sayaç, kendisi dahil) + **`while koşul(current)`** { current ilerle; length++ }. Kritik: while koşulunda **ilerleyen** değişken olmalı (sabit olan → sonsuz döngü).
 
 **PROB-0167** · Q: Two Sum II (sorted) — hangi teknik, neden hash değil? — A: Converging two pointers (L=0, R=n-1): sum>target→R--, sum<target→L++. O(n) time, **O(1) space**. Sorted olduğu için R-- toplamı kesin küçültür. Hash de çalışır ama O(n) space; sorted → two pointers daha iyi.

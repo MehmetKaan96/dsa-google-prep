@@ -13,7 +13,7 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 8 | 150+ |
+| LeetCode problems solved | 9 | 150+ |
 | Blind 75 completion | 6 / 75 | 75 / 75 |
 | NeetCode 150 completion | 8 / 150 | 150 / 150 |
 | Concept deep-dives done | 4 / 11 | 11 / 11 |
@@ -287,6 +287,13 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - **String mekaniği** guided işlendi: Character = grapheme cluster (değişken byte) → `str[Int]` yasak, `count` O(n), `Array(s)` (O(n) space/O(1) index) vs `String.Index` (O(1) space) → [03-string-two-pointers](concepts/03-string-two-pointers.md) + şema
 - **Valid Palindrome (#125)** guided çözüldü, **iki versiyon**: Array + String.Index. Bug: De Morgan (`!(A\|\|B)=!A&&!B`) + case (per-compare lowercase) → [strings/0125](problems/strings/0125-valid-palindrome.md)
 - Konu 03 (String & Two Pointers) ✅ — 8 problem toplam
+
+**Seans 4 — 2026-08-05 (re-solve günü):**
+- Warm-up **3/3** ✅ (Two Pointers, String mekaniği, Move Zeroes) → kartlar Kutu 2-3'e
+- **#128 COLD re-solve: kısmi** — Set + başlangıç tespiti + Big-O hatırlandı ✓, **while-yürüyüş mekaniği ✗** (2 Ağu ile aynı yer) → Kutu 1'de kaldı
+- **Zayıf nokta teşhisi keskinleşti:** sorun problem seçimi değil, **değişken scope/ömür** — sayacı blok içinde tanımlayınca birikim olmuyor. Yeni kart: **LOOP-2**
+- Drill: **Max Consecutive Ones (#485)** → [arrays/0485](problems/arrays/0485-max-consecutive-ones.md) — 3 denemede çözüldü, scope dersi oturdu
+- **Kural:** *Sayacın ömrü, saydığın şeyin ömrüne eşit olmalı* (#485 dışarıda, #128 içeride — ezber değil, ömre bak)
 
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 

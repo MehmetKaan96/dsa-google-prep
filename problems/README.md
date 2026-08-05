@@ -68,3 +68,4 @@ print("✅ All tests passed")
 | 0128 | Longest Consecutive Sequence | Medium | Set O(1) membership + start detection | [hashmap/0128](hashmap/0128-longest-consecutive-sequence.md) |
 | 0167 | Two Sum II (Sorted) | Medium | Converging two pointers | [arrays/0167](arrays/0167-two-sum-ii-sorted.md) |
 | 0125 | Valid Palindrome | Easy | Two pointers + skip; String mekaniği | [strings/0125](strings/0125-valid-palindrome.md) |
+| 0485 | Max Consecutive Ones | Easy | Running counter + max (scope drill) | [arrays/0485](arrays/0485-max-consecutive-ones.md) |
