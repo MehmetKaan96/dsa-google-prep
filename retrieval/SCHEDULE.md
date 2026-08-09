@@ -50,6 +50,25 @@
 
 ---
 
+---
+
+## 📌 Sonraki seans — buradan başla
+
+**Yeni seans yapısı** (2026-08-09 geri bildirimi): kısa mekanik anlatım → **arka arkaya 2-3 problem**, Medium oranı yüksek. Az doküman, çok pratik.
+
+1. **Warm-up sweep** — birikmiş kartlar (aşağıdaki tablo, çoğu gecikmiş): Two Sum · Contains Duplicate · Valid Anagram · Group Anagrams (27 Tem'den) · Two Sum II · Valid Palindrome · Array/HashTable/String/TP mekanikleri
+2. **Stack merdiveni (kaldığımız yer):**
+   - **#232 Implement Queue using Stacks** ← başlanacak (iki-stack, kavramı işlendi)
+   - **#155 Min Stack** (yardımcı stack, O(1) min)
+   - **#739 Daily Temperatures** (monotonic stack — yeni pattern)
+3. Sonra → **Linked List** (konu 05)
+
+**iOS Recognition Drills — programa eklendi:** her 2-3 DSA seansında bir, seans başında **1-2 drill** (5-10 dk), canlı. Protokol: [00-PROTOCOL](../ios-depth/drills/recognition/00-PROTOCOL.md) — 5 adımlı cevap (isim→severity→failure→fix→trade-off).
+- ✅ 2026-08-09: UIKit cell-reuse drill yapıldı — baskın bug (stale image) bulundu ✓; severity kalibrasyonu geliştirilecek (`as!` = nit, her crash riski 🔴 değil); kaçırılanlar: `[weak self]`, thread sözleşmesi
+- Sırada: SwiftUI drill (Set 03 — henüz dosyalanmadı, canlı yapılıyor)
+
+---
+
 ## Yeni konu ekleme
 Bir `concepts/NN-*.md` bitince: buraya satır ekle, Kutu 1, `Next Due` = ertesi gün.
 
