@@ -13,10 +13,10 @@
 
 | Metric | Şu An | Hedef |
 |--------|-------|-------|
-| LeetCode problems solved | 9 | 150+ |
-| Blind 75 completion | 6 / 75 | 75 / 75 |
-| NeetCode 150 completion | 8 / 150 | 150 / 150 |
-| Concept deep-dives done | 4 / 11 | 11 / 11 |
+| LeetCode problems solved | 10 | 150+ |
+| Blind 75 completion | 7 / 75 | 75 / 75 |
+| NeetCode 150 completion | 9 / 150 | 150 / 150 |
+| Concept deep-dives done | 5 / 11 | 11 / 11 |
 | iOS deep-dives done | 8 / 8 | 8 / 8 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
@@ -36,7 +36,7 @@
 | 01 | Array | ✅ | 2 |
 | 02 | HashTable / Dictionary | ✅ | 5 |
 | 03 | String & Two Pointers | ✅ | 2 |
-| 04 | Stack & Queue | ⏳ | 0 |
+| 04 | Stack & Queue | ✅ | 1 |
 | 05 | Linked List | ⏳ | 0 |
 | 06 | Trees & BST | ⏳ | 0 |
 | 07 | Heap / Priority Queue | ⏳ | 0 |
@@ -300,6 +300,9 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - **#485 cold:** scope dersi **hatırlandı** (değişkenler döngü dışında ✓, 5 Ağu'da 3 denemede zor çözülmüştü). Yeni bug: **rol karışıklığı** (current vs longest) → 1 düzeltmeyle çözüldü. Yeni kart: **LOOP-3**
 - **#128 cold: TAM ÇÖZÜM, ipucusuz** ✅ — 2 ve 5 Ağu'da iki kez takıldığı **while-yürüyüşü** dahil (`number` ilerleyen değişken doğru kullanıldı)
 - **Sonuç:** "Ara verirsem unutur muyum?" sorusunun cevabı → spaced repetition + understanding-first çalışıyor. Zayıf noktalar Kutu 2'ye yükseldi.
+- **Stack & Queue deep dive** (konu 04 ✅) → [04-stack-queue](concepts/04-stack-queue.md) + şema: LIFO/FIFO, `removeFirst()` **O(n) tuzağı** (BFS'i gizlice O(n²) yapar) → head index çözümü, iki-stack queue (amortized gerekçesi Array growth'tan **farklı**)
+- **Valid Parentheses (#20)** → [stack-queue/0020](problems/stack-queue/0020-valid-parentheses.md). Sözel algoritma **4/4 kendi kurdu**; zorluk koda çevirmede: "sessiz yutma" (mismatch dalı yok) 2 kez + **rewrite tuzağı**
+- **Yeni kural (CODE-1):** *Kod %90 doğruysa boşluğu doldur, baştan yazma.* Ayrıca kullanıcı kendi house style'ını hatırlattı (brute force atlanmış) → Approach 0/1/2 eklendi
 
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 

@@ -28,6 +28,9 @@
 | ZAYIF NOKTA: while-walk kalıbı | 2 | 2026-08-09 | 2026-08-12 | ✅ Aşıldı: #128'de `number` (ilerleyen) doğru kullanıldı |
 | ZAYIF NOKTA: değişken scope/ömür | 2 | 2026-08-09 | 2026-08-12 | ✅ #485'te ilk denemede dışarıda tanımlandı. Kalan: rol ayrımı (current vs longest) |
 | Max Consecutive Ones (0485) | 2 | 2026-08-09 | 2026-08-12 | Cold: scope ✓, rol karışıklığı (1 düzeltme) → çözdü |
+| Stack & Queue mekaniği (SQ) | 1 | 2026-08-09 | 2026-08-10 | Deep dive: LIFO/FIFO, removeFirst O(n) tuzağı, 2-stack amortized |
+| Valid Parentheses (0020) | 1 | 2026-08-09 | 2026-08-12 | Sözel 4/4 ✓; kodda "sessiz yutma" 2 kez + rewrite tuzağı |
+| ⚠️ CODE-1: minimal fix > rewrite | 1 | 2026-08-09 | 2026-08-10 | %90 doğru kodu baştan yazma; her if'in her dalını belirt |
 | Two Sum II (0167) | 1 | 2026-08-04 | 2026-08-07 | İlk denemede bug'sız ✓; +3g re-solve ≤5dk |
 | Two Pointers pattern (TP) | 2 | 2026-08-05 | 2026-08-08 | Recall doğru ✓ (O(1) space ekseni) |
 | String mekaniği (STR) | 2 | 2026-08-05 | 2026-08-08 | Recall doğru ✓ (stride mantığıyla açıkladı) |

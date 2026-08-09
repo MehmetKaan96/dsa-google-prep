@@ -49,6 +49,7 @@ print("✅ All tests passed")
 | Folder | Topics | Primary DS |
 |--------|--------|------------|
 | `arrays/` | Two pointers, sliding window, prefix sum | Array |
+| `stack-queue/` | LIFO/FIFO, monotonic stack, BFS queue | Stack, Queue |
 | `hashmap/` | Frequency, lookup, dedup | Dictionary, Set |
 | `strings/` | Palindrome, pattern matching | String, Array |
 | `linked-list/` | Reversal, cycle detection, merging | LinkedList |
@@ -69,3 +70,4 @@ print("✅ All tests passed")
 | 0167 | Two Sum II (Sorted) | Medium | Converging two pointers | [arrays/0167](arrays/0167-two-sum-ii-sorted.md) |
 | 0125 | Valid Palindrome | Easy | Two pointers + skip; String mekaniği | [strings/0125](strings/0125-valid-palindrome.md) |
 | 0485 | Max Consecutive Ones | Easy | Running counter + max (scope drill) | [arrays/0485](arrays/0485-max-consecutive-ones.md) |
+| 0020 | Valid Parentheses | Easy | Stack ile eşleştirme (LIFO) | [stack-queue/0020](stack-queue/0020-valid-parentheses.md) |

@@ -90,6 +90,18 @@
 
 **PROB-0485** · Q: Max Consecutive Ones — kalıp? — A: `current` ve `longest` for'un DIŞINDA. `1` → `current += 1`. `0` → `current = 0`. Her turda `longest = max(longest, current)`. "Dizi 1 ile biterse" özel durumu **gerekmez**.
 
+**SQ-1** · Q: Stack neden Array ile O(1), Swift'te ayrı tip var mı? — A: Sondan ekle/sil → kaydırma yok. `append` O(1) amortized, `removeLast` O(1). Swift'te ayrı `Stack` yok — `Array` zaten stack.
+
+**SQ-2** ⚠️ · Q: `queue.removeFirst()` neden tuzak, çözüm? — A: index 0 silinince hepsi sola kayar → O(n); n dequeue = **O(n²)**. BFS'i gizlice bozar. Çözüm: **head index** (`queue[head]; head += 1`), ring buffer, iki stack veya `Deque`.
+
+**SQ-3** · Q: İki stack ile queue neden FIFO, neden amortized O(1)? — A: Transfer sırayı ters çevirir (LIFO×LIFO=FIFO); outbox boşsa inbox'ı aktar. Amortized: her eleman **en fazla 1 kez** transfer edilir, geri taşınmaz → toplam O(n). *(Array growth'tan farklı gerekçe.)*
+
+**SQ-4** · Q: Stack mi Queue mu? — A: "En son gördüğüme dön" / eşleştirme / DFS / next-greater → **Stack** (derinlik). "Sırayla, katman katman" / BFS / en kısa yol → **Queue** (genişlik). Recursion = gizli stack.
+
+**PROB-0020** · Q: Valid Parentheses — neden sayaç yetmez, kritik dal? — A: Sayaç sırayı kaybeder (`"([)]"` sayaçları tutar ama geçersiz) → nesting problemi, stack şart. Kritik: kapanış eşleşmezse **anında `return false`** (yoksa sessiz yutma → `"]"` true döner). Sonda `stack.isEmpty`.
+
+**CODE-1** ⚠️ *(9 Ağu — asıl ders)* · Q: Kod %90 doğru ama bir yeri eksikse ne yaparsın? — A: **Boşluğu doldur, baştan yazma.** #20'de tek satır (`else { return false }`) eksikken baştan yazdım → iki-geçişli versiyon stack'in özünü öldürdü. Hangi parçanın çalıştığını bilmek, yeni bir şey denemekten değerli. Ayrıca: her `if`'in **her dalında** ne olacağını açıkça belirt ("hiçbir şey yapma" bilinçli olmalı, kaza değil).
+
 **LOOP-3** ⚠️ *(9 Ağu — rol karışıklığı)* · Q: "Running counter + best" kalıbında iki değişkenin rolleri? — A: **`current`** = şu anki seri, koşul bozulunca **sıfırlanır**. **`longest`** = rekor, **asla sıfırlanmaz**. Tek değişkene iki rol yükleme (hem sıfırlan hem max) → ikisini de yapamaz. Net isim ver, rol netleşir.
 
 **LOOP-1** ⚠️ *(zayıf nokta — 2 ve 5 Ağu'da takıldı)* · Q: "Bir noktadan başlayıp koşul bozulana kadar yürü ve say" — kalıp nedir? — A: Üçlü: **`current`** (ilerleyen işaretçi, başlangıç değerinden kopyalanır) + **`length = 1`** (sayaç, kendisi dahil) + **`while koşul(current)`** { current ilerle; length++ }. Kritik: while koşulunda **ilerleyen** değişken olmalı (sabit olan → sonsuz döngü).
