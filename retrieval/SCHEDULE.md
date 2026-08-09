@@ -24,10 +24,10 @@
 |------|------|---------------|----------|-----|
 | Array (ARR) | 2 | 2026-08-02 | 2026-08-05 | Recall güçlü: erişim/shift/Move Zeroes doğru ✓ |
 | HashTable (HASH) | 2 | 2026-08-04 | 2026-08-07 | Recall doğru (worst O(n) = tek bucket lineer) ✓ |
-| Longest Consecutive (0128) | 1 | 2026-08-05 | 2026-08-06 | COLD re-solve **kısmi**: Set+start ✓, Big-O ✓, **while yürüyüşü ✗** → Kutu 1'de kal |
-| ⚠️ ZAYIF NOKTA: while-walk kalıbı | 1 | 2026-08-05 | 2026-08-06 | Tekrarlayan: `current` (ilerleyen) + `length` (sayaç) + `while cond` üçlüsü. 2 Ağu ve 5 Ağu'da takıldı. |
-| ⚠️⚠️ ANA ZAYIF NOKTA: değişken scope/ömür | 1 | 2026-08-05 | 2026-08-06 | Sayacı blok içinde tanımlayınca birikim olmuyor. Kural: sayacın ömrü = saydığın şeyin ömrü. (LOOP-2) |
-| Max Consecutive Ones (0485) | 1 | 2026-08-05 | 2026-08-06 | Drill; 3 denemede çözüldü (scope bug). +1g re-solve ≤4dk |
+| Longest Consecutive (0128) | 2 | 2026-08-09 | 2026-08-12 | ✅ **COLD SOLVE TAM** (4 gün aradan sonra, ipucusuz) — while yürüyüşü dahil |
+| ZAYIF NOKTA: while-walk kalıbı | 2 | 2026-08-09 | 2026-08-12 | ✅ Aşıldı: #128'de `number` (ilerleyen) doğru kullanıldı |
+| ZAYIF NOKTA: değişken scope/ömür | 2 | 2026-08-09 | 2026-08-12 | ✅ #485'te ilk denemede dışarıda tanımlandı. Kalan: rol ayrımı (current vs longest) |
+| Max Consecutive Ones (0485) | 2 | 2026-08-09 | 2026-08-12 | Cold: scope ✓, rol karışıklığı (1 düzeltme) → çözdü |
 | Two Sum II (0167) | 1 | 2026-08-04 | 2026-08-07 | İlk denemede bug'sız ✓; +3g re-solve ≤5dk |
 | Two Pointers pattern (TP) | 2 | 2026-08-05 | 2026-08-08 | Recall doğru ✓ (O(1) space ekseni) |
 | String mekaniği (STR) | 2 | 2026-08-05 | 2026-08-08 | Recall doğru ✓ (stride mantığıyla açıkladı) |

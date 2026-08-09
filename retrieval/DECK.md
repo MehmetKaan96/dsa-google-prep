@@ -88,7 +88,9 @@
 
 **LOOP-2** ⚠️⚠️ *(ANA ZAYIF NOKTA — 5 Ağu, 3 denemede çözüldü)* · Q: Sayaç değişkenini döngünün içine mi dışına mı koyarsın? — A: **Sayacın ömrü, saydığın şeyin ömrüne eşit olmalı.** Blok İÇİNDE tanımlanan `var` her girişte **yeniden doğar** (birikim imkânsız). Turlar arası bilgi taşıyacaksa → **dışarıda**. Örnek: #485 (tek geçiş, ardışık say) → dışarıda; #128 (her başlangıç kendi yürüyüşü) → içeride. Ezberleme, ömre bak.
 
-**PROB-0485** · Q: Max Consecutive Ones — kalıp? — A: `current` ve `longest` for'un DIŞINDA. `1` → `current += 1; longest = max(longest, current)`. `0` → `current = 0`. Her artışta max aldığın için "dizi 1 ile biterse" özel durumu **gerekmez**.
+**PROB-0485** · Q: Max Consecutive Ones — kalıp? — A: `current` ve `longest` for'un DIŞINDA. `1` → `current += 1`. `0` → `current = 0`. Her turda `longest = max(longest, current)`. "Dizi 1 ile biterse" özel durumu **gerekmez**.
+
+**LOOP-3** ⚠️ *(9 Ağu — rol karışıklığı)* · Q: "Running counter + best" kalıbında iki değişkenin rolleri? — A: **`current`** = şu anki seri, koşul bozulunca **sıfırlanır**. **`longest`** = rekor, **asla sıfırlanmaz**. Tek değişkene iki rol yükleme (hem sıfırlan hem max) → ikisini de yapamaz. Net isim ver, rol netleşir.
 
 **LOOP-1** ⚠️ *(zayıf nokta — 2 ve 5 Ağu'da takıldı)* · Q: "Bir noktadan başlayıp koşul bozulana kadar yürü ve say" — kalıp nedir? — A: Üçlü: **`current`** (ilerleyen işaretçi, başlangıç değerinden kopyalanır) + **`length = 1`** (sayaç, kendisi dahil) + **`while koşul(current)`** { current ilerle; length++ }. Kritik: while koşulunda **ilerleyen** değişken olmalı (sabit olan → sonsuz döngü).
 

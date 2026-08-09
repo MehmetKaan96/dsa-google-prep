@@ -295,6 +295,12 @@ Uzun aradan sonra **temelden sağlamlaştırma** kararı: hedef, 1 aylık ara ve
 - Drill: **Max Consecutive Ones (#485)** → [arrays/0485](problems/arrays/0485-max-consecutive-ones.md) — 3 denemede çözüldü, scope dersi oturdu
 - **Kural:** *Sayacın ömrü, saydığın şeyin ömrüne eşit olmalı* (#485 dışarıda, #128 içeride — ezber değil, ömre bak)
 
+**Seans 5 — 2026-08-09 (cold solve günü, 4 gün ara sonrası):** 🏆
+- **Retention testi geçildi.** 4 gün ara verildi; warm-up kartı verilmeden (prime etmemek için) iki problem de sıfırdan çözüldü.
+- **#485 cold:** scope dersi **hatırlandı** (değişkenler döngü dışında ✓, 5 Ağu'da 3 denemede zor çözülmüştü). Yeni bug: **rol karışıklığı** (current vs longest) → 1 düzeltmeyle çözüldü. Yeni kart: **LOOP-3**
+- **#128 cold: TAM ÇÖZÜM, ipucusuz** ✅ — 2 ve 5 Ağu'da iki kez takıldığı **while-yürüyüşü** dahil (`number` ilerleyen değişken doğru kullanıldı)
+- **Sonuç:** "Ara verirsem unutur muyum?" sorusunun cevabı → spaced repetition + understanding-first çalışıyor. Zayıf noktalar Kutu 2'ye yükseldi.
+
 ### Distribution Track — "mülakata girmek" (2026-07-26 eklendi)
 
 Prep "mülakatı geçmek"i çözer; ayrı bir paralel track "mülakata girmek"i çözer (ayda ~2-4 saat). CV · LinkedIn/görünürlük · **referral (en yüksek kaldıraç)** · application stratejisi. Aktif başvuru sabit tarihe değil hazırlık-sinyaline (Activation Gate) bağlı.
