@@ -17,7 +17,7 @@
 | Blind 75 completion | 7 / 75 | 75 / 75 |
 | NeetCode 150 completion | 9 / 150 | 150 / 150 |
 | Concept deep-dives done | 5 / 11 | 11 / 11 |
-| iOS deep-dives done | 8 / 8 | 8 / 8 |
+| iOS konu coverage (deep-dive) | 12 / 34 | 34 / 34 |
 | Mock interviews done | 0 | 3-5 |
 | Weeks completed | 0 / 24 | 24 / 24 |
 
@@ -45,6 +45,18 @@
 | 10 | Dynamic Programming | ⏳ | 0 |
 | 11 | Sorting & Searching | ⏳ | 0 |
 
+### iOS / Swift Coverage
+
+Detaylı tablo: **[ios-depth/coverage-tracker.md](ios-depth/coverage-tracker.md)** (34 konu, Beginner → Advanced, "arkada nasıl çalışıyor" seviyesinde).
+
+| Seviye | ✅ Deep-dive | 🟡 Kısmi | ⏳ Yapılmadı | Toplam |
+|--------|-------------|----------|-------------|--------|
+| 🟢 Beginner | 3 | 3 | 4 | 10 |
+| 🟡 Intermediate | 6 | 5 | 1 | 12 |
+| 🔴 Advanced | 3 | 4 | 5 | 12 |
+
+Format **D** seanslarında bu tracker'dan konu seçilir; Format **A/B/C** DSA tarafındadır.
+
 ---
 
 ## Folder Structure
@@ -68,7 +80,7 @@ dsa-google-prep/
 │   ├── trees/
 │   ├── graphs/
 │   └── dp/
-├── ios-depth/              ← iOS internals, memory, concurrency, architecture, code-review drills/
+├── ios-depth/              ← iOS internals + coverage-tracker.md (Beginner→Advanced) + drills/
 ├── career/                 ← distribution planı (mülakata girmek: CV, referral, görünürlük)
 ├── interviews/             ← mülakata özel hazırlık doc'ları (Trendyol, vb.)
 ├── system-design/          ← mobile system design notları
@@ -129,7 +141,7 @@ Her seans 5 şekilden birini alır. Mentor önerir; kullanıcı başta confirm e
 | **A** | Concept Deep-Dive | 60-90 dk | Yeni data structure veya algoritma |
 | **B** | Guided Problem | 45-60 dk | LeetCode mentor ile, hint'ler ihtiyaca göre |
 | **C** | Solo Sprint | 30+20 dk | Timed solo solve + review |
-| **D** | iOS Deep-Dive | 60 dk | iOS topic (Ay 3+) |
+| **D** | iOS Deep-Dive | 60 dk | iOS topic — konu seçimi: [coverage-tracker](ios-depth/coverage-tracker.md) |
 | **E** | Mock Interview | 60-90 dk | Tam simülasyon (Ay 5+) |
 
 ---

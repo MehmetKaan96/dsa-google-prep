@@ -2,7 +2,11 @@
 
 iOS'a özel mülakat topic'lerinin derin notları. Phase 2-3 (Ay 3-4) boyunca dolar.
 
+**📊 Coverage tracker (Beginner → Intermediate → Advanced, 34 konu):** [coverage-tracker.md](coverage-tracker.md) — Format **D** seanslarında konu buradan seçilir.
+
 **Code review drill bankası (Trendyol tarzı snippet'ler):** [drills/README.md](drills/README.md)
+
+> Aşağıdaki liste **dosya indeksi**dir; öğrenme sırası ve durum takibi için tracker'ı kullan.
 
 ## Planlanan Topic'ler
 
